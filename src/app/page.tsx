@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/hero-forest.png"
+            src="/hero-forest.webp"
             alt="Waldweg im Morgenlicht"
             fill
             className="object-cover"
@@ -228,7 +228,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 bg-forest" />
         <div className="absolute inset-0 opacity-10">
-          <Image src="/hero-forest.png" alt="" fill className="object-cover" />
+          <Image src="/hero-forest.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <Quote size={48} className="text-sage/40 mx-auto mb-6" />
@@ -282,7 +282,7 @@ export default function HomePage() {
       {/* ═══════════ WALDBADEN CTA ═══════════ */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/waldbaden.png" alt="Waldbaden Szene" fill className="object-cover" />
+          <Image src="/waldbaden.webp" alt="Waldbaden Szene" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-earth/80 via-earth/50 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
