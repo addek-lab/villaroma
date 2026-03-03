@@ -8,21 +8,21 @@ const books = [
     subtitle: "Die Heilkraft der ätherischen Baumöle",
     coAuthor: "mit Anusati Thumm",
     description: "15 Baumöle und 108 Rezepte für Gesundheit und Wohlbefinden aus dem Wald.",
-    color: "bg-forest/10",
+    cover: "/buch-waldmedizin.jpg",
   },
   {
     title: "Zitrusdüfte",
     subtitle: "Die Heilkraft der ätherischen Zitrusöle",
     coAuthor: "mit Anusati Thumm",
-    description: "14 ätherische Zitrusöle und ihre vielfältigen Anwendungen für Körper und Seele.",
-    color: "bg-[#f59e0b]/10",
+    description: "14 ätherische Zitrusöle und 150 Rezepturen für Körper und Psyche.",
+    cover: "/buch-zitrusduefte.jpg",
   },
   {
     title: "Hausapotheke Ätherische Öle",
     subtitle: "Schnelle Hilfe für jeden Tag",
     coAuthor: "",
     description: "Praktische Tipps und Rezepte für die tägliche Anwendung ätherischer Öle.",
-    color: "bg-sage/15",
+    cover: "/buch-hausapotheke.jpg",
   },
 ];
 
@@ -90,19 +90,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ ABOUT PREVIEW ═══════════ */}
+      {/* ═══════════ NEW BOOK: NATUR-RESILIENZ (PROMINENT) ═══════════ */}
       <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Book Cover */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-[280px] sm:w-[340px] drop-shadow-2xl">
+                <Image
+                  src="/buch-naturresilienz.webp"
+                  alt="Natur-Resilienz — Maria M. Kettenring & Jasmin Schlimm-Thierjung"
+                  width={400}
+                  height={560}
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Book Info */}
+            <div>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-forest text-white text-xs font-bold mb-5 uppercase tracking-wider">
+                Neuerscheinung 2026
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 wave-divider">
+                Natur-Resilienz
+              </h2>
+              <p className="text-leaf font-semibold text-lg mb-2 mt-6">
+                Finde deine innere Balance mit der Kraft der Natur
+              </p>
+              <p className="text-sm text-soft-grey mb-4">
+                Maria M. Kettenring &amp; Jasmin Schlimm-Thierjung · Mankau Verlag
+              </p>
+              <p className="text-bark text-lg leading-relaxed mb-8">
+                Das neueste Werk von Maria M. Kettenring verbindet die heilsame Kraft der Natur
+                mit praktischen Übungen zur Stärkung der inneren Widerstandskraft. Erfahren Sie,
+                wie Sie durch achtsame Naturerfahrungen, ätherische Öle und Waldbaden-Techniken
+                Ihre Resilienz nachhaltig aufbauen können.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/buecher" className="btn-primary">
+                  Mehr erfahren <ArrowRight size={16} />
+                </Link>
+                <Link href="/kontakt" className="btn-outline">
+                  Anfrage senden
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ ABOUT PREVIEW ═══════════ */}
+      <section className="section-padding">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+            <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl max-w-[400px] mx-auto lg:mx-0">
               <Image
-                src="/aromatherapy.png"
-                alt="Ätherische Öle und Aromatherapie"
+                src="/maria.jpg"
+                alt="Maria M. Kettenring"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-forest text-white p-6 rounded-2xl shadow-lg hidden md:block">
+            <div className="absolute -bottom-6 -right-2 lg:-right-6 bg-forest text-white p-6 rounded-2xl shadow-lg">
               <div className="text-3xl font-bold font-[family-name:var(--font-heading)]">40+</div>
               <div className="text-sm text-white/70">Jahre Erfahrung</div>
             </div>
@@ -131,7 +181,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ BOOKS ═══════════ */}
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">Publikationen</span>
@@ -139,22 +189,29 @@ export default function HomePage() {
               Bücher von Maria M. Kettenring
             </h2>
             <p className="text-bark text-lg">
-              Praxisnahe Ratgeber mit über 300 Rezepten für die tägliche Anwendung ätherischer Öle.
+              Praxisnahe Ratgeber mit hunderten Rezepten für die tägliche Anwendung ätherischer Öle.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {books.map((book, i) => (
-              <div key={i} className="card p-8">
-                <div className={`w-14 h-14 rounded-2xl ${book.color} flex items-center justify-center mb-6`}>
-                  <BookOpen size={24} className="text-forest" />
+              <div key={i} className="card p-0 overflow-hidden">
+                <div className="relative aspect-[3/4] bg-cream">
+                  <Image
+                    src={book.cover}
+                    alt={`${book.title} — Buchcover`}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-earth mb-1">{book.title}</h3>
-                <p className="text-sm text-leaf font-medium mb-3">{book.subtitle}</p>
-                {book.coAuthor && (
-                  <p className="text-xs text-soft-grey mb-3">{book.coAuthor}</p>
-                )}
-                <p className="text-bark text-sm leading-relaxed">{book.description}</p>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-earth mb-1">{book.title}</h3>
+                  <p className="text-sm text-leaf font-medium mb-2">{book.subtitle}</p>
+                  {book.coAuthor && (
+                    <p className="text-xs text-soft-grey mb-3">{book.coAuthor}</p>
+                  )}
+                  <p className="text-bark text-sm leading-relaxed">{book.description}</p>
+                </div>
               </div>
             ))}
           </div>

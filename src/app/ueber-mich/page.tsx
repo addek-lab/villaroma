@@ -47,10 +47,10 @@ export default function UeberMichPage() {
                         </div>
 
                         <div className="relative">
-                            <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+                            <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/aromatherapy.png"
-                                    alt="Maria M. Kettenring - Aromatherapie"
+                                    src="/maria.jpg"
+                                    alt="Maria M. Kettenring"
                                     fill
                                     className="object-cover"
                                 />
