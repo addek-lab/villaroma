@@ -23,7 +23,7 @@ export function Navbar() {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 no-underline">
-                        <Image src="/logo.png" alt="Villaroma Logo" width={200} height={60} priority className="h-12 w-auto" />
+                        <Image src="/logo.webp" alt="Villaroma — Waldmedizin & Waldbaden" width={800} height={375} priority className="h-14 w-auto" />
                     </Link>
 
                     {/* Desktop Navigation */}
