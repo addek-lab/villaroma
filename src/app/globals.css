@@ -1,26 +1,173 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-forest: #2d5a27;
+  --color-forest-light: #3a7232;
+  --color-leaf: #4a8c3f;
+  --color-sage: #8bba7e;
+  --color-sage-light: #c5ddb9;
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #ede6d8;
+  --color-earth: #3d3225;
+  --color-bark: #6b5c4d;
+  --color-soft-grey: #9a9a96;
+  --color-white: #ffffff;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: var(--color-earth);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-forest);
+  line-height: 1.2;
+}
+
+/* Reusable Component Styles */
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 2rem;
+  }
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-forest);
+  color: white;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-forest-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(45, 90, 39, 0.25);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: var(--color-forest);
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: 2px solid var(--color-forest);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-forest);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Card Style */
+.card {
+  background: var(--color-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(45, 90, 39, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Divider wave shape */
+.wave-divider {
+  position: relative;
+}
+
+.wave-divider::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-sage), var(--color-forest), var(--color-soft-grey));
+  border-radius: 4px;
+  margin-top: 1rem;
 }
