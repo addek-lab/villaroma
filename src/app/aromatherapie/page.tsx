@@ -59,7 +59,7 @@ export default function AromatherapiePage() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/villaroma/aromatherapy_skincare.png"
+                src="/villaroma/aromatherapy_skincare_v2.png"
                 alt="Ätherische Öle Beratung"
                 fill
                 className="object-cover"
