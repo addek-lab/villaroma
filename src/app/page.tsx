@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, TreePine, Calendar, Sparkles, Leaf, Quote } from "lucide-react";
+import { ArrowRight, BookOpen, TreePine, Calendar, Sparkles, Leaf, Quote, ExternalLink, Mic, Newspaper } from "lucide-react";
 
 const books = [
   {
@@ -127,14 +127,9 @@ export default function HomePage() {
                 wie Sie durch achtsame Naturerfahrungen, ätherische Öle und Waldbaden-Techniken
                 Ihre Resilienz nachhaltig aufbauen können.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/buecher" className="btn-primary">
-                  Mehr erfahren <ArrowRight size={16} />
-                </Link>
-                <Link href="/kontakt" className="btn-outline">
-                  Anfrage senden
-                </Link>
-              </div>
+              <Link href="/buecher" className="btn-primary">
+                Mehr erfahren <ArrowRight size={16} />
+              </Link>
             </div>
           </div>
         </div>
@@ -175,6 +170,135 @@ export default function HomePage() {
             </p>
             <Link href="/ueber-mich" className="btn-outline">
               Mehr erfahren <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ AKTUELLES (NEWS) ═══════════ */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">Neuigkeiten</span>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Aktuelles
+            </h2>
+            <p className="text-bark text-lg">
+              Kommende Seminare, Presse und aktuelle Projekte von Maria M. Kettenring.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Seminar: Detox und das Wilde Grün */}
+            <div className="card p-6 flex flex-col">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
+                <span className="text-xs text-soft-grey ml-auto">11.–12. April 2025</span>
+              </div>
+              <h3 className="text-lg font-bold text-earth mb-2">Detox und das Wilde Grün</h3>
+              <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
+                Sammeln und Bestimmen von Wildkräutern, Zubereiten von Smoothies und Aromacocktails,
+                Tipps für vegane Speisevariationen, Atemübungen und Pflegerituale.
+              </p>
+              <div className="flex items-center justify-between pt-4 border-t border-forest/5">
+                <span className="text-xs text-bark flex items-center gap-1">
+                  <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
+                </span>
+                <a href="https://akademie.primaveralife.com/de/de-DE/Details/709" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Anmelden <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+
+            {/* Seminar: Duftwerkstatt */}
+            <div className="card p-6 flex flex-col">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
+                <span className="text-xs text-soft-grey ml-auto">09.–10. Mai 2025</span>
+              </div>
+              <h3 className="text-lg font-bold text-earth mb-2">Duftwerkstatt – gekonnt mischen</h3>
+              <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
+                Entdecke den Dreiklang der Düfte. Kombiniere und mische ätherische Blüten-, Kräuter-,
+                Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu Körper- und Massageölen,
+                Roll-Ons und Splash Colognes.
+              </p>
+              <div className="flex items-center justify-between pt-4 border-t border-forest/5">
+                <span className="text-xs text-bark flex items-center gap-1">
+                  <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
+                </span>
+                <a href="https://akademie.primaveralife.com/de/de-DE/Details/826" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Anmelden <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+
+            {/* Seminar: Lavendel */}
+            <div className="card p-6 flex flex-col">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
+                <span className="text-xs text-soft-grey ml-auto">27.–28. Juni 2025</span>
+              </div>
+              <h3 className="text-lg font-bold text-earth mb-2">Lavendel – Blaues Wunder</h3>
+              <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
+                Gemeinsam Lavendel ernten, Duftsäckchen nähen, Destillation erleben.
+                Ein sinnliches Wochenende rund um den Lavendel.
+              </p>
+              <div className="flex items-center justify-between pt-4 border-t border-forest/5">
+                <span className="text-xs text-bark flex items-center gap-1">
+                  <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
+                </span>
+                <a href="https://akademie.primaveralife.com/de/de-DE/Details/708" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Anmelden <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Presse & Podcast */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            {/* Podcast */}
+            <div className="card p-6 flex items-start gap-5">
+              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                <Mic size={22} className="text-forest" />
+              </div>
+              <div>
+                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Podcast</span>
+                <h3 className="text-base font-bold text-earth mb-1">Zu Gast beim Kindheits(t)räume Podcast</h3>
+                <p className="text-bark text-sm leading-relaxed mb-3">
+                  Maria im Gespräch mit Claudia Dippel über Aromatherapie, Naturverbundenheit und Kindheitserinnerungen.
+                </p>
+                <a href="https://anchor.fm/claudia-dippel/episodes/Interview-mit-Maria-Kettenring-e1d5h8s" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Anhören <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+
+            {/* Presse */}
+            <div className="card p-6 flex items-start gap-5">
+              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                <Newspaper size={22} className="text-forest" />
+              </div>
+              <div>
+                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
+                <h3 className="text-base font-bold text-earth mb-1">Brigitte Magazin — Aromatherapie & Waldmedizin</h3>
+                <p className="text-bark text-sm leading-relaxed mb-3">
+                  Artikel über Aromatherapie und Waldmedizin mit Buchempfehlung „Waldmedizin" von Anusati Thumm und Maria M. Kettenring.
+                </p>
+                <a href="https://shop.brigitte.de/de_DE/einzelhefte/einzelausgaben/brigitte-26-2021/2055728.html" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Zum Artikel <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/seminare" className="btn-outline">
+              Alle Termine ansehen <ArrowRight size={16} />
             </Link>
           </div>
         </div>
@@ -302,21 +426,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ CONTACT CTA ═══════════ */}
-      <section className="section-padding bg-cream-dark">
-        <div className="max-w-3xl mx-auto text-center">
-          <Leaf size={32} className="text-leaf mx-auto mb-6" />
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Haben Sie Fragen?
-          </h2>
-          <p className="text-bark text-lg mb-8 max-w-lg mx-auto">
-            Ob Buchungen für Seminare, Vortragsanfragen oder allgemeine Fragen — Maria freut sich auf Ihre Nachricht.
-          </p>
-          <Link href="/kontakt" className="btn-primary">
-            Kontakt aufnehmen <ArrowRight size={16} />
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }

@@ -6,7 +6,6 @@ const footerLinks = [
     { href: "/buecher", label: "Bücher" },
     { href: "/seminare", label: "Seminare" },
     { href: "/waldbaden", label: "Waldbaden" },
-    { href: "/kontakt", label: "Kontakt" },
 ];
 
 export function Footer() {

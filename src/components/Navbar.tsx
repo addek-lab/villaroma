@@ -11,7 +11,6 @@ const navLinks = [
     { href: "/buecher", label: "Bücher" },
     { href: "/seminare", label: "Seminare" },
     { href: "/waldbaden", label: "Waldbaden" },
-    { href: "/kontakt", label: "Kontakt" },
 ];
 
 export function Navbar() {
@@ -39,13 +38,6 @@ export function Navbar() {
                         ))}
                     </div>
 
-                    {/* CTA Desktop */}
-                    <div className="hidden lg:block">
-                        <Link href="/kontakt" className="btn-primary text-sm">
-                            Kontakt aufnehmen
-                        </Link>
-                    </div>
-
                     {/* Mobile Toggle */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -70,11 +62,6 @@ export function Navbar() {
                                     {link.label}
                                 </Link>
                             ))}
-                            <div className="pt-4 px-4">
-                                <Link href="/kontakt" onClick={() => setIsOpen(false)} className="btn-primary w-full text-center text-sm">
-                                    Kontakt aufnehmen
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 )}

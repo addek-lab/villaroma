@@ -128,14 +128,9 @@ export default function WaldbadenPage() {
                     <p className="text-bark text-lg mb-8">
                         Nehmen Sie an einem von Marias Waldbaden-Seminaren teil und erleben Sie die heilsame Kraft des Waldes am eigenen Körper.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="/seminare" className="btn-primary">
-                            Seminare ansehen <ArrowRight size={16} />
-                        </Link>
-                        <Link href="/kontakt" className="btn-outline">
-                            Anfrage senden
-                        </Link>
-                    </div>
+                    <Link href="/seminare" className="btn-primary">
+                        Seminare ansehen <ArrowRight size={16} />
+                    </Link>
                 </div>
             </section>
         </div>
