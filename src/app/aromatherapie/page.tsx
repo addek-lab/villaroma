@@ -15,21 +15,22 @@ export default function AromatherapiePage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[--color-lavender-dark]/80 via-[--color-lavender-dark]/60 to-transparent" />
+          {/* Darker gradient for better text readability against the bright lavender field */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[--color-lavender-dark]/95 via-[--color-lavender-dark]/80 to-transparent/50" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-2 text-[--color-lavender-light] mb-6 animate-fade-in-up">
+            <div className="flex items-center gap-2 text-[--color-lavender-light] mb-6 animate-fade-in-up drop-shadow-md">
               <Leaf size={18} />
-              <span className="text-sm font-medium uppercase tracking-widest">Die Heilkraft der Natur</span>
+              <span className="text-sm font-medium uppercase tracking-widest drop-shadow-md">Die Heilkraft der Natur</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up delay-100" style={{ opacity: 0 }}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up delay-100 drop-shadow-lg" style={{ opacity: 0 }}>
               Aromatherapie
               <br />
               <span className="text-[--color-lavender-light]">&amp; Duftdesign</span>
             </h1>
-            <p className="text-white/90 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200" style={{ opacity: 0 }}>
+            <p className="text-white/95 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200 drop-shadow-md font-medium" style={{ opacity: 0 }}>
               Entdecken Sie die gesundheitsfördernde Wirkung natürlicher Düfte für Körper, Geist und Seele.
             </p>
           </div>
