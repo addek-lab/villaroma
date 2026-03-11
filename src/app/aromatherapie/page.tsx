@@ -9,10 +9,10 @@ export default function AromatherapiePage() {
       <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/buch-hausapotheke.jpg"
-            alt="Aromatherapie"
+            src="/villaroma/hero_lavender.png"
+            alt="Aromatherapie in traumhaftem Lavendelfeld"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[--color-lavender-dark]/80 via-[--color-lavender-dark]/60 to-transparent" />
@@ -59,7 +59,7 @@ export default function AromatherapiePage() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/villaroma/buch-aetherische-oele.jpg"
+                src="/villaroma/aromatherapy_skincare.png"
                 alt="Ätherische Öle Beratung"
                 fill
                 className="object-cover"
