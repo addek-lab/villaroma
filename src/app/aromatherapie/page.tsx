@@ -138,6 +138,16 @@ export default function AromatherapiePage() {
           </Link>
         </div>
       </section>
+
+      {/* ═══════════ DECORATIVE FOOTER ACCENT ═══════════ */}
+      <div className="w-full relative h-[120px] sm:h-[180px] lg:h-[220px] bg-white border-t border-[--color-lavender-light]">
+        <Image
+          src="/villaroma/lavender_floral_accent.png"
+          alt="Dekoratives Lavendel-Element"
+          fill
+          className="object-cover object-bottom opacity-90"
+        />
+      </div>
     </div>
   );
 }
