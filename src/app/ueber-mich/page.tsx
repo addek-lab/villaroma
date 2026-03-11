@@ -29,13 +29,16 @@ export default function UeberMichPage() {
                                 Maria M. Kettenring
                             </h1>
                             <p className="text-bark text-lg leading-relaxed mb-6">
-                                Maria M. Kettenring ist seit vier Jahrzehnten eine anerkannte Aromaexpertin, Autorin und &raquo;Duftbotschafterin&laquo; mit tiefgreifendem Wissen und umfangreicher Praxiserfahrung in Aromatherapie.
+                                Maria M. Kettenring ist seit über 38 Jahren eine anerkannte Aromaexpertin, Autorin und &raquo;Duftbotschafterin&laquo; mit tiefgreifendem Wissen und umfangreicher Praxiserfahrung in Aromakultur und Aromatherapie.
                             </p>
                             <p className="text-bark leading-relaxed mb-6">
-                                Seit Mitte der 1980er-Jahre hat sie die Aroma- und Duftküche entwickelt.
+                                Als eine der ersten Mitarbeiterinnen von Primavera beschäftigt sie sich seit den 1980er-Jahren beruflich mit ätherischen Ölen. Seit Mitte der 1980er-Jahre hat sie die Aroma- und Duftküche maßgeblich entwickelt. Ihr erstes Kochbuch &ldquo;Phantasievoll kochen mit ätherischen Ölen&rdquo; (1987) markierte den Beginn der Aromaküche bei Primavera.
+                            </p>
+                            <p className="text-bark leading-relaxed mb-6">
+                                Seit 1989 leitet sie internationale Duft- und Studienreisen und hält im In- und Ausland Vorträge zu den Themen Aromatherapie und Aromapflege. Bei der Primavera Akademie ist sie heute als passionierte Seminar- und Kursleiterin tätig.
                             </p>
                             <p className="text-bark leading-relaxed">
-                                Als ausgebildete Trainerin für Waldbaden und Natur-Resilienz teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
+                                Als zertifizierte Trainerin für Waldbaden und Natur-Resilienz® (Deutsche Akademie für Waldbaden und Gesundheit) teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
                             </p>
                         </div>
 
