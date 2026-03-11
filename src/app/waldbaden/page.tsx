@@ -21,16 +21,17 @@ export default function WaldbadenPage() {
             {/* Hero */}
             <section className="relative min-h-[60vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0">
-                    <Image src="/villaroma/waldbaden.webp" alt="Waldbaden im Wald" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-earth/80 via-earth/60 to-transparent" />
+                    <Image src="/villaroma/waldbaden.webp" alt="Waldbaden im Wald" fill className="object-cover object-center" priority />
+                    <div className="absolute inset-0 bg-forest/30 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-forest/80 via-forest/40 to-transparent" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                     <div className="max-w-2xl">
-                        <span className="text-sm font-semibold uppercase tracking-widest text-sage mb-4 block">Shinrin-Yoku · 森林浴</span>
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+                        <span className="text-sm font-semibold uppercase tracking-widest text-cream mb-4 block drop-shadow-md">Shinrin-Yoku · 森林浴</span>
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                             Waldbaden
                         </h1>
-                        <p className="text-white/80 text-lg leading-relaxed">
+                        <p className="text-white text-lg leading-relaxed drop-shadow-md font-medium">
                             Die japanische Praxis des &ldquo;Waldbadens&rdquo; — ein achtsames Eintauchen in die
                             Atmosphäre des Waldes. Wissenschaftlich belegt, therapeutisch wirksam,
                             zutiefst heilsam.
