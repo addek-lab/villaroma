@@ -47,14 +47,10 @@ export default function AromatherapiePage() {
             </h2>
             <div className="w-20 h-1 bg-[--color-lavender] rounded-full mb-8"></div>
             <p className="text-bark text-lg leading-relaxed mb-4">
-              Seit über vier Jahrzehnten widmet sich Maria M. Kettenring der Aromatherapie und der 
-              gesundheitsfördernden Wirkung naturreiner ätherischer Öle. Als passionierte Expertin 
-              verbindet sie tiefgehendes Wissen mit praktischer Anwendung.
+              Maria M. Kettenring ist seit vier Jahrzehnten eine anerkannte Aromaexpertin, Autorin und &raquo;Duftbotschafterin&laquo; mit tiefgreifendem Wissen und umfangreicher Praxiserfahrung in Aromatherapie.
             </p>
             <p className="text-bark leading-relaxed mb-8">
-              Ihre Arbeit umfasst nicht nur die klassische Duftberatung, sondern greift tief in den 
-              Alltag ein – von einer harmonisierenden Raumbeduftung bis hin zur eigens von ihr 
-              geprägten Aromaküche, deren Pionierin sie in Deutschland ist.
+              Seit Mitte der 1980er-Jahre hat sie die Aroma- und Duftküche entwickelt. Als ausgebildete Trainerin für Waldbaden und Natur-Resilienz teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
             </p>
           </div>
           <div className="relative">

@@ -29,20 +29,13 @@ export default function UeberMichPage() {
                                 Maria M. Kettenring
                             </h1>
                             <p className="text-bark text-lg leading-relaxed mb-6">
-                                Maria M. Kettenring ist eine der renommiertesten Aromafachspezialistinnen im deutschsprachigen Raum.
-                                Als <strong>Duftbotschafterin</strong> mit über 40 Jahren praktischer Erfahrung widmet sie sich der
-                                Aromakultur, Aromatherapie und der heilsamen Verbindung zwischen Mensch und Natur.
+                                Maria M. Kettenring ist seit vier Jahrzehnten eine anerkannte Aromaexpertin, Autorin und &raquo;Duftbotschafterin&laquo; mit tiefgreifendem Wissen und umfangreicher Praxiserfahrung in Aromatherapie.
                             </p>
                             <p className="text-bark leading-relaxed mb-6">
-                                Sie arbeitet als Ernährungsberaterin, Aroma- und Dufttrainerin sowie als zertifizierte Trainerin für
-                                <strong> Waldbaden und Natur-Resilienz®</strong>. Ihre Ausbildung zur Dozentin für &ldquo;Waldbaden — Achtsamkeit
-                                im Wald®&rdquo; absolvierte sie an der Deutschen Akademie für Waldbaden &amp; Gesundheit.
+                                Seit Mitte der 1980er-Jahre hat sie die Aroma- und Duftküche entwickelt.
                             </p>
                             <p className="text-bark leading-relaxed">
-                                Seit Mitte der 1980er Jahre entwickelt sie die Aroma- und Duftküche maßgeblich mit und hat mit
-                                &ldquo;Phantasievoll kochen mit ätherischen Ölen&rdquo; (1987) das erste Kochbuch seiner Art veröffentlicht.
-                                Seit 1989 leitet sie international Duft- und Studienreisen und hält Seminare und
-                                Vorträge zu Aromatherapie und Aromapflege.
+                                Als ausgebildete Trainerin für Waldbaden und Natur-Resilienz teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
                             </p>
                         </div>
 

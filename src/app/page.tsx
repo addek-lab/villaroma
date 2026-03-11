@@ -159,14 +159,10 @@ export default function HomePage() {
               Duftbotschafterin mit Leidenschaft
             </h2>
             <p className="text-bark text-lg leading-relaxed mb-4">
-              Maria M. Kettenring ist seit über vier Jahrzehnten als Aromafachspezialistin, Ernährungsberaterin
-              und Dozentin tätig. Als zertifizierte Trainerin für Waldbaden und Natur-Resilienz® verbindet sie
-              die Kraft ätherischer Öle mit der heilsamen Wirkung des Waldes.
+              Maria M. Kettenring ist seit vier Jahrzehnten eine anerkannte Aromaexpertin, Autorin und &raquo;Duftbotschafterin&laquo; mit tiefgreifendem Wissen und umfangreicher Praxiserfahrung in Aromatherapie.
             </p>
             <p className="text-bark leading-relaxed mb-8">
-              Seit 1989 leitet sie internationale Duft- und Studienreisen und hat zahlreiche Fachbücher
-              über ätherische Öle, Waldmedizin und Aromaküche veröffentlicht. Sie ist Pionierin der Aromaküche
-              in Deutschland.
+              Seit Mitte der 1980er-Jahre hat sie die Aroma- und Duftküche entwickelt. Als ausgebildete Trainerin für Waldbaden und Natur-Resilienz teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
             </p>
             <Link href="/ueber-mich" className="btn-outline">
               Mehr erfahren <ArrowRight size={16} />
