@@ -21,7 +21,7 @@ export default function WaldbadenPage() {
             {/* Hero */}
             <section className="relative min-h-[60vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0">
-                    <Image src="/waldbaden.webp" alt="Waldbaden im Wald" fill className="object-cover" />
+                    <Image src="/villaroma/waldbaden.webp" alt="Waldbaden im Wald" fill className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-r from-earth/80 via-earth/60 to-transparent" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -67,7 +67,7 @@ export default function WaldbadenPage() {
 
                     <div className="relative">
                         <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                            <Image src="/hero-forest.webp" alt="Waldweg" fill className="object-cover" />
+                            <Image src="/villaroma/hero-forest.webp" alt="Waldweg" fill className="object-cover" />
                         </div>
                     </div>
                 </div>

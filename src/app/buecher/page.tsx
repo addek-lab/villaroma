@@ -36,7 +36,7 @@ const books: Book[] = [
     publisher: "Mankau Verlag",
     description:
       "Das neueste Werk verbindet die heilsame Kraft der Natur mit praktischen Übungen zur Stärkung der inneren Widerstandskraft. Erfahren Sie, wie Sie durch achtsame Naturerfahrungen, ätherische Öle und Waldbaden-Techniken Ihre Resilienz nachhaltig aufbauen können.",
-    cover: "/buch-naturresilienz.webp",
+    cover: "/villaroma/buch-naturresilienz.webp",
     year: "Frühjahr 2026",
     badge: "Neu",
     featured: true,
@@ -56,7 +56,7 @@ const books: Book[] = [
       "Anwendung, Inhaltsstoffe und Wirkweisen",
       "150 Rezepturen (DIY) für Psyche, Körper und Genuss",
     ],
-    cover: "/buch-zitrusduefte.jpg",
+    cover: "/villaroma/buch-zitrusduefte.jpg",
     year: "2021",
     featured: false,
     shops: [
@@ -78,7 +78,7 @@ const books: Book[] = [
       "Viele Rezepturen zur Behandlung von Halsschmerzen, Husten, Schnupfen, Heiserkeit, Bronchitis, grippalen Infekten u.v.m.",
       "Die fachgerechte Anwendung ätherischer Öle bei Kindern",
     ],
-    cover: "/buch-erkaeltungszeit.webp",
+    cover: "/villaroma/buch-erkaeltungszeit.webp",
     year: "2023",
     featured: false,
     shops: [
@@ -105,7 +105,7 @@ const books: Book[] = [
       "Die Anwendung ätherischer Baumöle",
       "Symptome-Register zum schnellen Auffinden der Rezepturen",
     ],
-    cover: "/buch-waldmedizin.jpg",
+    cover: "/villaroma/buch-waldmedizin.jpg",
     year: "2023",
     featured: false,
     shops: [
@@ -131,7 +131,7 @@ const books: Book[] = [
       "Schnelle Hilfe bei: Erkältungen, Insektenstichen, Sportverletzungen, Muskelverspannungen, Rückenschmerzen, Übelkeit, Jetlag u.v.m.",
       "Mit einem umfangreichen Symptome-Register von A-Z zum schnellen Auffinden von über 200 Rezepturen",
     ],
-    cover: "/buch-hausapotheke.jpg",
+    cover: "/villaroma/buch-hausapotheke.jpg",
     year: "2023",
     featured: false,
     shops: [
@@ -154,7 +154,7 @@ const books: Book[] = [
       "Rezepte für Duftapotheke, Massageöle, Aromaküche und natürliche Raumdüfte",
       "Zahlreiche praktische Tipps sowie erprobte Rezepte für Massageöle, Raumdüfte, Aromaküche und vieles mehr",
     ],
-    cover: "/buch-aetherische-oele.jpg",
+    cover: "/villaroma/buch-aetherische-oele.jpg",
     year: "2023",
     featured: false,
     shops: [
@@ -177,7 +177,7 @@ const books: Book[] = [
       "Gesundheitsaspekte durch die Vielfalt an wirkungsvollen Inhaltsstoffen in den ätherischen Ölen",
       "Tipps zu Qualität, Einkauf und Umgang mit ätherischen Ölen (Würzessenzen)",
     ],
-    cover: "/buch-duftkueche.jpg",
+    cover: "/villaroma/buch-duftkueche.jpg",
     edition: "2. Auflage 2014",
     year: "2014",
     featured: false,
@@ -202,7 +202,7 @@ const books: Book[] = [
       "Porträt der Duftrosen",
       "Heilkräfte der Rose",
     ],
-    cover: "/buch-rosenkueche.jpg",
+    cover: "/villaroma/buch-rosenkueche.jpg",
     year: "",
     featured: false,
     shops: [
@@ -219,7 +219,7 @@ const books: Book[] = [
     edition: "3. Auflage",
     description:
       "Edited by two renowned experts, the Handbook of Essential Oils covers all aspects of essential oils from chemistry, pharmacology, and biological activity, to production and trade, to uses and regulation. This comprehensive handbook provides a much-needed compilation of information related to the development, use, and marketing of essential oils.",
-    cover: "/buch-essential-oils.jpg",
+    cover: "/villaroma/buch-essential-oils.jpg",
     year: "",
     featured: false,
     shops: [
@@ -255,7 +255,7 @@ export default function BuecherPage() {
             <div className="flex justify-center">
               <div className="relative w-[240px] sm:w-[280px] drop-shadow-2xl">
                 <Image
-                  src="/buch-naturresilienz.webp"
+                  src="/villaroma/buch-naturresilienz.webp"
                   alt="Natur-Resilienz — Buchcover"
                   width={400}
                   height={560}

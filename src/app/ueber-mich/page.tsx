@@ -49,7 +49,7 @@ export default function UeberMichPage() {
                         <div className="relative">
                             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/maria.jpg"
+                                    src="/villaroma/maria.jpg"
                                     alt="Maria M. Kettenring"
                                     fill
                                     className="object-cover"

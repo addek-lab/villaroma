@@ -8,21 +8,21 @@ const books = [
     subtitle: "Die Heilkraft der ätherischen Baumöle",
     coAuthor: "mit Anusati Thumm",
     description: "15 Baumöle und 108 Rezepte für Gesundheit und Wohlbefinden aus dem Wald.",
-    cover: "/buch-waldmedizin.jpg",
+    cover: "/villaroma/buch-waldmedizin.jpg",
   },
   {
     title: "Zitrusdüfte",
     subtitle: "Die Heilkraft der ätherischen Zitrusöle",
     coAuthor: "mit Anusati Thumm",
     description: "14 ätherische Zitrusöle und 150 Rezepturen für Körper und Psyche.",
-    cover: "/buch-zitrusduefte.jpg",
+    cover: "/villaroma/buch-zitrusduefte.jpg",
   },
   {
     title: "Hausapotheke Ätherische Öle",
     subtitle: "Schnelle Hilfe für jeden Tag",
     coAuthor: "",
     description: "Praktische Tipps und Rezepte für die tägliche Anwendung ätherischer Öle.",
-    cover: "/buch-hausapotheke.jpg",
+    cover: "/villaroma/buch-hausapotheke.jpg",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/hero-forest.webp"
+            src="/villaroma/hero-forest.webp"
             alt="Waldweg im Morgenlicht"
             fill
             className="object-cover"
@@ -98,7 +98,7 @@ export default function HomePage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-[280px] sm:w-[340px] drop-shadow-2xl">
                 <Image
-                  src="/buch-naturresilienz.webp"
+                  src="/villaroma/buch-naturresilienz.webp"
                   alt="Natur-Resilienz — Maria M. Kettenring & Jasmin Schlimm-Thierjung"
                   width={400}
                   height={560}
@@ -141,7 +141,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl max-w-[400px] mx-auto lg:mx-0">
               <Image
-                src="/maria.jpg"
+                src="/villaroma/maria.jpg"
                 alt="Maria M. Kettenring"
                 fill
                 className="object-cover"
@@ -352,7 +352,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 bg-forest" />
         <div className="absolute inset-0 opacity-10">
-          <Image src="/hero-forest.webp" alt="" fill className="object-cover" />
+          <Image src="/villaroma/hero-forest.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <Quote size={48} className="text-sage/40 mx-auto mb-6" />
@@ -406,7 +406,7 @@ export default function HomePage() {
       {/* ═══════════ WALDBADEN CTA ═══════════ */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/waldbaden.webp" alt="Waldbaden Szene" fill className="object-cover" />
+          <Image src="/villaroma/waldbaden.webp" alt="Waldbaden Szene" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-earth/80 via-earth/50 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
