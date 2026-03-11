@@ -1,21 +1,22 @@
 import Link from "next/link";
-import { Calendar, MapPin, Clock, ArrowRight, Users, Monitor } from "lucide-react";
+import Image from "next/image";
+import { Calendar, MapPin, Clock, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
-import SeminarCalendar from "@/components/SeminarCalendar";
-import type { CalendarEvent } from "@/components/SeminarCalendar";
 
 export const metadata: Metadata = {
     title: "Seminare & Webinare | Villaroma — Maria M. Kettenring",
     description: "Kommende Seminare, Workshops und Webinare zu Aromatherapie, Waldmedizin und Waldbaden mit Maria M. Kettenring.",
 };
 
-// Icons mapped by event type (kept in server component, not passed to client)
-const typeIcons: Record<string, typeof Users> = {
-    Seminar: Users,
-    Vortrag: Users,
-    Webinar: Monitor,
-    Workshop: Users,
-    Studienreise: Users,
+export type CalendarEvent = {
+    title: string;
+    description: string;
+    location: string;
+    date: string;
+    duration: string;
+    type: string;
+    featured: boolean;
+    image: string;
 };
 
 const events: CalendarEvent[] = [
@@ -27,8 +28,7 @@ const events: CalendarEvent[] = [
         duration: "2 Tage",
         type: "Seminar",
         featured: true,
-        startDate: "2026-04-18",
-        endDate: "2026-04-19",
+        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
         title: "Waldmedizin — Die Heilkraft der Baumöle",
@@ -38,7 +38,7 @@ const events: CalendarEvent[] = [
         duration: "3 Stunden",
         type: "Vortrag",
         featured: false,
-        startDate: "2026-06-12",
+        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
     },
     {
         title: "Ätherische Öle — Grundlagen & Praxis",
@@ -48,6 +48,7 @@ const events: CalendarEvent[] = [
         duration: "2 Stunden",
         type: "Webinar",
         featured: false,
+        image: "/villaroma/seminare/seminar_grundlagen_1773246276783.png",
     },
     {
         title: "Aromadesign — Die Kunst des natürlichen Parfums",
@@ -57,6 +58,7 @@ const events: CalendarEvent[] = [
         duration: "Ganztägig",
         type: "Workshop",
         featured: false,
+        image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
     },
     {
         title: "Duft- und Studienreise",
@@ -66,71 +68,84 @@ const events: CalendarEvent[] = [
         duration: "Mehrere Tage",
         type: "Studienreise",
         featured: false,
+        image: "/villaroma/seminare/seminar_studienreise_1773246309283.png",
     },
 ];
 
 export default function SeminarePage() {
     return (
         <div className="pt-20">
-            {/* Header */}
-            <section className="section-padding bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <div className="max-w-3xl">
-                        <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">Termine</span>
-                        <h1 className="text-4xl sm:text-5xl font-bold mb-6 wave-divider">
-                            Seminare & Webinare
-                        </h1>
-                        <p className="text-bark text-lg leading-relaxed">
-                            Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin in Marias
-                            Seminaren, Vorträgen und Webinaren. Praxisnah, inspirierend und wissenschaftlich fundiert.
-                        </p>
-                    </div>
+            {/* ═══════════ HERO SECTION ═══════════ */}
+            <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0">
+                    <Image
+                        src="/villaroma/seminare/seminar_waldbaden_1773246243999.png"
+                        alt="Seminare Hero"
+                        fill
+                        className="object-cover object-[center_30%]"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-forest/60 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-forest/90 via-transparent to-transparent" />
+                </div>
+                
+                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
+                    <span className="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-semibold tracking-wider uppercase mb-4 backdrop-blur-sm border border-white/30">
+                        Wissen & Erfahrung
+                    </span>
+                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-md">
+                        Seminare & Webinare
+                    </h1>
+                    <p className="text-xl text-cream md:text-2xl font-light text-shadow-sm max-w-2xl mx-auto">
+                        Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin in praxisnahen Seminaren und Vorträgen.
+                    </p>
                 </div>
             </section>
 
-            {/* Calendar */}
-            <SeminarCalendar events={events} />
-
             {/* Events List */}
-            <section className="section-padding !pt-0 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">
+            <section className="section-padding bg-sage/5">
+                <div className="max-w-5xl mx-auto">
+                    <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-8 block text-center">
                         Alle Veranstaltungen
                     </span>
-                    <div className="space-y-6">
+                    <div className="space-y-8">
                         {events.map((event, i) => {
-                            const Icon = typeIcons[event.type] || Users;
                             return (
                                 <div
                                     key={i}
-                                    className={`card p-8 ${event.featured ? "ring-2 ring-forest/20 bg-cream/50" : ""}`}
+                                    className={`card overflow-hidden flex flex-col md:flex-row transition-all hover:shadow-xl ${event.featured ? "ring-2 ring-forest/30 bg-white" : "bg-white"}`}
                                 >
-                                    {event.featured && (
-                                        <span className="inline-block px-3 py-1 rounded-full bg-forest text-white text-xs font-bold mb-4">
-                                            Empfohlen
-                                        </span>
-                                    )}
-                                    <div className="flex flex-col md:flex-row gap-6">
-                                        <div className="w-14 h-14 rounded-2xl bg-sage/15 flex items-center justify-center shrink-0">
-                                            <Icon size={24} className="text-forest" />
-                                        </div>
-                                        <div className="flex-1">
-                                            <h2 className="text-xl font-bold text-earth mb-2">{event.title}</h2>
-                                            <p className="text-bark text-sm leading-relaxed mb-4">{event.description}</p>
-                                            <div className="flex flex-wrap items-center gap-4 text-xs text-bark">
-                                                <span className="flex items-center gap-1.5 bg-cream px-3 py-1.5 rounded-full">
-                                                    <MapPin size={12} className="text-leaf" /> {event.location}
-                                                </span>
-                                                <span className="flex items-center gap-1.5 bg-cream px-3 py-1.5 rounded-full">
-                                                    <Calendar size={12} className="text-leaf" /> {event.date}
-                                                </span>
-                                                <span className="flex items-center gap-1.5 bg-cream px-3 py-1.5 rounded-full">
-                                                    <Clock size={12} className="text-leaf" /> {event.duration}
-                                                </span>
-                                                <span className="px-3 py-1.5 rounded-full bg-forest/5 text-forest font-semibold">
-                                                    {event.type}
+                                    <div className="w-full md:w-64 h-48 md:h-auto relative shrink-0">
+                                        <Image
+                                            src={event.image}
+                                            alt={event.title}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                        {event.featured && (
+                                            <div className="absolute top-4 left-4">
+                                                <span className="inline-block px-3 py-1 rounded-full bg-forest text-white text-xs font-bold shadow-md">
+                                                    Empfohlen
                                                 </span>
                                             </div>
+                                        )}
+                                    </div>
+                                    <div className="p-8 flex-1 flex flex-col justify-center">
+                                        <h2 className="text-2xl font-bold text-earth mb-3">{event.title}</h2>
+                                        <p className="text-bark leading-relaxed mb-6">{event.description}</p>
+                                        <div className="flex flex-wrap items-center gap-3 text-sm text-earth">
+                                            <span className="flex items-center gap-1.5 bg-sage/20 px-3 py-1.5 rounded-full border border-sage/30">
+                                                <MapPin size={14} className="text-forest" /> {event.location}
+                                            </span>
+                                            <span className="flex items-center gap-1.5 bg-sage/20 px-3 py-1.5 rounded-full border border-sage/30">
+                                                <Calendar size={14} className="text-forest" /> {event.date}
+                                            </span>
+                                            <span className="flex items-center gap-1.5 bg-sage/20 px-3 py-1.5 rounded-full border border-sage/30">
+                                                <Clock size={14} className="text-forest" /> {event.duration}
+                                            </span>
+                                            <span className="px-3 py-1.5 rounded-full bg-leaf/10 text-leaf font-semibold border border-leaf/20 ml-auto">
+                                                {event.type}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
