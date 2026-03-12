@@ -60,30 +60,30 @@ export default function HomePage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-earth/60 via-earth/30 to-transparent mix-blend-multiply" />
-          <div className="absolute inset-0 bg-black/10" />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-earth/80 via-earth/40 to-transparent" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 text-sage-light mb-6 animate-fade-in-up">
               <Sparkles size={18} />
-              <span className="text-sm font-medium uppercase tracking-widest text-white/90">Maria M. Kettenring</span>
+              <span className="text-sm font-medium uppercase tracking-widest !text-white/90 drop-shadow-sm">Maria M. Kettenring</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-up delay-100" style={{ opacity: 0 }}>
-              Sinnliche <span className="text-sage-light">Naturerlebnisse</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold !text-white leading-tight mb-6 animate-fade-in-up delay-100 drop-shadow-md" style={{ opacity: 0 }}>
+              Sinnliche <span className="!text-sage-light">Naturerlebnisse</span>
               <br />
-              <span className="text-white">&amp; Wohlbefinden</span>
+              <span className="!text-white">&amp; Wohlbefinden</span>
             </h1>
-            <p className="text-white/90 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200" style={{ opacity: 0 }}>
+            <p className="!text-white/90 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200 drop-shadow-sm" style={{ opacity: 0 }}>
               Willkommen im Villaroma. Entdecken Sie die harmonische Verbindung von Aromatherapie, 
               achtsamem Waldbaden und der heilenden Kraft der Düfte aus über 40 Jahren Erfahrung.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300" style={{ opacity: 0 }}>
-              <Link href="/ueber-mich" className="btn-primary">
+              <Link href="/ueber-mich" className="btn-primary !bg-white !text-forest hover:!bg-sage-light">
                 Über Villaroma <ArrowRight size={18} />
               </Link>
-              <Link href="/impressionen" className="btn-outline !text-white !border-white hover:!bg-white/10">
+              <Link href="/impressionen" className="btn-outline !text-white !border-white hover:!bg-white/20 drop-shadow-sm">
                 Inspiration finden
               </Link>
             </div>
