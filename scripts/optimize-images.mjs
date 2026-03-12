@@ -24,6 +24,7 @@ for (const file of files) {
 
     try {
         await sharp(inputPath)
+            .rotate()
             .resize({
                 width: 1600,
                 withoutEnlargement: true
