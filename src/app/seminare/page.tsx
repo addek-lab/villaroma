@@ -28,7 +28,7 @@ const events: CalendarEvent[] = [
         duration: "2 Tage",
         type: "Seminar",
         featured: true,
-        image: "/seminare/seminar_waldbaden_1773246243999.png",
+        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
         title: "Waldmedizin — Die Heilkraft der Baumöle",
@@ -38,7 +38,7 @@ const events: CalendarEvent[] = [
         duration: "3 Stunden",
         type: "Vortrag",
         featured: false,
-        image: "/seminare/seminar_baumoele_1773246261672.png",
+        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
     },
     {
         title: "Ätherische Öle — Grundlagen & Praxis",
@@ -48,7 +48,7 @@ const events: CalendarEvent[] = [
         duration: "2 Stunden",
         type: "Webinar",
         featured: false,
-        image: "/seminare/seminar_grundlagen_1773246276783.png",
+        image: "/villaroma/seminare/seminar_grundlagen_1773246276783.png",
     },
     {
         title: "Aromadesign — Die Kunst des natürlichen Parfums",
@@ -58,7 +58,7 @@ const events: CalendarEvent[] = [
         duration: "Ganztägig",
         type: "Workshop",
         featured: false,
-        image: "/seminare/seminar_aromadesign_1773246292011.png",
+        image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
     },
     {
         title: "Duft- und Studienreise",
@@ -68,7 +68,7 @@ const events: CalendarEvent[] = [
         duration: "Mehrere Tage",
         type: "Studienreise",
         featured: false,
-        image: "/seminare/seminar_studienreise_1773246309283.png",
+        image: "/villaroma/seminare/seminar_studienreise_1773246309283.png",
     },
 ];
 
@@ -79,7 +79,7 @@ export default function SeminarePage() {
             <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/seminare/seminar_waldbaden_1773246243999.png"
+                        src="/villaroma/seminare/seminar_waldbaden_1773246243999.png"
                         alt="Seminare Hero"
                         fill
                         className="object-cover object-[center_30%]"
