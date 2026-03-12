@@ -56,11 +56,9 @@ const books: Book[] = [
       "Anwendung, Inhaltsstoffe und Wirkweisen",
       "150 Rezepturen (DIY) für Psyche, Körper und Genuss",
     ],
-    cover: "/villaroma/buch-zitrusduefte.jpg",
     year: "2021",
     featured: false,
     shops: [
-      { label: "Joy-Verlag", url: "https://www.joy-verlag.de/Zitrusduefte" },
       { label: "Amazon", url: "https://www.amazon.de/Zitrusdüfte-Heilkraft-ätherischen-Zitrone-Limette/dp/396199014X/" },
     ],
   },
@@ -82,7 +80,6 @@ const books: Book[] = [
     year: "2023",
     featured: false,
     shops: [
-      { label: "Joy-Verlag", url: "https://www.joy-verlag.de/Aetherische-Oele-in-der-Erkaeltungszeit" },
       { label: "Amazon", url: "https://www.amazon.de/Ätherische-Öle-Erkältungszeit-Schnupfen-grippalen/dp/3961990131/" },
       { label: "Primavera", url: "https://www.primaveralife.com/buch-aetherische-oele-in-der-erkaeltungszeit.html" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ID148377404.html" },
@@ -109,7 +106,6 @@ const books: Book[] = [
     year: "2023",
     featured: false,
     shops: [
-      { label: "Joy-Verlag", url: "https://www.joy-verlag.de/Waldmedizin" },
       { label: "Amazon", url: "https://www.amazon.de/Waldmedizin-Die-Heilkraft-ätherischen-Baumöle/dp/3961990042/" },
       { label: "Bücher.de", url: "https://www.buecher.de/shop/meditation/waldmedizin/thumm-anusati-kettenring-maria-m-/products_products/detail/prod_id/52628710/" },
       { label: "Hugendubel", url: "https://www.hugendubel.de/de/buch_kartoniert/anusati_thumm_maria_m_kettenring-waldmedizin-33142502-product-details.html" },
@@ -129,13 +125,12 @@ const books: Book[] = [
       "Ausführliche Informationen zu den 15 wichtigsten ätherischen Ölen für die Hausapotheke",
       "Nützliche Informationen zu Inhaltsstoffen, Heilkräften und Anwendungsgebieten",
       "Schnelle Hilfe bei: Erkältungen, Insektenstichen, Sportverletzungen, Muskelverspannungen, Rückenschmerzen, Übelkeit, Jetlag u.v.m.",
-      "Mit einem umfangreichen Symptome-Register von A-Z zum schnellen Auffinden von über 200 Rezepturen",
+      "Mit einem umfangreichen Symptome-Register von A-Z zum schnellen Auffinden von over 200 Rezepturen",
     ],
     cover: "/villaroma/buch-hausapotheke.jpg",
     year: "2023",
     featured: false,
     shops: [
-      { label: "Joy-Verlag", url: "https://www.joy-verlag.de/Hausapotheke-aetherische-oele" },
       { label: "Amazon", url: "https://www.amazon.de/Hausapotheke-Ätherische-Öle-Schnelle-Hilfe/dp/3928554867" },
       { label: "Bücher.de", url: "https://www.buecher.de/shop/fachbuecher/hausapotheke-aetherische-oele/kettenring-maria-m-/products_products/detail/prod_id/38616421/" },
       { label: "Primavera", url: "https://www.primaveralife.com/hausapotheke-aetherische-oele-schnelle-hilfe-fuer-jeden-tag.html" },
