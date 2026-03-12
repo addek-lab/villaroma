@@ -54,36 +54,37 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/hero-forest.webp"
-            alt="Waldweg im Morgenlicht"
+            src="/villaroma/hero-lavender.png"
+            alt="Blühendes Lavendelfeld im Sonnenlicht"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-earth/80 via-earth/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-cream/60 via-cream/30 to-transparent mix-blend-overlay" />
+          <div className="absolute inset-0 bg-earth/20" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-2 text-sage mb-6 animate-fade-in-up">
-              <Leaf size={18} />
-              <span className="text-sm font-medium uppercase tracking-widest">Maria M. Kettenring</span>
+            <div className="flex items-center gap-2 text-lavender-dark mb-6 animate-fade-in-up">
+              <Sparkles size={18} />
+              <span className="text-sm font-medium uppercase tracking-widest text-earth">Maria M. Kettenring</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up delay-100" style={{ opacity: 0 }}>
-              Waldmedizin
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-earth leading-tight mb-6 animate-fade-in-up delay-100" style={{ opacity: 0 }}>
+              Sinnliche <span className="text-forest">Naturerlebnisse</span>
               <br />
-              <span className="text-sage-light">&amp; Waldbaden</span>
+              <span className="text-lavender-dark">&amp; Wohlbefinden</span>
             </h1>
-            <p className="text-white/80 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200" style={{ opacity: 0 }}>
-              Entdecken Sie die Heilkraft der Natur. Über 40 Jahre Erfahrung in
-              Aromatherapie, ätherischen Ölen und der therapeutischen Kraft des Waldes.
+            <p className="text-earth/80 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200" style={{ opacity: 0 }}>
+              Willkommen im Villaroma. Entdecken Sie die harmonische Verbindung von Aromatherapie, 
+              achtsamem Waldbaden und der heilenden Kraft der Düfte aus über 40 Jahren Erfahrung.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300" style={{ opacity: 0 }}>
-              <Link href="/buecher" className="btn-primary">
-                Bücher entdecken <ArrowRight size={18} />
+              <Link href="/ueber-mich" className="btn-primary">
+                Über Villaroma <ArrowRight size={18} />
               </Link>
-              <Link href="/seminare" className="btn-outline !border-white/30 !text-white hover:!bg-white/10 hover:!text-white">
-                Seminare ansehen
+              <Link href="/impressionen" className="btn-outline">
+                Inspiration finden
               </Link>
             </div>
           </div>
