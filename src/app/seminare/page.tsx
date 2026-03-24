@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Clock, ExternalLink, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,61 +15,181 @@ export type CalendarEvent = {
     date: string;
     duration: string;
     type: string;
+    price: string;
+    link: string;
     featured: boolean;
     image: string;
 };
 
 const events: CalendarEvent[] = [
     {
-        title: "Waldbaden und Naturresilienz",
-        description: "Ein immersives Seminar, das Waldbaden-Techniken mit Natur-Resilienz-Übungen verbindet. Stärken Sie Ihre körperliche und mentale Widerstandskraft durch achtsame Naturerfahrungen.",
-        location: "Oy-Mittelberg, Allgäu",
-        date: "18.–19. April 2026",
+        title: "Aromafachberater*in",
+        description: "Aromatherapie-Wissen für eine kompetente Kund*innenberatung.",
+        location: "Wien (AT)",
+        date: "14. – 15.04.2026",
         duration: "2 Tage",
         type: "Seminar",
+        price: "298,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1066",
+        featured: false,
+        image: "/villaroma/seminare/seminar_aromafachberater_1774344074666.png",
+    },
+    {
+        title: "Aromafachberater*in",
+        description: "Aromatherapie-Wissen für eine kompetente Kund*innenberatung.",
+        location: "Freiburg (DE)",
+        date: "21. – 22.04.2026",
+        duration: "2 Tage",
+        type: "Seminar",
+        price: "298,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1062",
+        featured: false,
+        image: "/villaroma/seminare/seminar_aromafachberater_1774344074666.png",
+    },
+    {
+        title: "Detox und das \"wilde\" Grün",
+        description: "Balance, Entgiftung und Fitness für Körper und Geist.",
+        location: "Oy-Mittelberg",
+        date: "14. – 15.05.2026",
+        duration: "2 Tage",
+        type: "Seminar",
+        price: "268,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1183",
         featured: true,
+        image: "/villaroma/seminare/seminar_detox_gruen_1774344090956.png",
+    },
+    {
+        title: "Waldbaden und Naturresilienz",
+        description: "Exklusive Workshops im Naturparadies in Oy.",
+        location: "Oy-Mittelberg",
+        date: "16.05.2026",
+        duration: "1 Tag",
+        type: "Kompaktkurs",
+        price: "25,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1137",
+        featured: false,
         image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
-        title: "Waldmedizin — Die Heilkraft der Baumöle",
-        description: "Vortrag über die therapeutischen Eigenschaften ätherischer Baumöle und ihre praktische Anwendung in der Aromatherapie. Mit Live-Demonstrationen und Rezeptbeispielen.",
-        location: "Frankfurt am Main",
-        date: "12. Juni 2026",
-        duration: "3 Stunden",
-        type: "Vortrag",
-        featured: false,
-        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
-    },
-    {
-        title: "Ätherische Öle — Grundlagen & Praxis",
-        description: "Umfassendes Webinar für Einsteiger und Fortgeschrittene. Lernen Sie die wichtigsten ätherischen Öle kennen, ihre Wirkweisen und sichere Anwendungsmethoden.",
-        location: "Online (Zoom)",
-        date: "Laufend",
-        duration: "2 Stunden",
-        type: "Webinar",
-        featured: false,
-        image: "/villaroma/seminare/seminar_grundlagen_1773246276783.png",
-    },
-    {
-        title: "Aromadesign — Die Kunst des natürlichen Parfums",
-        description: "Workshop zur Kreation individueller Naturparfums. Meistern Sie die Kunst der Duftkomposition mit hochwertigen ätherischen Ölen.",
-        location: "Auf Anfrage",
-        date: "Auf Anfrage",
-        duration: "Ganztägig",
+        title: "Duftwerkstatt - gekonnt mischen",
+        description: "Die Kunst der Duftkomposition mit hochwertigen ätherischen Ölen.",
+        location: "Fulda (DE)",
+        date: "30. – 31.05.2026",
+        duration: "2 Tage",
         type: "Workshop",
+        price: "268,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1098",
         featured: false,
         image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
     },
     {
-        title: "Duft- und Studienreise",
-        description: "Internationale Reise zu den Ursprüngen ätherischer Öle. Besuchen Sie Destillerien, Lavendelfelder und lernen Sie direkt von Erzeugern.",
-        location: "International",
-        date: "Auf Anfrage",
-        duration: "Mehrere Tage",
-        type: "Studienreise",
+        title: "Exkursion zum Zirbenweg",
+        description: "Studienreise in die Alpen: Erleben Sie die Zirbe in ihrem natürlichen Lebensraum.",
+        location: "Oy-Mittelberg",
+        date: "08. – 09.06.2026",
+        duration: "2 Tage",
+        type: "Exkursion",
+        price: "388,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1190",
         featured: false,
-        image: "/villaroma/seminare/seminar_studienreise_1773246309283.png",
+        image: "/villaroma/seminare/seminar_zirbenweg_1774344106703.png",
     },
+    {
+        title: "Waldbaden und Naturresilienz",
+        description: "Exklusive Workshops im Naturparadies in Oy.",
+        location: "Oy-Mittelberg",
+        date: "10.07.2026",
+        duration: "1 Tag",
+        type: "Kompaktkurs",
+        price: "25,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1139",
+        featured: false,
+        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
+    },
+    {
+        title: "Zitrusdüfte - Lieblinge für Psyche",
+        description: "Die erfrischende und stimmungsaufhellende Wirkung der Zitrusöle erleben.",
+        location: "Oy-Mittelberg",
+        date: "11.07.2026",
+        duration: "1 Tag",
+        type: "Seminar",
+        price: "188,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1186",
+        featured: false,
+        image: "/villaroma/seminare/seminar_zitrusduefte_1774344123867.png",
+    },
+    {
+        title: "Waldmedizin — Heilkraft der Baumöle",
+        description: "Vortrag über die therapeutischen Eigenschaften ätherischer Baumöle und ihre praktische Anwendung in der Aromatherapie.",
+        location: "Frankfurt (DE)",
+        date: "11. – 12.09.2026",
+        duration: "2 Tage",
+        type: "Vortrag",
+        price: "348,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
+        featured: true,
+        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
+    },
+    {
+        title: "Waldbaden und Resilienz",
+        description: "Stärken Sie Ihre innere Widerstandskraft durch achtsame Naturerfahrungen.",
+        location: "St. Ulrich (AT)",
+        date: "18. – 19.09.2026",
+        duration: "2 Tage",
+        type: "Seminar",
+        price: "268,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1189",
+        featured: false,
+        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
+    },
+    {
+        title: "Duftwerkstatt - gekonnt mischen",
+        description: "Die Kunst der Duftkomposition mit hochwertigen ätherischen Ölen.",
+        location: "Oy-Mittelberg",
+        date: "17. – 18.10.2026",
+        duration: "2 Tage",
+        type: "Workshop",
+        price: "268,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1099",
+        featured: false,
+        image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
+    },
+    {
+        title: "Aromafachberater*in",
+        description: "Aromatherapie-Wissen für eine kompetente Kund*innenberatung.",
+        location: "Wien (AT)",
+        date: "20. – 21.10.2026",
+        duration: "2 Tage",
+        type: "Seminar",
+        price: "298,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1067",
+        featured: false,
+        image: "/villaroma/seminare/seminar_aromafachberater_1774344074666.png",
+    },
+    {
+        title: "PRIMAVERA Aromamassage",
+        description: "Kennenlernen und Anwenden der sanften Aromamassage.",
+        location: "Oy-Mittelberg",
+        date: "13. – 15.11.2026",
+        duration: "3 Tage",
+        type: "Workshop",
+        price: "398,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1145",
+        featured: false,
+        image: "/villaroma/seminare/seminar_aromamassage_1774344139032.png",
+    },
+    {
+        title: "Weihnachtsbäckerei",
+        description: "Backen mit ätherischen Ölen für ein ganz besonderes Geschmackserlebnis.",
+        location: "Wenzendorf (DE)",
+        date: "28.11.2026",
+        duration: "1 Tag",
+        type: "Workshop",
+        price: "168,00 €",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1185",
+        featured: false,
+        image: "/villaroma/seminare/seminar_weihnachtsbaeckerei_1774344157206.png",
+    }
 ];
 
 export default function SeminarePage() {
@@ -97,7 +217,7 @@ export default function SeminarePage() {
                         Seminare & Webinare
                     </h1>
                     <p className="text-xl text-cream md:text-2xl font-light text-shadow-sm max-w-2xl mx-auto">
-                        Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin in praxisnahen Seminaren und Vorträgen.
+                        Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin mit Maria M. Kettenring in der Primavera Akademie.
                     </p>
                 </div>
             </section>
@@ -106,7 +226,7 @@ export default function SeminarePage() {
             <section className="section-padding bg-sage/5">
                 <div className="max-w-5xl mx-auto">
                     <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-8 block text-center">
-                        Alle Veranstaltungen
+                        Alle Termine bei Primavera
                     </span>
                     <div className="space-y-8">
                         {events.map((event, i) => {
@@ -146,6 +266,18 @@ export default function SeminarePage() {
                                             <span className="px-3 py-1.5 rounded-full bg-leaf/10 text-leaf font-semibold border border-leaf/20 ml-auto">
                                                 {event.type}
                                             </span>
+                                        </div>
+                                        
+                                        <div className="mt-6 flex flex-wrap items-center justify-end border-t border-sage/20 pt-4 gap-4">
+                                            <Link 
+                                                href={event.link} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 px-6 py-2 bg-leaf hover:bg-forest text-white font-medium text-sm rounded-full transition-colors shadow-sm"
+                                            >
+                                                Zur Anmeldung (extern)
+                                                <ExternalLink size={14} />
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
