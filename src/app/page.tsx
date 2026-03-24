@@ -51,13 +51,13 @@ export default function HomePage() {
   return (
     <div className="pt-20">
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative min-h-[90vh] flex items-center justify-center lg:justify-start overflow-hidden">
+      <section className="relative h-[550px] sm:h-[600px] flex items-center justify-center lg:justify-start overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/hero-lavendel-hell.png"
+            src="/villaroma/lavendel.jpg"
             alt="Blühendes Lavendelfeld im Sonnenlicht"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
         </div>
