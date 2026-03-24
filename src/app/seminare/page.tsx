@@ -24,7 +24,7 @@ export type CalendarEvent = {
 const events: CalendarEvent[] = [
     {
         title: "Aromafachberater*in",
-        description: "Aromatherapie-Wissen für eine kompetente Kund*innenberatung.",
+        description: "Vermittlung der Grundlagen der Aromatherapie sowie den gezielten Einsatz ätherischer Öle und Naturprodukte von PRIMAVERA an zwei praxisnahen Tagen. Werden Sie Markenbotschafter*in, vertiefen Sie Ihr Wissen und erweitern Sie Ihre Beratungskompetenz, um Kund*innen zu begeistern.",
         location: "Wien (AT)",
         date: "14. – 15.04.2026",
         duration: "2 Tage",
@@ -36,7 +36,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Aromafachberater*in",
-        description: "Aromatherapie-Wissen für eine kompetente Kund*innenberatung.",
+        description: "Vermittlung der Grundlagen der Aromatherapie sowie den gezielten Einsatz ätherischer Öle und Naturprodukte von PRIMAVERA an zwei praxisnahen Tagen. Werden Sie Markenbotschafter*in, vertiefen Sie Ihr Wissen und erweitern Sie Ihre Beratungskompetenz, um Kund*innen zu begeistern.",
         location: "Freiburg (DE)",
         date: "21. – 22.04.2026",
         duration: "2 Tage",
@@ -48,7 +48,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Detox und das \"wilde\" Grün",
-        description: "Balance, Entgiftung und Fitness für Körper und Geist.",
+        description: "Wildkräuter von der Haustür bis zum Gartenzaun: So beginnt unsere Entdeckungsreise. Gemeinsam sammeln wir Wildkräuter und Blüten für eine basische Kur mit Smoothies, Salaten, Fastensuppe, Tees, Easy-Fingerfood und Säften. Genieße Bewegung, Atemübungen und Selbstmassage.",
         location: "Oy-Mittelberg",
         date: "14. – 15.05.2026",
         duration: "2 Tage",
@@ -60,7 +60,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldbaden und Naturresilienz",
-        description: "Exklusive Workshops im Naturparadies in Oy.",
+        description: "Ätherische Öle von Bäumen, Wurzeln, Blüten und Kräutern bauen Stress ab und Widerstandskräfte auf. Du lernst kleine Naturresilienz- und Waldbaden-Übungen kennen, die Dich in die Atmosphäre des Waldes und in die Natur eintauchen lassen.",
         location: "Oy-Mittelberg",
         date: "16.05.2026",
         duration: "1 Tag",
@@ -72,7 +72,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Duftwerkstatt - gekonnt mischen",
-        description: "Die Kunst der Duftkomposition mit hochwertigen ätherischen Ölen.",
+        description: "Entdecke den Dreiklang der Düfte: Kombiniere ätherische Blüten-, Kräuter-, Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu individuellen Körperölen, Roll-Ons und Naturparfums. Tauche ein in die Geheimnisse natürlicher Düfte und lerne, wie du gelungene Wohlfühlmischungen kreierst und verfeinerst.",
         location: "Fulda (DE)",
         date: "30. – 31.05.2026",
         duration: "2 Tage",
@@ -84,7 +84,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Exkursion zum Zirbenweg",
-        description: "Studienreise in die Alpen: Erleben Sie die Zirbe in ihrem natürlichen Lebensraum.",
+        description: "Erlebe den Zirbenweg am Patscherkofel in Tirol, einen panoramareichen Höhenweg durch einen der ältesten Zirbelkieferbestände Europas. Wir entdecken gemeinsam die Kraft der Baumöle, lernen botanische Besonderheiten kennen und stellen im Naturparadies eigene Aromapflegeprodukte her.",
         location: "Oy-Mittelberg",
         date: "08. – 09.06.2026",
         duration: "2 Tage",
@@ -96,7 +96,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldbaden und Naturresilienz",
-        description: "Exklusive Workshops im Naturparadies in Oy.",
+        description: "Ätherische Öle von Bäumen, Wurzeln, Blüten und Kräutern bauen Stress ab und Widerstandskräfte auf. Du lernst kleine Naturresilienz- und Waldbaden-Übungen kennen, die Dich in die Atmosphäre des Waldes und in die Natur eintauchen lassen.",
         location: "Oy-Mittelberg",
         date: "10.07.2026",
         duration: "1 Tag",
@@ -108,7 +108,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Zitrusdüfte - Lieblinge für Psyche",
-        description: "Die erfrischende und stimmungsaufhellende Wirkung der Zitrusöle erleben.",
+        description: "Ein Tag voller Heiterkeit und guter Laune: Die wertvollen Zitrusdüfte sind wahre Seelenstreichler. Lerne, wie du Bergamotte, Yuzu und Neroli gezielt einsetzt, um Splashs, Roll-Ons und Massageöle zur Unterstützung bei Stress und Erschöpfung zu kreieren.",
         location: "Oy-Mittelberg",
         date: "11.07.2026",
         duration: "1 Tag",
@@ -120,7 +120,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldmedizin — Heilkraft der Baumöle",
-        description: "Vortrag über die therapeutischen Eigenschaften ätherischer Baumöle und ihre praktische Anwendung in der Aromatherapie.",
+        description: "Tauche ein in die Welt der Baumöle, Mythen und Märchen. Erfahre mehr über die heilende Kraft des Waldbadens und die vielfältigen Wirkungen ätherischer Nadelbaumöle wie Fichte, Tanne und Zirbe in der Aromatherapie.",
         location: "Frankfurt (DE)",
         date: "11. – 12.09.2026",
         duration: "2 Tage",
@@ -132,7 +132,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldbaden und Resilienz",
-        description: "Stärken Sie Ihre innere Widerstandskraft durch achtsame Naturerfahrungen.",
+        description: "In zauberhafter Umgebung mitten in der Natur beim Pillersee (Tirol) stärken wir unsere Ressourcen und Belastbarkeit. Mit den 7 Resilienzwurzeln, den passenden ätherischen Ölen der Bäume, Blüten und Wurzeln bauen wir Stress ab, nutzen Waldbaden (Shinrin Yoku) und Duft-Qi-Gong zur Selbstregulation mit Ankerdüften.",
         location: "St. Ulrich (AT)",
         date: "18. – 19.09.2026",
         duration: "2 Tage",
@@ -144,7 +144,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Duftwerkstatt - gekonnt mischen",
-        description: "Die Kunst der Duftkomposition mit hochwertigen ätherischen Ölen.",
+        description: "Entdecke den Dreiklang der Düfte: Kombiniere ätherische Blüten-, Kräuter-, Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu individuellen Körperölen, Roll-Ons und Naturparfums. Tauche ein in die Geheimnisse natürlicher Düfte und lerne, wie du gelungene Wohlfühlmischungen kreierst und verfeinerst.",
         location: "Oy-Mittelberg",
         date: "17. – 18.10.2026",
         duration: "2 Tage",
@@ -156,7 +156,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Aromafachberater*in",
-        description: "Aromatherapie-Wissen für eine kompetente Kund*innenberatung.",
+        description: "Vermittlung der Grundlagen der Aromatherapie sowie den gezielten Einsatz ätherischer Öle und Naturprodukte von PRIMAVERA an zwei praxisnahen Tagen. Werden Sie Markenbotschafter*in, vertiefen Sie Ihr Wissen und erweitern Sie Ihre Beratungskompetenz, um Kund*innen zu begeistern.",
         location: "Wien (AT)",
         date: "20. – 21.10.2026",
         duration: "2 Tage",
@@ -168,7 +168,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "PRIMAVERA Aromamassage",
-        description: "Kennenlernen und Anwenden der sanften Aromamassage.",
+        description: "Löse Verspannungen und stelle Deine innere Harmonie wieder her. In diesem Kurs erlernst Du einfache, aber wirkungsvolle Grifftechniken der Aromamassage wie Streichen, Dehnen und Kneten, um blockierte Energie wieder zum Fließen zu bringen und individuelle Verwöhnerlebnisse mit Bio Pflegeölen zu kreieren.",
         location: "Oy-Mittelberg",
         date: "13. – 15.11.2026",
         duration: "3 Tage",
@@ -180,7 +180,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Weihnachtsbäckerei",
-        description: "Backen mit ätherischen Ölen für ein ganz besonderes Geschmackserlebnis.",
+        description: "Es duftet nach Punsch, Tannengrün und selbst gebackenen Plätzchen. Im Workshop lernst Du, wie Du für noch mehr Würze sorgst und Deine Liebsten mit außergewöhnlichen Geschenkideen aus der Duft- und Aromaküche überraschen kannst. Gemeinsam kreieren wir gesunde Gaumenfreuden für die Winterzeit, die im Gedächtnis bleiben.",
         location: "Wenzendorf (DE)",
         date: "28.11.2026",
         duration: "1 Tag",
