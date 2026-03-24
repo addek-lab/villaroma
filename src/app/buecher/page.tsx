@@ -56,6 +56,7 @@ const books: Book[] = [
       "Anwendung, Inhaltsstoffe und Wirkweisen",
       "150 Rezepturen (DIY) für Psyche, Körper und Genuss",
     ],
+    cover: "/villaroma/buch-zitrusduefte-neu.webp",
     year: "2021",
     featured: false,
     shops: [
