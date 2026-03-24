@@ -51,39 +51,40 @@ export default function HomePage() {
   return (
     <div className="pt-20">
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center lg:justify-start overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/hero-lavender.png"
+            src="/villaroma/hero-lavendel-hell.png"
             alt="Blühendes Lavendelfeld im Sonnenlicht"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="absolute inset-0 bg-gradient-to-r from-earth/80 via-earth/40 to-transparent" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-2 text-sage-light mb-6 animate-fade-in-up">
-              <Sparkles size={18} />
-              <span className="text-sm font-medium uppercase tracking-widest !text-white/90 drop-shadow-sm">Maria M. Kettenring</span>
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 mt-16 sm:mt-10">
+          <div className="max-w-2xl bg-white/60 backdrop-blur-xl border border-white/60 shadow-2xl p-8 sm:p-12 rounded-[2.5rem] animate-fade-in-up">
+            <div className="flex items-center gap-2 mb-6">
+              <Sparkles size={18} className="text-leaf" />
+              <span className="text-sm font-bold uppercase tracking-widest text-forest">Maria M. Kettenring</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold !text-white leading-tight mb-6 animate-fade-in-up delay-100 drop-shadow-md" style={{ opacity: 0 }}>
-              Sinnliche <span className="!text-sage-light">Naturerlebnisse</span>
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-earth leading-[1.1] mb-6">
+              Sinnliche <span className="text-leaf">Naturerlebnisse</span>
               <br />
-              <span className="!text-white">&amp; Wohlbefinden</span>
+              <span className="text-earth">&amp; Wohlbefinden</span>
             </h1>
-            <p className="!text-white/90 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200 drop-shadow-sm" style={{ opacity: 0 }}>
+            
+            <p className="text-bark font-medium text-lg sm:text-xl max-w-lg mb-10 leading-relaxed">
               Willkommen im Villaroma. Entdecken Sie die harmonische Verbindung von Aromatherapie, 
               achtsamem Waldbaden und der heilenden Kraft der Düfte aus über 40 Jahren Erfahrung.
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300" style={{ opacity: 0 }}>
-              <Link href="/ueber-mich" className="btn-primary !bg-white !text-forest hover:!bg-sage-light">
+            
+            <div className="flex flex-wrap gap-4">
+              <Link href="/ueber-mich" className="btn-primary shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
                 Über Villaroma <ArrowRight size={18} />
               </Link>
-              <Link href="/impressionen" className="btn-outline !text-white !border-white hover:!bg-white/20 drop-shadow-sm">
+              <Link href="/impressionen" className="btn-outline !bg-white/80 !text-earth !border-forest hover:!bg-forest hover:!text-white shadow-sm hover:shadow-md transition-all">
                 Inspiration finden
               </Link>
             </div>
