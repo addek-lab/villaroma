@@ -71,9 +71,13 @@ export function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-white/40 text-xs">
-                        © {new Date().getFullYear()} Villaroma — Maria M. Kettenring. Alle Rechte vorbehalten.
-                    </p>
+                    <div className="text-white/40 text-xs flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                        <span>© {new Date().getFullYear()} Villaroma — Maria M. Kettenring. Alle Rechte vorbehalten.</span>
+                        <span className="hidden sm:inline">|</span>
+                        <Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link>
+                        <span className="hidden sm:inline">|</span>
+                        <Link href="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link>
+                    </div>
                     <div className="flex items-center gap-1 text-white/40 text-xs">
                         <Leaf size={12} />
                         <span>Mit Liebe zur Natur gestaltet</span>
