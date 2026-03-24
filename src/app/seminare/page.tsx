@@ -217,7 +217,7 @@ export default function SeminarePage() {
                         Seminare & Webinare
                     </h1>
                     <p className="text-xl text-cream md:text-2xl font-light text-shadow-sm max-w-2xl mx-auto">
-                        Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin mit Maria M. Kettenring in der Primavera Akademie.
+                        Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin in praxisnahen Seminaren und Exkursionen mit Maria M. Kettenring.
                     </p>
                 </div>
             </section>
@@ -225,9 +225,6 @@ export default function SeminarePage() {
             {/* Events List */}
             <section className="section-padding bg-sage/5">
                 <div className="max-w-5xl mx-auto">
-                    <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-8 block text-center">
-                        Alle Termine bei Primavera
-                    </span>
                     <div className="space-y-8">
                         {events.map((event, i) => {
                             return (
