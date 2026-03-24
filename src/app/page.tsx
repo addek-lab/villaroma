@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="relative h-[550px] sm:h-[600px] flex items-center justify-center lg:justify-start overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/lavendel.jpg"
+            src="/villaroma/hero-lavender-premium.png"
             alt="Blühendes Lavendelfeld im Sonnenlicht"
             fill
             className="object-cover object-center"
