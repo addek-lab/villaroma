@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 
 const navLinks = [
     { href: "/", label: "Home" },
@@ -38,16 +38,25 @@ export function Navbar() {
                                 {link.label}
                             </Link>
                         ))}
+                        <div className="w-px h-5 bg-forest/20 mx-2"></div>
+                        <Link href="https://www.instagram.com/maria.kettenring/" target="_blank" rel="noopener noreferrer" className="p-2 text-earth hover:text-forest transition-colors rounded-lg hover:bg-forest/5" aria-label="Folge Maria auf Instagram">
+                            <Instagram size={20} strokeWidth={1.5} />
+                        </Link>
                     </div>
 
-                    {/* Mobile Toggle */}
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="lg:hidden p-2 text-earth hover:text-forest transition-colors"
-                        aria-label="Navigation öffnen"
-                    >
-                        {isOpen ? <X size={24} /> : <Menu size={24} />}
-                    </button>
+                    <div className="flex items-center gap-1 lg:hidden">
+                        <Link href="https://www.instagram.com/maria.kettenring/" target="_blank" rel="noopener noreferrer" className="p-2 text-earth hover:text-forest transition-colors rounded-lg hover:bg-forest/5" aria-label="Folge Maria auf Instagram">
+                            <Instagram size={24} strokeWidth={1.5} />
+                        </Link>
+                        {/* Mobile Toggle */}
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="p-2 text-earth hover:text-forest transition-colors"
+                            aria-label="Navigation öffnen"
+                        >
+                            {isOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
                 </div>
 
                 {/* Mobile Navigation */}

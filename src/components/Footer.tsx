@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone, Leaf } from "lucide-react";
+import { Mail, MapPin, Phone, Leaf, Instagram } from "lucide-react";
 
 const footerLinks = [
     { href: "/ueber-mich", label: "Über Mich" },
@@ -23,9 +23,14 @@ export function Footer() {
                                 Villaroma
                             </span>
                         </div>
-                        <p className="text-white/60 text-sm leading-relaxed max-w-xs">
+                        <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
                             Waldmedizin & Waldbaden — Die Heilkraft der Natur erleben mit über 40 Jahren Erfahrung in Aromatherapie und ätherischen Ölen.
                         </p>
+                        <div className="flex items-center gap-4">
+                            <Link href="https://www.instagram.com/maria.kettenring/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-forest hover:text-white transition-all border border-white/10" aria-label="Folge Maria auf Instagram">
+                                <Instagram size={20} strokeWidth={1.5} />
+                            </Link>
+                        </div>
                     </div>
 
                     {/* Links */}
