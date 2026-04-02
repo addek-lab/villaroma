@@ -28,6 +28,12 @@ const books = [
 
 const seminare = [
   {
+    title: "Waldmedizin — Heilkraft der Baumöle (Sonderedition)",
+    location: "Weberstedt (Hainich)",
+    date: "24. – 25.10.2026",
+    type: "Seminar",
+  },
+  {
     title: "Waldbaden und Naturresilienz",
     location: "Oy-Mittelberg",
     date: "2026",
@@ -38,12 +44,6 @@ const seminare = [
     location: "Frankfurt",
     date: "2026",
     type: "Vortrag",
-  },
-  {
-    title: "Ätherische Öle — Grundlagen & Praxis",
-    location: "Online",
-    date: "Laufend",
-    type: "Webinar",
   },
 ];
 
