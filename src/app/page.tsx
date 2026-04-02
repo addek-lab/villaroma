@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/hero-lavender.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-lavender.png`}
             alt="Blühendes Lavendelfeld im Sonnenlicht"
             fill
             className="object-cover"
@@ -102,7 +102,7 @@ export default function HomePage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-[280px] sm:w-[340px] drop-shadow-2xl">
                 <Image
-                  src="/villaroma/buch-naturresilienz.webp"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/buch-naturresilienz.webp`}
                   alt="Natur-Resilienz — Maria M. Kettenring & Jasmin Schlimm-Thierjung"
                   width={400}
                   height={560}
@@ -145,7 +145,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl max-w-[400px] mx-auto lg:mx-0">
               <Image
-                src="/villaroma/maria.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/maria.jpg`}
                 alt="Maria M. Kettenring"
                 fill
                 className="object-cover"
@@ -352,7 +352,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 bg-forest" />
         <div className="absolute inset-0 opacity-10">
-          <Image src="/villaroma/hero-forest.webp" alt="" fill className="object-cover" />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-forest.webp`} alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <Quote size={48} className="text-sage/40 mx-auto mb-6" />
@@ -406,7 +406,7 @@ export default function HomePage() {
       {/* ═══════════ WALDBADEN CTA ═══════════ */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/villaroma/waldbaden.webp" alt="Waldbaden Szene" fill className="object-cover" />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/waldbaden.webp`} alt="Waldbaden Szene" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-earth/80 via-earth/50 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">

@@ -254,7 +254,7 @@ export default function BuecherPage() {
             <div className="flex justify-center">
               <div className="relative w-[240px] sm:w-[280px] drop-shadow-2xl">
                 <Image
-                  src="/villaroma/buch-naturresilienz.webp"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/buch-naturresilienz.webp`}
                   alt="Natur-Resilienz — Buchcover"
                   width={400}
                   height={560}
@@ -291,7 +291,7 @@ export default function BuecherPage() {
                   {book.cover ? (
                     <div className="relative aspect-[3/4] md:aspect-auto bg-cream">
                       <Image
-                        src={book.cover}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${book.cover}`}
                         alt={`${book.title} — Buchcover`}
                         fill
                         className="object-cover"

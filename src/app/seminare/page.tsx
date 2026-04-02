@@ -199,7 +199,7 @@ export default function SeminarePage() {
             <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/villaroma/seminare/seminar_waldbaden_1773246243999.png"
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/seminare/seminar_waldbaden_1773246243999.png`}
                         alt="Seminare Hero"
                         fill
                         className="object-cover object-[center_30%]"

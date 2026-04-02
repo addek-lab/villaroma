@@ -9,7 +9,7 @@ export default function AromatherapiePage() {
       <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/villaroma/hero_lavender.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero_lavender.png`}
             alt="Aromatherapie in traumhaftem Lavendelfeld"
             fill
             className="object-cover object-center"
@@ -56,7 +56,7 @@ export default function AromatherapiePage() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/villaroma/aromatherapy_skincare_v2.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/aromatherapy_skincare_v2.png`}
                 alt="Ätherische Öle Beratung"
                 fill
                 className="object-cover"
@@ -142,7 +142,7 @@ export default function AromatherapiePage() {
       {/* ═══════════ DECORATIVE FOOTER ACCENT ═══════════ */}
       <div className="w-full relative h-[120px] sm:h-[180px] lg:h-[250px] bg-white border-t border-[--color-lavender-light] overflow-hidden">
         <Image
-          src="/villaroma/lavender_floral_accent.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/lavender_floral_accent.png`}
           alt="Dekoratives Lavendel-Element"
           fill
           className="object-cover object-center opacity-90 mix-blend-multiply"
