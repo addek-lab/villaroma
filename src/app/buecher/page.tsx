@@ -56,7 +56,7 @@ const books: Book[] = [
       "Anwendung, Inhaltsstoffe und Wirkweisen",
       "150 Rezepturen für Psyche, Körper und Genuss",
     ],
-    cover: "/buch-zitrusduefte.webp",
+    cover: "/buch-zitrusduefte-v2-final.webp",
     year: "2025",
     featured: false,
     shops: [

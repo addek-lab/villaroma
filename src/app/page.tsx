@@ -15,7 +15,7 @@ const books = [
     subtitle: "Die Heilkraft der ätherischen Zitrusöle",
     coAuthor: "mit Anusati Thumm",
     description: "14 ätherische Zitrusöle und 150 Rezepturen für Körper und Psyche.",
-    cover: "/buch-zitrusduefte.webp",
+    cover: "/buch-zitrusduefte-v2-final.webp",
   },
   {
     title: "Hausapotheke Ätherische Öle",
