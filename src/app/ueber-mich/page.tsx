@@ -11,7 +11,7 @@ const credentials = [
     { icon: Leaf, title: "Aromafachspezialistin", desc: "Über 40 Jahre Erfahrung in Aromakultur und Aromatherapie" },
     { icon: GraduationCap, title: "Dozentin & Ernährungsberaterin", desc: "Fachvorträge im In- und Ausland seit 1989" },
     { icon: TreePine, title: "Zertifizierte Trainerin für Waldbaden", desc: "Deutsche Akademie für Waldbaden und Gesundheit" },
-    { icon: Leaf, title: "Trainerin für Natur-Resilienz®", desc: "Deutsche Akademie für Waldbaden und Gesundheit" },
+    { icon: Leaf, title: "Zertifizierte Natur-Resilienz-Trainerin®", desc: "Deutsche Akademie für Waldbaden und Gesundheit" },
     { icon: BookOpen, title: "Autorin", desc: "Über 10 Fachbücher zu ätherischen Ölen und Waldmedizin" },
     { icon: Globe, title: "Internationale Reiseleiterin", desc: "Duft- und Studienreisen weltweit seit 1989" },
     { icon: Award, title: "Pionierin der Aromaküche", desc: "Erstes Kochbuch mit ätherischen Ölen 1987" },
@@ -39,7 +39,7 @@ export default function UeberMichPage() {
                                 Seit 1989 leitet sie internationale Duft- und Studienreisen und hält im In- und Ausland Vorträge zu den Themen Aromatherapie und Aromapflege. Bei der Primavera Akademie ist sie heute als passionierte Seminar- und Kursleiterin tätig.
                             </p>
                             <p className="text-bark leading-relaxed">
-                                Als zertifizierte Trainerin für Waldbaden und Natur-Resilienz® (Deutsche Akademie für Waldbaden und Gesundheit) teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
+                                Als zertifizierte Trainerin für Waldbaden (Deutsche Akademie für Waldbaden und Gesundheit) und zertifizierte Natur-Resilienz-Trainerin® (Deutsche Akademie für Waldbaden und Gesundheit) teilt sie ihre Leidenschaft für die Heilkraft ätherischer Öle und die Balance mit und in der Natur.
                             </p>
                         </div>
 
