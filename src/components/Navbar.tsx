@@ -15,6 +15,8 @@ const navLinks = [
     { href: "/impressionen", label: "Impressionen" },
 ];
 
+import logoImage from "../../public/logo-villaroma-cropped.png";
+
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -23,8 +25,8 @@ export function Navbar() {
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 no-underline relative shrink-0 w-64 h-20">
-                        <Image src="/logo-villaroma-cropped.png" alt="Villaroma — Maria M. Kettenring" width={900} height={350} priority className="absolute left-0 top-1/2 -translate-y-1/2 w-[280px] sm:w-[350px] max-w-none h-auto mix-blend-multiply pointer-events-none" />
+                    <Link href="/" className="flex items-center gap-3 no-underline">
+                        <Image src={logoImage} alt="Villaroma — Maria M. Kettenring" priority className="h-16 sm:h-20 w-auto mix-blend-multiply origin-left scale-125 md:scale-150" />
                     </Link>
 
                     {/* Desktop Navigation */}
