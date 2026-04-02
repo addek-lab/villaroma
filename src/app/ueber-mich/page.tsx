@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 const credentials = [
     { icon: Leaf, title: "Aromafachspezialistin", desc: "Über 40 Jahre Erfahrung in Aromakultur und Aromatherapie" },
     { icon: GraduationCap, title: "Dozentin & Ernährungsberaterin", desc: "Fachvorträge im In- und Ausland seit 1989" },
-    { icon: TreePine, title: "Waldbaden-Trainerin", desc: "Zertifizierte Trainerin für Waldbaden und Natur-Resilienz®" },
+    { icon: TreePine, title: "Zertifizierte Trainerin für Waldbaden", desc: "Deutsche Akademie für Waldbaden und Gesundheit" },
+    { icon: Leaf, title: "Trainerin für Natur-Resilienz®", desc: "Deutsche Akademie für Waldbaden und Gesundheit" },
     { icon: BookOpen, title: "Autorin", desc: "Über 10 Fachbücher zu ätherischen Ölen und Waldmedizin" },
     { icon: Globe, title: "Internationale Reiseleiterin", desc: "Duft- und Studienreisen weltweit seit 1989" },
     { icon: Award, title: "Pionierin der Aromaküche", desc: "Erstes Kochbuch mit ätherischen Ölen 1987" },

@@ -36,7 +36,7 @@ const books: Book[] = [
     publisher: "Mankau Verlag",
     description:
       "Das neueste Werk verbindet die heilsame Kraft der Natur mit praktischen Übungen zur Stärkung der inneren Widerstandskraft. Erfahren Sie, wie Sie durch achtsame Naturerfahrungen, ätherische Öle und Waldbaden-Techniken Ihre Resilienz nachhaltig aufbauen können.",
-    cover: "/villaroma/buch-naturresilienz.webp",
+    cover: "/buch-naturresilienz.webp",
     year: "Frühjahr 2026",
     badge: "Neu",
     featured: true,
@@ -44,31 +44,33 @@ const books: Book[] = [
   },
   {
     title: "Zitrusdüfte",
-    subtitle: "Die Heilkraft der ätherischen Öle von Orange, Zitrone, Limette & Co.",
+    subtitle: "Die Heilkraft der ätherischen Zitrusöle — 150 Rezepturen für Körper und Psyche",
     coAuthor: "mit Anusati Thumm",
-    publisher: "Joy Verlag",
-    edition: "1. Auflage 2021",
+    publisher: "Eugen Ulmer Verlag",
+    edition: "Neuausgabe 2025",
     description:
-      "Zitrusdüfte verbreiten Lebensfreude und lassen die Sonne des Südens in unser Herz einziehen. Sie aktivieren körpereigene Botenstoffe und können unserer Seele Flügel verleihen.",
+      "14 ätherische Zitrusöle und ihre Wirkung auf Körper und Psyche — von Bergamotte über Grapefruit bis Yuzu. Mit 150 Rezepturen für Raumduft, Konzentration, Hautpflege, Sport, Freizeit sowie Tipps für die Anwendung in Küche und Haushalt.",
     highlights: [
       "Streifzug durch Botanik und Geschichte der Zitruspflanzen",
-      "Infos zu Qualität und Ölgewinnung",
+      "14 ätherische Zitrusöle im Porträt",
       "Anwendung, Inhaltsstoffe und Wirkweisen",
-      "150 Rezepturen (DIY) für Psyche, Körper und Genuss",
+      "150 Rezepturen für Psyche, Körper und Genuss",
     ],
-    cover: "/villaroma/buch-zitrusduefte-neu.webp",
-    year: "2021",
+    cover: "/buch-zitrusduefte-kettenring.webp",
+    year: "2025",
     featured: false,
     shops: [
-      { label: "Amazon", url: "https://www.amazon.de/Zitrusdüfte-Heilkraft-ätherischen-Zitrone-Limette/dp/396199014X/" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-8263087/zitrusduefte-.html" },
+      { label: "Amazon", url: "https://www.amazon.de/dp/3818625719/" },
+      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818625719.html" },
     ],
   },
   {
     title: "Ätherische Öle in der Erkältungszeit",
     subtitle: "Schnelle Hilfe bei Husten, Schnupfen und grippalen Infekten",
     coAuthor: "mit Anusati Thumm",
-    publisher: "Joy Verlag",
-    edition: "4. Auflage 2023",
+    publisher: "Eugen Ulmer Verlag",
+    edition: "Neuausgabe 2024",
     description:
       "Viren und Bakterien plagen uns vor allem in der kalten Jahreszeit mit Schnupfen, entzündeten Atemwegen und Fieber. Hier bietet die Naturheilkunde mit der Aromatherapie besonders wirkungsvolle Möglichkeiten des Schutzes und der Behandlung.",
     highlights: [
@@ -77,21 +79,22 @@ const books: Book[] = [
       "Viele Rezepturen zur Behandlung von Halsschmerzen, Husten, Schnupfen, Heiserkeit, Bronchitis, grippalen Infekten u.v.m.",
       "Die fachgerechte Anwendung ätherischer Öle bei Kindern",
     ],
-    cover: "/villaroma/buch-erkaeltungszeit.webp",
-    year: "2023",
+    cover: "/buch-erkaeltungszeit.webp",
+    year: "2024",
     featured: false,
     shops: [
-      { label: "Amazon", url: "https://www.amazon.de/Ätherische-Öle-Erkältungszeit-Schnupfen-grippalen/dp/3961990131/" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885196/aetherische-oele-in-der-erkaeltungszeit-.html" },
+      { label: "Amazon", url: "https://www.amazon.de/dp/3818624143/" },
       { label: "Primavera", url: "https://www.primaveralife.com/buch-aetherische-oele-in-der-erkaeltungszeit.html" },
-      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ID148377404.html" },
+      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624149.html" },
     ],
   },
   {
     title: "Waldmedizin",
     subtitle: "Die Heilkraft der ätherischen Baumöle",
     coAuthor: "mit Anusati Thumm",
-    publisher: "Joy Verlag",
-    edition: "6. Auflage 2023",
+    publisher: "Eugen Ulmer Verlag",
+    edition: "Neuausgabe 2024",
     description:
       "Ausführlich beschreiben die Autorinnen in ihrem Buch die gesundheitsfördernden Wirkungen ausgewählter ätherischer Baumöle und geben Anleitungen, wie diese gezielt zur Vorbeugung und bei Erkrankungen eingesetzt werden können. Unterstützende kurze Atem- und Yogaübungen runden das Thema Waldmedizin ab.",
     highlights: [
@@ -103,14 +106,14 @@ const books: Book[] = [
       "Die Anwendung ätherischer Baumöle",
       "Symptome-Register zum schnellen Auffinden der Rezepturen",
     ],
-    cover: "/villaroma/buch-waldmedizin.jpg",
-    year: "2023",
+    cover: "/buch-waldmedizin-new.webp",
+    year: "2024",
     featured: false,
     shops: [
-      { label: "Amazon", url: "https://www.amazon.de/Waldmedizin-Die-Heilkraft-ätherischen-Baumöle/dp/3961990042/" },
-      { label: "Bücher.de", url: "https://www.buecher.de/shop/meditation/waldmedizin/thumm-anusati-kettenring-maria-m-/products_products/detail/prod_id/52628710/" },
-      { label: "Hugendubel", url: "https://www.hugendubel.de/de/buch_kartoniert/anusati_thumm_maria_m_kettenring-waldmedizin-33142502-product-details.html" },
-      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ID122239875.html" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885196/waldmedizin-.html" },
+      { label: "Amazon", url: "https://www.amazon.de/dp/3818624208/" },
+      { label: "Hugendubel", url: "https://www.hugendubel.de/de/buch_kartoniert/anusati_thumm_maria_m_kettenring-waldmedizin-49085568-produkt-details.html" },
+      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624200.html" },
       { label: "Primavera", url: "https://www.primaveralife.com/waldmedizin.html" },
     ],
   },
@@ -118,24 +121,24 @@ const books: Book[] = [
     title: "Hausapotheke Ätherische Öle",
     subtitle: "Schnelle Hilfe für jeden Tag",
     coAuthor: "",
-    publisher: "Joy Verlag",
-    edition: "11. Auflage 2023",
+    publisher: "Eugen Ulmer Verlag",
+    edition: "Neuausgabe 2024",
     description:
       "Maria M. Kettenring stellt in ihrem Buch 15 ätherische Öle vor, die sich für die Haus- und Reiseapotheke besonders gut eignen. Sie bieten schnelle Hilfe bei Unwohlsein und kleineren Erkrankungen, zudem sind sie ein idealer Begleiter im Urlaub und auf Reisen.",
     highlights: [
       "Ausführliche Informationen zu den 15 wichtigsten ätherischen Ölen für die Hausapotheke",
       "Nützliche Informationen zu Inhaltsstoffen, Heilkräften und Anwendungsgebieten",
       "Schnelle Hilfe bei: Erkältungen, Insektenstichen, Sportverletzungen, Muskelverspannungen, Rückenschmerzen, Übelkeit, Jetlag u.v.m.",
-      "Mit einem umfangreichen Symptome-Register von A-Z zum schnellen Auffinden von over 200 Rezepturen",
+      "Mit einem umfangreichen Symptome-Register von A-Z zum schnellen Auffinden von über 200 Rezepturen",
     ],
-    cover: "/villaroma/buch-hausapotheke.jpg",
-    year: "2023",
+    cover: "/buch-hausapotheke-new.webp",
+    year: "2024",
     featured: false,
     shops: [
-      { label: "Amazon", url: "https://www.amazon.de/Hausapotheke-Ätherische-Öle-Schnelle-Hilfe/dp/3928554867" },
-      { label: "Bücher.de", url: "https://www.buecher.de/shop/fachbuecher/hausapotheke-aetherische-oele/kettenring-maria-m-/products_products/detail/prod_id/38616421/" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885196/hausapotheke-aetherische-oele-.html" },
+      { label: "Amazon", url: "https://www.amazon.de/dp/3818624194/" },
       { label: "Primavera", url: "https://www.primaveralife.com/hausapotheke-aetherische-oele-schnelle-hilfe-fuer-jeden-tag.html" },
-      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ID35344652.html" },
+      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624194.html" },
     ],
   },
   {
@@ -150,7 +153,7 @@ const books: Book[] = [
       "Rezepte für Duftapotheke, Massageöle, Aromaküche und natürliche Raumdüfte",
       "Zahlreiche praktische Tipps sowie erprobte Rezepte für Massageöle, Raumdüfte, Aromaküche und vieles mehr",
     ],
-    cover: "/villaroma/buch-aetherische-oele.jpg",
+    cover: "/buch-aetherische-oele.jpg",
     year: "2023",
     featured: false,
     shops: [
@@ -173,7 +176,7 @@ const books: Book[] = [
       "Gesundheitsaspekte durch die Vielfalt an wirkungsvollen Inhaltsstoffen in den ätherischen Ölen",
       "Tipps zu Qualität, Einkauf und Umgang mit ätherischen Ölen (Würzessenzen)",
     ],
-    cover: "/villaroma/buch-duftkueche.jpg",
+    cover: "/buch-duftkueche.jpg",
     edition: "2. Auflage 2014",
     year: "2014",
     featured: false,
@@ -198,7 +201,7 @@ const books: Book[] = [
       "Porträt der Duftrosen",
       "Heilkräfte der Rose",
     ],
-    cover: "/villaroma/buch-rosenkueche.jpg",
+    cover: "/buch-rosenkueche.jpg",
     year: "",
     featured: false,
     shops: [
@@ -215,7 +218,7 @@ const books: Book[] = [
     edition: "3. Auflage",
     description:
       "Edited by two renowned experts, the Handbook of Essential Oils covers all aspects of essential oils from chemistry, pharmacology, and biological activity, to production and trade, to uses and regulation. This comprehensive handbook provides a much-needed compilation of information related to the development, use, and marketing of essential oils.",
-    cover: "/villaroma/buch-essential-oils.jpg",
+    cover: "/buch-essential-oils.jpg",
     year: "",
     featured: false,
     shops: [
@@ -251,7 +254,7 @@ export default function BuecherPage() {
             <div className="flex justify-center">
               <div className="relative w-[240px] sm:w-[280px] drop-shadow-2xl">
                 <Image
-                  src="/villaroma/buch-naturresilienz.webp"
+                  src="/buch-naturresilienz.webp"
                   alt="Natur-Resilienz — Buchcover"
                   width={400}
                   height={560}

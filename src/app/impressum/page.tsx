@@ -15,20 +15,21 @@ export default function Impressum() {
                 <p className="text-bark mb-4">
                     <strong>Maria M. Kettenring</strong><br />
                     Villaroma<br />
-                    [Straße und Hausnummer hier einfügen]<br />
-                    [PLZ, Ort hier einfügen]
+                    Friedensallee 26<br />
+                    63263 Neu-Isenburg
                 </p>
 
                 <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">Kontakt</h2>
                 <p className="text-bark mb-4">
-                    Telefon: [Telefonnummer hier einfügen]<br />
+                    Telefon: 06102 / 27693<br />
                     E-Mail: info@villaroma.de
                 </p>
 
-                <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+                <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">Verantwortlich für den Inhalt</h2>
                 <p className="text-bark mb-4">
                     Maria M. Kettenring<br />
-                    [Adresse hier einfügen]
+                    Friedensallee 26<br />
+                    63263 Neu-Isenburg
                 </p>
 
                 <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">Haftung für Inhalte</h2>
