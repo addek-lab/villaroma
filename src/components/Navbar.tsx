@@ -23,8 +23,8 @@ export function Navbar() {
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 no-underline">
-                        <Image src="/logo-villaroma-cropped.png" alt="Villaroma — Maria M. Kettenring" width={900} height={350} priority className="h-16 w-auto mix-blend-multiply scale-110 sm:scale-125 origin-left" />
+                    <Link href="/" className="flex items-center gap-3 no-underline relative shrink-0 w-64 h-20">
+                        <Image src="/logo-villaroma-cropped.png" alt="Villaroma — Maria M. Kettenring" width={900} height={350} priority className="absolute left-0 top-1/2 -translate-y-1/2 w-[280px] sm:w-[350px] max-w-none h-auto mix-blend-multiply pointer-events-none" />
                     </Link>
 
                     {/* Desktop Navigation */}
