@@ -132,7 +132,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldmedizin — Heilkraft der Baumöle (Sonderedition)",
-        description: "In dieser Sonderedition tauchen wir tief in die Welt der Baumöle ein. Erfahren Sie alles über die Heilkraft von Fichte, Tanne, Kiefer, Zirbe und Co. Inklusive Seminarunterlagen, Duftproben und Rezepten für die praktische Anwendung im Alltag.",
+        description: "Erleben Sie die Heilkraft der Baumöle und die Magie alter Mythen in diesem besonderen Workshop. Wir trainieren unseren Geruchssinn durch sensorische Übungen, stellen eigene Wald-Roll-ons für den Winter her und stärken unsere Resilienz mit begleitenden Atem- und Qigong-Einheiten. Entdecken Sie Walddüfte als wertvolle psychische Anker für mehr Stärke und Schutz im Alltag.",
         location: "Weberstedt (Hainich)",
         date: "24. – 25.10.2026",
         duration: "2 Tage",
