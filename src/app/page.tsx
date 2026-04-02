@@ -193,63 +193,62 @@ export default function HomePage() {
             <div className="card p-6 flex flex-col">
               <div className="flex items-center gap-2 mb-4">
                 <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
-                <span className="text-xs text-soft-grey ml-auto">11.–12. April 2025</span>
+                <span className="text-xs text-soft-grey ml-auto">14.–15. Mai 2026</span>
               </div>
               <h3 className="text-lg font-bold text-earth mb-2">Detox und das Wilde Grün</h3>
               <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
                 Sammeln und Bestimmen von Wildkräutern, Zubereiten von Smoothies und Aromacocktails,
-                Tipps für vegane Speisevariationen, Atemübungen und Pflegerituale.
+                Tipps für vegane Speisevariationen, Atemübungen und Pflegerituale für Ihre Gesundheit.
               </p>
               <div className="flex items-center justify-between pt-4 border-t border-forest/5">
                 <span className="text-xs text-bark flex items-center gap-1">
                   <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
                 </span>
-                <a href="https://akademie.primaveralife.com/de/de-DE/Details/709" target="_blank" rel="noopener noreferrer"
+                <a href="https://akademie.primaveralife.com/de/de-DE/Details/1183" target="_blank" rel="noopener noreferrer"
                   className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
                   Anmelden <ExternalLink size={12} />
                 </a>
               </div>
             </div>
 
-            {/* Seminar: Duftwerkstatt */}
+            {/* Seminar: Waldmedizin Sonderedition */}
             <div className="card p-6 flex flex-col">
               <div className="flex items-center gap-2 mb-4">
                 <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
-                <span className="text-xs text-soft-grey ml-auto">09.–10. Mai 2025</span>
+                <span className="text-xs text-soft-grey ml-auto">24.–25. Okt. 2026</span>
               </div>
-              <h3 className="text-lg font-bold text-earth mb-2">Duftwerkstatt – gekonnt mischen</h3>
+              <h3 className="text-lg font-bold text-earth mb-2">Waldmedizin (Sonderedition)</h3>
               <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
-                Entdecke den Dreiklang der Düfte. Kombiniere und mische ätherische Blüten-, Kräuter-,
-                Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu Körper- und Massageölen,
-                Roll-Ons und Splash Colognes.
+                Erleben Sie die Heilkraft der Baumöle und die Magie alter Mythen. Wir trainieren unseren Geruchssinn, 
+                stellen eigene Wald-Roll-ons her und stärken unsere Resilienz mit Atem- und Qigong-Übungen.
               </p>
               <div className="flex items-center justify-between pt-4 border-t border-forest/5">
                 <span className="text-xs text-bark flex items-center gap-1">
-                  <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
+                  <TreePine size={12} className="text-leaf" /> Weberstedt
                 </span>
-                <a href="https://akademie.primaveralife.com/de/de-DE/Details/826" target="_blank" rel="noopener noreferrer"
+                <a href="https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/" target="_blank" rel="noopener noreferrer"
                   className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
                   Anmelden <ExternalLink size={12} />
                 </a>
               </div>
             </div>
 
-            {/* Seminar: Lavendel */}
+            {/* Seminar: Weihnachtsbäckerei */}
             <div className="card p-6 flex flex-col">
               <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
-                <span className="text-xs text-soft-grey ml-auto">27.–28. Juni 2025</span>
+                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Workshop</span>
+                <span className="text-xs text-soft-grey ml-auto">28. Nov. 2026</span>
               </div>
-              <h3 className="text-lg font-bold text-earth mb-2">Lavendel – Blaues Wunder</h3>
+              <h3 className="text-lg font-bold text-earth mb-2">Gesunde Weihnachtsbäckerei</h3>
               <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
-                Gemeinsam Lavendel ernten, Duftsäckchen nähen, Destillation erleben.
-                Ein sinnliches Wochenende rund um den Lavendel.
+                Es duftet nach Punsch und Tannengrün. Im Workshop lernen Sie, wie Sie für noch mehr Würze sorgen 
+                und Ihre Liebsten mit außergewöhnlichen Geschenkideen aus der Duft- und Aromaküche überraschen.
               </p>
               <div className="flex items-center justify-between pt-4 border-t border-forest/5">
                 <span className="text-xs text-bark flex items-center gap-1">
-                  <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
+                  <TreePine size={12} className="text-leaf" /> Wenzendorf
                 </span>
-                <a href="https://akademie.primaveralife.com/de/de-DE/Details/708" target="_blank" rel="noopener noreferrer"
+                <a href="https://akademie.primaveralife.com/de/de-DE/Details/1185" target="_blank" rel="noopener noreferrer"
                   className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
                   Anmelden <ExternalLink size={12} />
                 </a>
