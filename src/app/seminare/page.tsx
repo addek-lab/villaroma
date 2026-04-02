@@ -131,6 +131,18 @@ const events: CalendarEvent[] = [
         image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
     },
     {
+        title: "Waldmedizin — Heilkraft der Baumöle (Sonderedition)",
+        description: "In dieser Sonderedition tauchen wir tief in die Welt der Baumöle ein. Erfahren Sie alles über die Heilkraft von Fichte, Tanne, Kiefer, Zirbe und Co. Inklusive Seminarunterlagen, Duftproben und Rezepten für die praktische Anwendung im Alltag.",
+        location: "Weberstedt (Hainich)",
+        date: "24. – 25.10.2026",
+        duration: "2 Tage",
+        type: "Seminar",
+        price: "239,00 €",
+        link: "https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/",
+        featured: false,
+        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
+    },
+    {
         title: "PRIMAVERA Aromamassage",
         description: "Löse Verspannungen und stelle Deine innere Harmonie wieder her. In diesem Kurs erlernst Du einfache, aber wirkungsvolle Grifftechniken der Aromamassage wie Streichen, Dehnen und Kneten, um blockierte Energie wieder zum Fließen zu bringen und individuelle Verwöhnerlebnisse mit Bio Pflegeölen zu kreieren.",
         location: "Oy-Mittelberg",
