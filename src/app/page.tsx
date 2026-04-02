@@ -8,21 +8,21 @@ const books = [
     subtitle: "Die Heilkraft der ätherischen Baumöle",
     coAuthor: "mit Anusati Thumm",
     description: "15 Baumöle und 108 Rezepte für Gesundheit und Wohlbefinden aus dem Wald.",
-    cover: "/villaroma/buch-waldmedizin.jpg",
+    cover: "/buch-waldmedizin-new.webp",
   },
   {
     title: "Zitrusdüfte",
     subtitle: "Die Heilkraft der ätherischen Zitrusöle",
     coAuthor: "mit Anusati Thumm",
     description: "14 ätherische Zitrusöle und 150 Rezepturen für Körper und Psyche.",
-    cover: "/villaroma/buch-zitrusduefte-neu.webp",
+    cover: "/buch-zitrusduefte-kettenring.webp",
   },
   {
     title: "Hausapotheke Ätherische Öle",
     subtitle: "Schnelle Hilfe für jeden Tag",
     coAuthor: "",
     description: "Praktische Tipps und Rezepte für die tägliche Anwendung ätherischer Öle.",
-    cover: "/villaroma/buch-hausapotheke.jpg",
+    cover: "/buch-hausapotheke-new.webp",
   },
 ];
 
@@ -322,7 +322,7 @@ export default function HomePage() {
               <div key={i} className="card p-0 overflow-hidden">
                 <div className="relative aspect-[3/4] bg-cream">
                   <Image
-                    src={book.cover}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${book.cover}`}
                     alt={`${book.title} — Buchcover`}
                     fill
                     className="object-cover"
