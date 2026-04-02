@@ -24,7 +24,7 @@ export function Navbar() {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 no-underline">
-                        <Image src="/villaroma/logo-villaroma-v3.png" alt="Villaroma — Maria M. Kettenring" width={1024} height={1024} priority className="h-16 w-auto mix-blend-multiply" />
+                        <Image src="/villaroma/logo-villaroma-new.png" alt="Villaroma — Maria M. Kettenring" width={1024} height={1024} priority className="h-16 w-auto mix-blend-multiply" />
                     </Link>
 
                     {/* Desktop Navigation */}
