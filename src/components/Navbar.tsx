@@ -26,7 +26,7 @@ export function Navbar() {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 no-underline">
-                        <Image src={logoImage} alt="Villaroma — Maria M. Kettenring" priority className="h-14 sm:h-16 md:h-20 w-auto origin-left scale-[1.3] md:scale-150 pointer-events-none translate-x-2" />
+                        <Image src={logoImage} alt="Villaroma — Maria M. Kettenring" priority className="h-14 sm:h-20 w-auto mix-blend-multiply" />
                     </Link>
 
                     {/* Desktop Navigation */}
