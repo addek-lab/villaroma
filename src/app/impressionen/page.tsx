@@ -204,7 +204,7 @@ export default function ImpressionenPage() {
                       </div>
                   </div>
                   <Image
-                    src={`/villaroma/images/gallery/${img.optimized}`}
+                    src={`/images/gallery/${img.optimized}`}
                     alt={`Villaroma Impression — ${img.category}`}
                     width={800}
                     height={1200}
@@ -232,7 +232,7 @@ export default function ImpressionenPage() {
             </button>
             <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
                 <Image
-                    src={`/villaroma/images/gallery/${selectedImage}`}
+                    src={`/images/gallery/${selectedImage}`}
                     alt="Lightbox view"
                     fill
                     className="object-contain"
