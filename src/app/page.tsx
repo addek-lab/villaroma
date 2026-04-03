@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, TreePine, Calendar, Sparkles, Leaf, Quote, ExternalLink, Mic, Newspaper } from "lucide-react";
+import { events, parseDate } from "@/data/seminare";
 
 const books = [
   {
@@ -26,26 +27,9 @@ const books = [
   },
 ];
 
-const seminare = [
-  {
-    title: "Waldmedizin — Heilkraft der Baumöle (Sonderedition)",
-    location: "Weberstedt (Hainich)",
-    date: "24. – 25.10.2026",
-    type: "Seminar",
-  },
-  {
-    title: "Waldbaden und Naturresilienz",
-    location: "Oy-Mittelberg",
-    date: "2026",
-    type: "Seminar",
-  },
-  {
-    title: "Waldmedizin — Die Heilkraft der Baumöle",
-    location: "Frankfurt",
-    date: "2026",
-    type: "Vortrag",
-  },
-];
+const upcomingEvents = [...events]
+  .sort((a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime())
+  .slice(0, 5);
 
 export default function HomePage() {
   return (
@@ -60,7 +44,6 @@ export default function HomePage() {
             className="object-cover"
             priority
           />
-          {/* We remove black/40 and use a very light overlay so it's much brighter */}
           <div className="absolute inset-0 bg-gradient-to-r from-earth/80 via-earth/30 to-transparent" />
         </div>
 
@@ -189,71 +172,27 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Seminar: Detox und das Wilde Grün */}
-            <div className="card p-6 flex flex-col">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
-                <span className="text-xs text-soft-grey ml-auto">14.–15. Mai 2026</span>
+            {upcomingEvents.map((event, i) => (
+              <div key={i} className="card p-6 flex flex-col">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">{event.type}</span>
+                  <span className="text-xs text-soft-grey ml-auto">{event.date}</span>
+                </div>
+                <h3 className="text-lg font-bold text-earth mb-2">{event.title}</h3>
+                <p className="text-bark text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
+                  {event.description}
+                </p>
+                <div className="flex items-center justify-between pt-4 border-t border-forest/5">
+                  <span className="text-xs text-bark flex items-center gap-1">
+                    <TreePine size={12} className="text-leaf" /> {event.location}
+                  </span>
+                  <a href={event.link} target="_blank" rel="noopener noreferrer"
+                    className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                    Anmelden <ExternalLink size={12} />
+                  </a>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-earth mb-2">Detox und das Wilde Grün</h3>
-              <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
-                Sammeln und Bestimmen von Wildkräutern, Zubereiten von Smoothies und Aromacocktails,
-                Tipps für vegane Speisevariationen, Atemübungen und Pflegerituale für Ihre Gesundheit.
-              </p>
-              <div className="flex items-center justify-between pt-4 border-t border-forest/5">
-                <span className="text-xs text-bark flex items-center gap-1">
-                  <TreePine size={12} className="text-leaf" /> Oy-Mittelberg
-                </span>
-                <a href="https://akademie.primaveralife.com/de/de-DE/Details/1183" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Anmelden <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
-
-            {/* Seminar: Waldmedizin Sonderedition */}
-            <div className="card p-6 flex flex-col">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Seminar</span>
-                <span className="text-xs text-soft-grey ml-auto">24.–25. Okt. 2026</span>
-              </div>
-              <h3 className="text-lg font-bold text-earth mb-2">Waldmedizin (Sonderedition)</h3>
-              <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
-                Erleben Sie die Heilkraft der Baumöle und die Magie alter Mythen. Wir trainieren unseren Geruchssinn, 
-                stellen eigene Wald-Roll-ons her und stärken unsere Resilienz mit Atem- und Qigong-Übungen.
-              </p>
-              <div className="flex items-center justify-between pt-4 border-t border-forest/5">
-                <span className="text-xs text-bark flex items-center gap-1">
-                  <TreePine size={12} className="text-leaf" /> Weberstedt
-                </span>
-                <a href="https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Anmelden <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
-
-            {/* Seminar: Weihnachtsbäckerei */}
-            <div className="card p-6 flex flex-col">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">Workshop</span>
-                <span className="text-xs text-soft-grey ml-auto">28. Nov. 2026</span>
-              </div>
-              <h3 className="text-lg font-bold text-earth mb-2">Gesunde Weihnachtsbäckerei</h3>
-              <p className="text-bark text-sm leading-relaxed mb-4 flex-grow">
-                Es duftet nach Punsch und Tannengrün. Im Workshop lernen Sie, wie Sie für noch mehr Würze sorgen 
-                und Ihre Liebsten mit außergewöhnlichen Geschenkideen aus der Duft- und Aromaküche überraschen.
-              </p>
-              <div className="flex items-center justify-between pt-4 border-t border-forest/5">
-                <span className="text-xs text-bark flex items-center gap-1">
-                  <TreePine size={12} className="text-leaf" /> Wenzendorf
-                </span>
-                <a href="https://akademie.primaveralife.com/de/de-DE/Details/1185" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Anmelden <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Presse & Podcast */}
@@ -375,8 +314,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {seminare.map((event, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {upcomingEvents.map((event, i) => (
               <div key={i} className="card p-6 flex flex-col">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">{event.type}</span>
@@ -419,7 +358,7 @@ export default function HomePage() {
               Immunsystem, senkt den Blutdruck und bringt Körper und Geist in Einklang.
             </p>
             <Link href="/waldbaden" className="btn-primary">
-              <Sparkles size={18} /> Mehr über Waldbaden
+               Mehr über Waldbaden <Sparkles size={18} className="ml-2 inline-block" />
             </Link>
           </div>
         </div>
