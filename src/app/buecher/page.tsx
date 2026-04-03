@@ -274,6 +274,14 @@ export default function BuecherPage() {
                 der inneren Widerstandskraft. Erfahren Sie, wie Sie durch achtsame Naturerfahrungen und
                 Waldbaden-Techniken Ihre Resilienz nachhaltig aufbauen können.
               </p>
+              <a
+                href="https://mankau-verlag.de/products/natur-resilienz-buch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex"
+              >
+                Jetzt kaufen <ExternalLink size={16} />
+              </a>
             </div>
           </div>
         </div>
