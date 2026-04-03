@@ -382,15 +382,15 @@ export default function HomePage() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/waldbaden.webp`} alt="Waldbaden Szene" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-l from-earth/80 via-earth/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-l from-earth/90 via-earth/70 to-earth/30" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
           <div className="max-w-xl ml-auto text-right">
-            <span className="text-sm font-semibold uppercase tracking-widest text-sage mb-4 block">Shinrin-Yoku</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <span className="text-sm font-semibold uppercase tracking-widest text-white mb-4 block drop-shadow">Shinrin-Yoku</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-md">
               Die Kunst des Waldbadens
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white text-lg leading-relaxed mb-8 drop-shadow">
               Tauchen Sie ein in die beruhigende Atmosphäre des Waldes. Waldbaden stärkt das
               Immunsystem, senkt den Blutdruck und bringt Körper und Geist in Einklang.
             </p>
