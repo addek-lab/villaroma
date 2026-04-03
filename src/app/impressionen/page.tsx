@@ -140,6 +140,8 @@ export default function ImpressionenPage() {
             </h1>
             <p className="text-bark text-lg max-w-2xl mx-auto mb-10 animate-fade-in-up delay-100">
                 Momente aus dem Wald, Eindrücke von Seminaren und die Schönheit der Pflanzenwelt. 
+                Erleben Sie Impressionen von der Duftreise nach Frankreich und zum Zirbenweg, Einblicke 
+                in die Aromaküche und Aromamassage sowie besondere Momente aus der Waldmedizin und von Kongressen. 
                 Lassen Sie sich von der heilsamen Atmosphäre inspirieren.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-sage via-forest to-sage mx-auto rounded-full animate-fade-in delay-200" />

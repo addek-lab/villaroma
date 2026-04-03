@@ -28,7 +28,7 @@ export default function WaldbadenPage() {
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                     <div className="max-w-2xl">
                         <span className="text-sm font-semibold uppercase tracking-widest text-cream mb-4 block drop-shadow-md">Shinrin-Yoku · 森林浴</span>
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" style={{textShadow: "2px 2px 0 rgba(255,255,255,0.4), -2px -2px 0 rgba(255,255,255,0.4), 2px -2px 0 rgba(255,255,255,0.4), -2px 2px 0 rgba(255,255,255,0.4), 0 0 15px rgba(255,255,255,0.3)"}}>
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg" style={{ color: "white" }}>
                             Waldbaden
                         </h1>
                         <p className="text-white text-lg leading-relaxed drop-shadow-md font-medium">
