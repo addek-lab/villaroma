@@ -387,7 +387,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
           <div className="max-w-xl ml-auto text-right">
             <span className="text-sm font-semibold uppercase tracking-widest text-white mb-4 block drop-shadow">Shinrin-Yoku</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-md">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-md" style={{textShadow: "0 0 20px rgba(255,255,255,0.3), 1px 1px 0 rgba(255,255,255,0.15), -1px -1px 0 rgba(255,255,255,0.15)"}}>
               Die Kunst des Waldbadens
             </h2>
             <p className="text-white text-lg leading-relaxed mb-8 drop-shadow">
