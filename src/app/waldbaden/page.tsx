@@ -22,13 +22,13 @@ export default function WaldbadenPage() {
             <section className="relative min-h-[60vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/waldbaden.webp`} alt="Waldbaden im Wald" fill className="object-cover object-center" priority />
-                    <div className="absolute inset-0 bg-forest/30 mix-blend-multiply" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-forest/80 via-forest/40 to-transparent" />
+                    <div className="absolute inset-0 bg-forest/50 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/60 to-forest/20" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                     <div className="max-w-2xl">
                         <span className="text-sm font-semibold uppercase tracking-widest text-cream mb-4 block drop-shadow-md">Shinrin-Yoku · 森林浴</span>
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" style={{textShadow: "2px 2px 0 rgba(255,255,255,0.4), -2px -2px 0 rgba(255,255,255,0.4), 2px -2px 0 rgba(255,255,255,0.4), -2px 2px 0 rgba(255,255,255,0.4), 0 0 15px rgba(255,255,255,0.3)"}}>
                             Waldbaden
                         </h1>
                         <p className="text-white text-lg leading-relaxed drop-shadow-md font-medium">
