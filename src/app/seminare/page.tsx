@@ -189,7 +189,7 @@ export default function SeminarePage() {
                     <span className="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-semibold tracking-wider uppercase mb-4 backdrop-blur-sm border border-white/30">
                         Wissen & Erfahrung
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: "white", textShadow: "0 0 30px rgba(255,255,255,0.9), 0 0 60px rgba(255,255,255,0.5), 2px 2px 0 rgba(255,255,255,0.4), -2px -2px 0 rgba(255,255,255,0.4), 2px -2px 0 rgba(255,255,255,0.4), -2px 2px 0 rgba(255,255,255,0.4)" }}>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md" style={{ color: "white" }}>
                         Seminare & Webinare
                     </h1>
                     <p className="text-xl text-cream md:text-2xl font-light text-shadow-sm max-w-2xl mx-auto">
