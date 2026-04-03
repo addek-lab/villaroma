@@ -76,7 +76,7 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-lavender.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-new.webp`}
             alt="Blühendes Lavendelfeld im Sonnenlicht"
             fill
             className="object-cover"
