@@ -93,7 +93,7 @@ export default function HomePage() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-up delay-100 drop-shadow-md">
-              Sinnliche <span className="text-sage-light">Naturerlebnisse</span>
+              <span style={{color: "#c4a6e8"}}>Sinnliche</span> <span style={{color: "#dcc8f0"}}>Naturerlebnisse</span>
               <br />
               <span className="text-white">&amp; Wohlbefinden</span>
             </h1>
