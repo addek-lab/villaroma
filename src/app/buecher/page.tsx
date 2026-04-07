@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ExternalLink, ShoppingBag } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -60,7 +59,7 @@ const books: Book[] = [
     year: "2025",
     featured: false,
     shops: [
-      { label: "Ulmer", url: "https://www.ulmer.de/usd-8263087/zitrusduefte-.html" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7982042/zitrusduefte-.html" },
       { label: "Amazon", url: "https://www.amazon.de/dp/3818625719/" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818625719.html" },
     ],
@@ -83,7 +82,7 @@ const books: Book[] = [
     year: "2024",
     featured: false,
     shops: [
-      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885196/aetherische-oele-in-der-erkaeltungszeit-.html" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885323/aetherische-oele-in-der-erkaeltungszeit-.html" },
       { label: "Amazon", url: "https://www.amazon.de/dp/3818624143/" },
       { label: "Primavera", url: "https://www.primaveralife.com/buch-aetherische-oele-in-der-erkaeltungszeit.html" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624149.html" },
@@ -110,7 +109,7 @@ const books: Book[] = [
     year: "2024",
     featured: false,
     shops: [
-      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885196/waldmedizin-.html" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885345/waldmedizin-.html" },
       { label: "Amazon", url: "https://www.amazon.de/dp/3818624208/" },
       { label: "Hugendubel", url: "https://www.hugendubel.de/de/buch_kartoniert/anusati_thumm_maria_m_kettenring-waldmedizin-49085568-produkt-details.html" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624200.html" },
@@ -135,7 +134,7 @@ const books: Book[] = [
     year: "2024",
     featured: false,
     shops: [
-      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885196/hausapotheke-aetherische-oele-.html" },
+      { label: "Ulmer", url: "https://www.ulmer.de/usd-7885342/hausapotheke-aetherische-oele-.html" },
       { label: "Amazon", url: "https://www.amazon.de/dp/3818624194/" },
       { label: "Primavera", url: "https://www.primaveralife.com/hausapotheke-aetherische-oele-schnelle-hilfe-fuer-jeden-tag.html" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624194.html" },
@@ -181,7 +180,6 @@ const books: Book[] = [
     year: "2014",
     featured: false,
     shops: [
-      { label: "Vegaroma", url: "https://www.vegaroma.de/shop/koch-backbuecher/kochbuch-duftkueche" },
       { label: "Amazon", url: "https://www.amazon.de/Duftküche-Vitalrezepte-mit-ätherischen-Ölen/dp/3708806301/" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ID39352332.html" },
       { label: "Bücher.de", url: "https://www.buecher.de/shop/desserts--suessspeisen/duftkueche/kettenring-maria-m-/products_products/detail/prod_id/40893003/" },
@@ -297,12 +295,12 @@ export default function BuecherPage() {
                 <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-0">
                   {/* Cover */}
                   {book.cover ? (
-                    <div className="relative aspect-[3/4] md:aspect-auto bg-cream">
+                    <div className="relative aspect-[3/4] md:aspect-auto bg-cream flex items-center justify-center">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${book.cover}`}
                         alt={`${book.title} — Buchcover`}
                         fill
-                        className="object-cover"
+                        className="object-contain p-4"
                       />
                     </div>
                   ) : (

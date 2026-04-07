@@ -234,6 +234,42 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            {/* Interview Aromaris */}
+            <div className="card p-6 flex items-start gap-5">
+              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                <BookOpen size={22} className="text-forest" />
+              </div>
+              <div>
+                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Interview</span>
+                <h3 className="text-base font-bold text-earth mb-1">Aromaris — Zitrusdüfte im Gespräch</h3>
+                <p className="text-bark text-sm leading-relaxed mb-3">
+                  Maria M. Kettenring über die Heilkraft der Zitrusöle: Bergamotte, Zitrone & Co. und ihre Wirkung auf Körper und Psyche.
+                </p>
+                <a href="https://www.aromaris.de/zitrusduefte-interview-mit-maria-kettenring/" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Zum Interview <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+
+            {/* PR-Netz */}
+            <div className="card p-6 flex items-start gap-5">
+              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                <Newspaper size={22} className="text-forest" />
+              </div>
+              <div>
+                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
+                <h3 className="text-base font-bold text-earth mb-1">PR-Netz — Wohlfühlen in der Natur</h3>
+                <p className="text-bark text-sm leading-relaxed mb-3">
+                  Die besten Tipps für Körper und Geist: Naturerlebnisse, ätherische Öle und achtsame Bewegung für mehr Wohlbefinden im Alltag.
+                </p>
+                <a href="https://www.pr-netz.de/80239/wohlfuehlen-in-der-natur-die-besten-tipps-fuer-koerper-und-geist/" target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                  Zum Artikel <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+
             {/* Podcast */}
             <div className="card p-6 flex items-start gap-5">
               <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
@@ -252,7 +288,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Presse */}
+            {/* Presse Brigitte */}
             <div className="card p-6 flex items-start gap-5">
               <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
                 <Newspaper size={22} className="text-forest" />
@@ -261,7 +297,7 @@ export default function HomePage() {
                 <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
                 <h3 className="text-base font-bold text-earth mb-1">Brigitte Magazin — Aromatherapie & Waldmedizin</h3>
                 <p className="text-bark text-sm leading-relaxed mb-3">
-                  Artikel über Aromatherapie und Waldmedizin mit Buchempfehlung „Waldmedizin\" von Anusati Thumm und Maria M. Kettenring.
+                  Artikel über Aromatherapie und Waldmedizin mit Buchempfehlung „Waldmedizin" von Anusati Thumm und Maria M. Kettenring.
                 </p>
                 <a href="https://shop.brigitte.de/de_DE/einzelhefte/einzelausgaben/brigitte-26-2021/2055728.html" target="_blank" rel="noopener noreferrer"
                   className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">

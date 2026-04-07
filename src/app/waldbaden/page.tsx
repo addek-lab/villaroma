@@ -134,6 +134,48 @@ export default function WaldbadenPage() {
                     </Link>
                 </div>
             </section>
+
+            {/* Deutsche Akademie für Waldbaden — Partner */}
+            <section className="section-padding bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">Mein Partner</span>
+                            <div className="mb-8 inline-block bg-forest rounded-2xl px-6 py-4">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Akademie_Waldbaden.webp`}
+                                    alt="Deutsche Akademie für Waldbaden &amp; Gesundheit"
+                                    width={280}
+                                    height={100}
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="w-20 h-1 bg-sage rounded-full mb-8"></div>
+                            <p className="text-bark text-lg leading-relaxed mb-4">
+                                Entdecken Sie weitere Seminare, Workshops und Webinare bei meinem Partner, der Deutschen
+                                Akademie für Waldbaden &amp; Gesundheit — Qualifizierungen und Ausbildungen rund um
+                                Waldbaden, Natur-Resilienz &amp; Gesundheitsförderung in der Natur.
+                            </p>
+                            <a
+                                href="https://waldbaden-akademie.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-outline"
+                            >
+                                Zur Akademie <ArrowRight size={16} />
+                            </a>
+                        </div>
+                        <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+                            <Image
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-forest.webp`}
+                                alt="Waldbaden — Deutsche Akademie für Waldbaden &amp; Gesundheit"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

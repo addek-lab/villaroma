@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Leaf, Sparkles, Wind, BookOpen } from "lucide-react";
+import { ArrowRight, Leaf, Sparkles, Wind, BookOpen, FlaskConical } from "lucide-react";
 
 export default function AromatherapiePage() {
   return (
@@ -28,7 +28,7 @@ export default function AromatherapiePage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold !text-white leading-tight mb-6 animate-fade-in-up delay-100 drop-shadow-xl" style={{ opacity: 0 }}>
               Aromatherapie
               <br />
-              <span className="!text-white">&amp; Duftdesign</span>
+              <span className="!text-white">&amp; Aromakultur</span>
             </h1>
             <p className="!text-white text-lg sm:text-xl max-w-lg mb-10 leading-relaxed animate-fade-in-up delay-200 drop-shadow-lg font-medium" style={{ opacity: 0 }}>
               Entdecken Sie die gesundheitsfördernde Wirkung natürlicher Düfte für Körper, Geist und Seele.
@@ -114,9 +114,69 @@ export default function AromatherapiePage() {
               </div>
               <h3 className="text-xl font-bold text-[--color-lavender-dark] mb-3">Scent Design</h3>
               <p className="text-bark leading-relaxed mb-6">
-                Professionelle Raum- und Objektbeduftung für Praxen, Wohnräume und Seminare, um eine 
+                Professionelle Raum- und Objektbeduftung für Praxen, Wohnräume und Seminare, um eine
                 atmosphärische und heilsame Umgebung zu schaffen.
               </p>
+            </div>
+
+            {/* Mischen & Naturparfum */}
+            <div className="card p-8 border-t-4 md:col-span-3 lg:col-span-3" style={{ borderColor: 'var(--color-lavender-dark)' }}>
+              <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center bg-[--color-lavender-light] shrink-0">
+                  <FlaskConical size={28} className="text-[--color-lavender-dark]" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[--color-lavender-dark] mb-3">Mischen &amp; Sensoriktraining — bis hin zum Naturparfum</h3>
+                  <p className="text-bark leading-relaxed">
+                    Von der gezielten Kombination ätherischer Öle über die Schulung des Geruchssinns bis zur Kreation
+                    individueller Naturparfums: Maria M. Kettenring vermittelt das nötige Know-how, um Düfte bewusst
+                    wahrzunehmen, zu beurteilen und eigene Kompositionen aus reinen Pflanzenessenzen zu entwickeln.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ PRIMAVERA PARTNER ═══════════ */}
+      <section className="section-padding bg-[--color-lavender-light]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+              <Image
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/aromatherapy_skincare_v2.png`}
+                alt="PRIMAVERA ätherische Öle"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-[--color-lavender-dark] mb-4 block">Mein Partner</span>
+              <div className="mb-8">
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/primavera.jpg`}
+                  alt="PRIMAVERA Life"
+                  width={220}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
+              <div className="w-20 h-1 bg-[--color-lavender] rounded-full mb-8"></div>
+              <p className="text-bark text-lg leading-relaxed mb-4">
+                Entdecken Sie weitere Seminare, Workshops und Webinare bei meinem langjährigen Partner
+                PRIMAVERA. Hochwertige ätherische Öle und eine praxisnahe Ausbildung — für alle, die tiefer
+                in die Welt der Aromakultur einsteigen möchten.
+              </p>
+              <a
+                href="https://www.primaveralife.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex"
+                style={{ backgroundColor: 'var(--color-lavender-dark)', color: 'white' }}
+              >
+                Zu PRIMAVERA <ArrowRight size={16} />
+              </a>
             </div>
           </div>
         </div>
