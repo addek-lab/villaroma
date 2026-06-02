@@ -199,7 +199,7 @@ export default function SeminarePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-forest text-white hover:bg-leaf hover:scale-105 font-bold text-lg rounded-full transition-all shadow-md"
             >
-              Zur Jubiläumsseite <ExternalLink size={20} />
+              Zur Jubiläumsseite (extern) <ExternalLink size={20} />
             </a>
           </div>
         </div>
