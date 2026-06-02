@@ -38,7 +38,7 @@ const events: CalendarEvent[] = [
         image: "/seminare/seminar_zirbenweg_1774344106703.png",
     },
     {
-        title: "Waldbaden und Naturresilienz (Es sind noch wenige Restplätze verfügbar)",
+        title: "Waldbaden und Naturresilienz",
         description: "Ätherische Öle von Bäumen, Wurzeln, Blüten und Kräutern bauen Stress ab und Widerstandskräfte auf. Du lernst kleine Naturresilienz- und Waldbaden-Übungen kennen, die Dich in die Atmosphäre des Waldes und in die Natur eintauchen lassen.",
         location: "Oy-Mittelberg",
         date: "10.07.2026",
@@ -47,10 +47,11 @@ const events: CalendarEvent[] = [
         price: "25,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1139",
         featured: false,
+        badgeRight: "Wenige Restplätze verfügbar",
         image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
-        title: "Zitrusdüfte - Lieblinge für Psyche (Es sind noch wenige Restplätze verfügbar)",
+        title: "Zitrusdüfte - Lieblinge für die Psyche",
         description: "Ein Tag voller Heiterkeit und guter Laune: Die wertvollen Zitrusdüfte sind wahre Seelenstreichler. Lerne, wie du Bergamotte, Yuzu und Neroli gezielt einsetzt, um Splashs, Roll-Ons und Massageöle zur Unterstützung bei Stress und Erschöpfung zu kreieren.",
         location: "Oy-Mittelberg",
         date: "11.07.2026",
@@ -59,6 +60,7 @@ const events: CalendarEvent[] = [
         price: "188,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1186",
         featured: false,
+        badgeRight: "Wenige Restplätze verfügbar",
         image: "/seminare/seminar_zitrusduefte_1774344123867.png",
     },
     {

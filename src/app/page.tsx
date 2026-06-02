@@ -29,12 +29,13 @@ const books = [
 const seminare = [
 
   {
-    title: "Waldbaden und Naturresilienz (Es sind noch wenige Restplätze verfügbar)",
+    title: "Waldbaden und Naturresilienz",
     location: "Oy-Mittelberg",
     date: "10.07.2026",
     type: "Workshop",
     description: "Eintauchen in die Natur zur Stärkung der inneren Balance und Resilienz.",
     link: "https://akademie.primaveralife.com/de/de-DE/Details/1139",
+    badgeRight: "Wenige Restplätze verfügbar",
     image: "/seminare/seminar_waldbaden_1773246243999.png",
   },
   {
@@ -238,6 +239,11 @@ export default function HomePage() {
                     <span className="text-xs text-soft-grey ml-auto">{event.date}</span>
                   </div>
                   <h3 className="text-lg font-bold text-earth mb-2 pr-16">{event.title}</h3>
+                  {event.badgeRight && (
+                    <span className="inline-block mb-3 px-2 py-0.5 rounded bg-amber-600/95 text-white text-[10px] font-bold uppercase tracking-widest w-fit shadow-sm">
+                      {event.badgeRight}
+                    </span>
+                  )}
                   <p className="text-bark text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
                     {event.description}
                   </p>
