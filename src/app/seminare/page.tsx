@@ -76,6 +76,18 @@ const events: CalendarEvent[] = [
         image: "/seminare/seminar_baumoele_1773246261672.png",
     },
     {
+        title: "Vortrag: Resilient durch Naturmethoden",
+        description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung präsentieren ihr gemeinsames Buch 'Natur-Resilienz' beim 8. Kongress für Waldbaden, Naturgesundheit & Naturerlebnisse. Im Vortrag zeigen sie, wie Waldbaden, ätherische Öle und achtsame Naturerfahrungen die innere Widerstandskraft stärken - praxisnah und wissenschaftlich fundiert.",
+        location: "Weberstedt (Thüringen)",
+        date: "13.09.2026, 15:45 – 16:45 Uhr",
+        duration: "1 Stunde",
+        type: "Vortrag",
+        price: "",
+        link: "https://waldbaden-akademie.com/kongresse/",
+        featured: false,
+        image: "/seminare/kongress-waldbaden-2026.webp",
+    },
+    {
         title: "Waldbaden und Resilienz aus der Natur",
         description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden. Als aktuelle Alternative empfehlen wir den Kurs Waldmedizin — Heilkraft der Baumöle in Frankfurt. Dort werden auch Elemente der Naturresilienz mit einbezogen, sodass wesentliche Inhalte in passender Form aufgegriffen werden. Zudem wird Breathwalk praktiziert und ergänzt das Angebot um eine achtsame, bewegte Erfahrung in der Natur.",
         location: "St. Ulrich (AT)",
@@ -125,18 +137,7 @@ const events: CalendarEvent[] = [
         featured: false,
         image: "/seminare/seminar_aromamassage_1774344139032.png",
     },
-    {
-        title: "Vortrag: Resilient durch Naturmethoden",
-        description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung präsentieren ihr gemeinsames Buch 'Natur-Resilienz' beim 8. Kongress für Waldbaden, Naturgesundheit & Naturerlebnisse. Im Vortrag zeigen sie, wie Waldbaden, ätherische Öle und achtsame Naturerfahrungen die innere Widerstandskraft stärken - praxisnah und wissenschaftlich fundiert.",
-        location: "Weberstedt (Thüringen)",
-        date: "13.09.2026, 15:45 – 16:45 Uhr",
-        duration: "1 Stunde",
-        type: "Vortrag",
-        price: "",
-        link: "https://waldbaden-akademie.com/kongresse/",
-        featured: false,
-        image: "/seminare/kongress-waldbaden-2026.webp",
-    },
+
     {
         title: "Weihnachtsbäckerei",
         description: "Es duftet nach Punsch, Tannengrün und selbst gebackenen Plätzchen. Im Workshop lernst Du, wie Du für noch mehr Würze sorgst und Deine Liebsten mit außergewöhnlichen Geschenkideen aus der Duft- und Aromaküche überraschen kannst. Gemeinsam kreieren wir gesunde Gaumenfreuden für die Winterzeit, die im Gedächtnis bleiben.",
@@ -183,7 +184,7 @@ export default function SeminarePage() {
 
       {/* ═══════════ PRIMAVERA 40 JAHRE ═══════════ */}
       <section className="section-padding bg-white pb-0">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center gap-8">
             <div className="w-full rounded-2xl overflow-hidden shadow-xl">
               <img 
