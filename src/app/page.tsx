@@ -179,24 +179,22 @@ export default function HomePage() {
       {/* ═══════════ PRIMAVERA 40 JAHRE ═══════════ */}
       <section className="section-padding bg-white pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            {/* Background Gradient exactly like Primavera Banner */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #ec6aa0 0%, #f68f27 25%, #fae223 60%, #a2cc3a 100%)' }} />
-
-            <div className="relative p-12 md:p-20 text-center max-w-4xl mx-auto flex flex-col items-center justify-center">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-10 tracking-[0.2em] font-light leading-tight drop-shadow-sm">
-                WIR FEIERN<br />
-                40 JAHRE!
-              </h2>
-              <a 
-                href="https://www.primaveralife.com/40-jahre-jubilaeum?srsltid=AfmBOook3P3Vdsf7yUvgq7nv0vSwnFZjbecLx85s8mjM2Rp6wErxmSvm" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-forest text-white hover:bg-leaf hover:scale-105 font-bold text-lg rounded-full transition-all shadow-xl border border-white/20"
-              >
-                Zur Jubiläumsseite <ExternalLink size={20} />
-              </a>
+          <div className="flex flex-col items-center gap-8">
+            <div className="w-full rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/40Jahre_Primavera.png`}
+                alt="Primavera 40 Jahre Jubiläum"
+                className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
+              />
             </div>
+            <a 
+              href="https://www.primaveralife.com/40-jahre-jubilaeum?srsltid=AfmBOook3P3Vdsf7yUvgq7nv0vSwnFZjbecLx85s8mjM2Rp6wErxmSvm" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-forest text-white hover:bg-leaf hover:scale-105 font-bold text-lg rounded-full transition-all shadow-md"
+            >
+              Zur Jubiläumsseite <ExternalLink size={20} />
+            </a>
           </div>
         </div>
       </section>
