@@ -74,8 +74,8 @@ const events: CalendarEvent[] = [
         image: "/seminare/seminar_baumoele_1773246261672.png",
     },
     {
-        title: "Waldbaden und Resilienz",
-        description: "Der Kurs Waldbaden und Resilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden. Als aktuelle Alternative empfehlen wir den Kurs Waldmedizin — Heilkraft der Baumöle in Frankfurt. Dort werden auch Elemente der Naturresilienz mit einbezogen, sodass wesentliche Inhalte in passender Form aufgegriffen werden. Zudem wird Breathwalk praktiziert und ergänzt das Angebot um eine achtsame, bewegte Erfahrung in der Natur.",
+        title: "Waldbaden und Resilienz aus der Natur",
+        description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden. Als aktuelle Alternative empfehlen wir den Kurs Waldmedizin — Heilkraft der Baumöle in Frankfurt. Dort werden auch Elemente der Naturresilienz mit einbezogen, sodass wesentliche Inhalte in passender Form aufgegriffen werden. Zudem wird Breathwalk praktiziert und ergänzt das Angebot um eine achtsame, bewegte Erfahrung in der Natur.",
         location: "St. Ulrich (AT)",
         date: "18. – 19.09.2026",
         duration: "2 Tage",
