@@ -97,7 +97,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldbaden und Resilienz",
-        description: "Dieses Seminar fällt leider wegen noch nicht abgeschlossener Baumaßnahmen aus. Als aktuelle Alternative empfehlen wir den Kurs „Waldmedizin — Heilkraft der Baumöle“, bei dem ebenfalls Elemente aus der Naturresilienz mit einbezogen werden.",
+        description: "Der Kurs Waldbaden und Resilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden. Als aktuelle Alternative empfehlen wir den Kurs Waldmedizin — Heilkraft der Baumöle in Frankfurt. Dort werden auch Elemente der Naturresilienz mit einbezogen, sodass wesentliche Inhalte in passender Form aufgegriffen werden. Zudem wird Breathwalk praktiziert und ergänzt das Angebot um eine achtsame, bewegte Erfahrung in der Natur.",
         location: "St. Ulrich (AT)",
         date: "18. – 19.09.2026",
         duration: "2 Tage",
@@ -105,7 +105,7 @@ const events: CalendarEvent[] = [
         price: "268,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1189",
         featured: false,
-        badgeRight: "Fällt wegen anhaltender Baumaßnahmen aus",
+        badgeRight: "Fällt aus",
         image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
@@ -226,7 +226,7 @@ export default function SeminarePage() {
                                         )}
                                         {event.badgeRight && (
                                             <div className="absolute top-4 right-4 max-w-[60%] text-right">
-                                                <span className="inline-block px-3 py-1 rounded-xl bg-red-600/90 backdrop-blur-sm text-white text-xs font-bold shadow-md leading-tight">
+                                                <span className="inline-block px-3 py-1 rounded-full bg-forest/95 backdrop-blur-sm text-white text-xs font-bold shadow-md leading-tight">
                                                     {event.badgeRight}
                                                 </span>
                                             </div>
