@@ -227,8 +227,8 @@ export default function SeminarePage() {
                                             </div>
                                         )}
                                         {event.badgeRight && (
-                                            <div className="absolute top-4 right-4 max-w-[60%] text-right transform rotate-3 z-10">
-                                                <span className="inline-block px-4 py-1.5 rounded-lg bg-forest/95 backdrop-blur-sm text-white text-sm font-bold shadow-lg leading-tight border border-white/20">
+                                            <div className="absolute top-4 right-4 max-w-[70%] text-right z-10">
+                                                <span className="inline-block px-5 py-2 rounded-xl bg-amber-600/95 backdrop-blur-sm text-white text-base font-bold shadow-lg leading-tight border border-white/30">
                                                     {event.badgeRight}
                                                 </span>
                                             </div>
