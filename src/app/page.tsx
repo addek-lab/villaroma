@@ -175,6 +175,48 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ═══════════ PRIMAVERA 40 JAHRE ═══════════ */}
+      <section className="section-padding bg-white pb-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            {/* Background Image & Overlay */}
+            <div className="absolute inset-0">
+              <Image 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/primavera_40_jahre_bg.png`}
+                alt="Primavera 40 Jahre Jubiläum"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/80 via-amber-400/80 to-lime-500/80 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
+            </div>
+
+            <div className="relative p-8 md:p-16 text-center max-w-4xl mx-auto flex flex-col items-center justify-center">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-white/30 text-white text-xs md:text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-md border border-white/50 shadow-sm">
+                Jubiläum
+              </span>
+              <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg" style={{textShadow: "0 2px 10px rgba(0,0,0,0.2)"}}>
+                WIR FEIERN 40 JAHRE!
+              </h2>
+              <p className="text-xl md:text-3xl text-white font-medium mb-8 drop-shadow-md">
+                Duft, Licht & Lebensfreude
+              </p>
+              <p className="text-white/95 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow">
+                Feiere mit uns 40 Jahre PRIMAVERA! Entdecke die exklusive Jubiläumskollektion – eine aromatische Liebeserklärung an Mensch und Natur.
+              </p>
+              <a 
+                href="https://www.primaveralife.com/40-jahre-jubilaeum?srsltid=AfmBOook3P3Vdsf7yUvgq7nv0vSwnFZjbecLx85s8mjM2Rp6wErxmSvm" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-orange-600 hover:bg-orange-50 hover:text-orange-700 hover:scale-105 font-bold text-lg rounded-full transition-all shadow-xl"
+              >
+                Zur Jubiläumsseite <ExternalLink size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════ AKTUELLES (NEWS) ═══════════ */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
