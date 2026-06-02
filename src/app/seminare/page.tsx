@@ -19,6 +19,7 @@ export type CalendarEvent = {
     link: string;
     featured: boolean;
     badgeRight?: string;
+    buttonText?: string;
     image: string;
 };
 
@@ -103,9 +104,10 @@ const events: CalendarEvent[] = [
         duration: "2 Tage",
         type: "Seminar",
         price: "268,00 €",
-        link: "https://akademie.primaveralife.com/de/de-DE/Details/1189",
+        link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
         featured: false,
         badgeRight: "Fällt aus",
+        buttonText: "Anmeldung Alternativ",
         image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
@@ -225,8 +227,8 @@ export default function SeminarePage() {
                                             </div>
                                         )}
                                         {event.badgeRight && (
-                                            <div className="absolute top-4 right-4 max-w-[60%] text-right">
-                                                <span className="inline-block px-3 py-1 rounded-full bg-forest/95 backdrop-blur-sm text-white text-xs font-bold shadow-md leading-tight">
+                                            <div className="absolute top-4 right-4 max-w-[60%] text-right transform rotate-3 z-10">
+                                                <span className="inline-block px-4 py-1.5 rounded-lg bg-forest/95 backdrop-blur-sm text-white text-sm font-bold shadow-lg leading-tight border border-white/20">
                                                     {event.badgeRight}
                                                 </span>
                                             </div>
@@ -257,7 +259,7 @@ export default function SeminarePage() {
                                                 rel="noopener noreferrer"
                                                 className="inline-flex items-center gap-2 px-6 py-2 bg-leaf hover:bg-forest text-white font-medium text-sm rounded-full transition-colors shadow-sm"
                                             >
-                                                Zur Anmeldung (extern)
+                                                {event.buttonText || "Zur Anmeldung (extern)"}
                                                 <ExternalLink size={14} />
                                             </Link>
                                         </div>
