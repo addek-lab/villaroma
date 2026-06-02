@@ -177,7 +177,7 @@ export default function SeminarePage() {
                         Seminare & Webinare
                     </h1>
                     <p className="text-xl text-cream md:text-2xl font-light text-shadow-sm max-w-2xl mx-auto">
-                        Erleben Sie die faszinierende Welt der ätherischen Öle und Waldmedizin in praxisnahen Seminaren und Exkursionen mit Maria M. Kettenring.
+                        Erleben Sie die faszinierende Welt der ätherischen Öle, Waldmedizin und NaturResilienz in praxisnahen Seminaren und Exkursionen mit Maria M. Kettenring.
                     </p>
                 </div>
             </section>
