@@ -24,30 +24,7 @@ export type CalendarEvent = {
 };
 
 const events: CalendarEvent[] = [
-    {
-        title: "Detox und das \"wilde\" Grün",
-        description: "Wildkräuter von der Haustür bis zum Gartenzaun: So beginnt unsere Entdeckungsreise. Gemeinsam sammeln wir Wildkräuter und Blüten für eine basische Kur mit Smoothies, Salaten, Fastensuppe, Tees, Easy-Fingerfood und Säften. Genieße Bewegung, Atemübungen und Selbstmassage.",
-        location: "Oy-Mittelberg",
-        date: "14. – 15.05.2026",
-        duration: "2 Tage",
-        type: "Seminar",
-        price: "268,00 €",
-        link: "https://akademie.primaveralife.com/de/de-DE/Details/1183",
-        featured: true,
-        image: "/seminare/seminar_detox_gruen_1774344090956.png",
-    },
-    {
-        title: "Waldbaden und Naturresilienz",
-        description: "Ätherische Öle von Bäumen, Wurzeln, Blüten und Kräutern bauen Stress ab und Widerstandskräfte auf. Du lernst kleine Naturresilienz- und Waldbaden-Übungen kennen, die Dich in die Atmosphäre des Waldes und in die Natur eintauchen lassen.",
-        location: "Oy-Mittelberg",
-        date: "16.05.2026",
-        duration: "1 Tag",
-        type: "Workshop",
-        price: "25,00 €",
-        link: "https://akademie.primaveralife.com/de/de-DE/Details/1137",
-        featured: false,
-        image: "/seminare/seminar_waldbaden_1773246243999.png",
-    },
+
     {
         title: "Exkursion zum Zirbenweg",
         description: "Erlebe den Zirbenweg am Patscherkofel in Tirol, einen panoramareichen Höhenweg durch einen der ältesten Zirbelkieferbestände Europas. Wir entdecken gemeinsam die Kraft der Baumöle, lernen botanische Besonderheiten kennen und stellen im Naturparadies eigene Aromapflegeprodukte her.",
@@ -61,7 +38,7 @@ const events: CalendarEvent[] = [
         image: "/seminare/seminar_zirbenweg_1774344106703.png",
     },
     {
-        title: "Waldbaden und Naturresilienz",
+        title: "Waldbaden und Naturresilienz (Es sind noch wenige Restplätze verfügbar)",
         description: "Ätherische Öle von Bäumen, Wurzeln, Blüten und Kräutern bauen Stress ab und Widerstandskräfte auf. Du lernst kleine Naturresilienz- und Waldbaden-Übungen kennen, die Dich in die Atmosphäre des Waldes und in die Natur eintauchen lassen.",
         location: "Oy-Mittelberg",
         date: "10.07.2026",
@@ -73,7 +50,7 @@ const events: CalendarEvent[] = [
         image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
-        title: "Zitrusdüfte - Lieblinge für Psyche",
+        title: "Zitrusdüfte - Lieblinge für Psyche (Es sind noch wenige Restplätze verfügbar)",
         description: "Ein Tag voller Heiterkeit und guter Laune: Die wertvollen Zitrusdüfte sind wahre Seelenstreichler. Lerne, wie du Bergamotte, Yuzu und Neroli gezielt einsetzt, um Splashs, Roll-Ons und Massageöle zur Unterstützung bei Stress und Erschöpfung zu kreieren.",
         location: "Oy-Mittelberg",
         date: "11.07.2026",

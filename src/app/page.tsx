@@ -27,27 +27,9 @@ const books = [
 ];
 
 const seminare = [
-  {
-    title: "Detox und das \"wilde\" Grün",
-    location: "Oy-Mittelberg",
-    date: "14. – 15.05.2026",
-    type: "Seminar",
-    description: "Wildkräuter sammeln, basische Kur mit Smoothies und Salaten, Bewegung und Selbstmassage.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1183",
-    image: "/seminare/seminar_detox_gruen_1774344090956.png",
-  },
-  {
-    title: "Waldbaden und Naturresilienz",
-    location: "Oy-Mittelberg",
-    date: "16.05.2026",
-    type: "Workshop",
-    description: "Stressabbau und Stärkung der Widerstandskräfte durch die Atmosphäre des Waldes.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1137",
-    image: "/seminare/seminar_waldbaden_1773246243999.png",
-  },
 
   {
-    title: "Waldbaden und Naturresilienz",
+    title: "Waldbaden und Naturresilienz (Es sind noch wenige Restplätze verfügbar)",
     location: "Oy-Mittelberg",
     date: "10.07.2026",
     type: "Workshop",
