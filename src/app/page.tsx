@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, TreePine, Calendar, Sparkles, Leaf, Quote, ExternalLink, Mic, Newspaper } from "lucide-react";
+import { ArrowRight, BookOpen, TreePine, Calendar, Sparkles, Quote, ExternalLink, Mic, Newspaper } from "lucide-react";
 
 const books = [
   {
@@ -33,7 +33,8 @@ const seminare = [
     date: "14. – 15.05.2026",
     type: "Seminar",
     description: "Wildkräuter sammeln, basische Kur mit Smoothies und Salaten, Bewegung und Selbstmassage.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1183"
+    link: "https://akademie.primaveralife.com/de/de-DE/Details/1183",
+    image: "/seminare/seminar_detox_gruen_1774344090956.png",
   },
   {
     title: "Waldbaden und Naturresilienz",
@@ -41,15 +42,8 @@ const seminare = [
     date: "16.05.2026",
     type: "Kompaktkurs",
     description: "Stressabbau und Stärkung der Widerstandskräfte durch die Atmosphäre des Waldes.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1137"
-  },
-  {
-    title: "Duftwerkstatt - gekonnt mischen",
-    location: "Fulda (DE)",
-    date: "30. – 31.05.2026",
-    type: "Workshop",
-    description: "Kombiniere ätherische Öle zu individuellen Körperölen und Naturparfums.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1098"
+    link: "https://akademie.primaveralife.com/de/de-DE/Details/1137",
+    image: "/seminare/seminar_waldbaden_1773246243999.png",
   },
   {
     title: "Exkursion zum Zirbenweg",
@@ -57,7 +51,8 @@ const seminare = [
     date: "08. – 09.06.2026",
     type: "Exkursion",
     description: "Erlebe die Zirbelkieferbestände in Tirol und stelle eigene Aromapflegeprodukte her.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1190"
+    link: "https://akademie.primaveralife.com/de/de-DE/Details/1190",
+    image: "/seminare/seminar_zirbenweg_1774344106703.png",
   },
   {
     title: "Waldbaden und Naturresilienz",
@@ -65,7 +60,17 @@ const seminare = [
     date: "10.07.2026",
     type: "Kompaktkurs",
     description: "Eintauchen in die Natur zur Stärkung der inneren Balance und Resilienz.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1139"
+    link: "https://akademie.primaveralife.com/de/de-DE/Details/1139",
+    image: "/seminare/seminar_waldbaden_1773246243999.png",
+  },
+  {
+    title: "Vortrag: Resilient durch Naturmethoden",
+    location: "Weberstedt (Thüringen)",
+    date: "13.09.2026, 15:45 – 16:45 Uhr",
+    type: "Vortrag",
+    description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung stellen ihr gemeinsames Buch 'Natur-Resilienz' vor — wie Waldbaden und ätherische Öle die innere Widerstandskraft stärken.",
+    link: "https://waldbaden-akademie.com/kongresse/",
+    image: "/seminare/kongress-waldbaden-2026.webp",
   },
 ];
 
@@ -166,10 +171,10 @@ export default function HomePage() {
           <div className="relative">
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl max-w-[400px] mx-auto lg:mx-0">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/maria.jpg`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/maria.webp`}
                 alt="Maria M. Kettenring"
                 fill
-                className="object-cover"
+                className="object-cover rounded-3xl"
               />
             </div>
             <div className="absolute -bottom-6 -right-2 lg:-right-6 bg-forest text-white p-6 rounded-2xl shadow-lg">
@@ -209,108 +214,151 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {seminare.map((event, i) => (
-              <div key={i} className="card p-6 flex flex-col">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">{event.type}</span>
-                  <span className="text-xs text-soft-grey ml-auto">{event.date}</span>
+          {/* — Bevorstehende Termine — */}
+          <div className="mb-14">
+            <div className="flex items-center gap-3 mb-8">
+              <Calendar size={20} className="text-forest shrink-0" />
+              <h3 className="text-lg font-bold text-earth whitespace-nowrap">Bevorstehende Termine</h3>
+              <div className="flex-1 h-px bg-forest/15" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {seminare.map((event, i) => (
+                <div key={i} className="card p-6 flex flex-col relative overflow-hidden">
+                  {event.image && (
+                    <div className="absolute top-4 right-4 w-14 h-14 rounded-xl overflow-hidden shadow border-2 border-white/80">
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${event.image}`}
+                        alt={event.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="flex items-center gap-2 mb-4 pr-16">
+                    <span className="px-3 py-1 rounded-full bg-sage/20 text-forest text-xs font-bold">{event.type}</span>
+                    <span className="text-xs text-soft-grey ml-auto">{event.date}</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-earth mb-2 pr-16">{event.title}</h3>
+                  <p className="text-bark text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
+                    {event.description}
+                  </p>
+                  <div className="flex items-center justify-between pt-4 border-t border-forest/5">
+                    <span className="text-xs text-bark flex items-center gap-1">
+                      <TreePine size={12} className="text-leaf" /> {event.location}
+                    </span>
+                    <a href={event.link} target="_blank" rel="noopener noreferrer"
+                      className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                      Anmelden <ExternalLink size={12} />
+                    </a>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-earth mb-2">{event.title}</h3>
-                <p className="text-bark text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
-                  {event.description}
-                </p>
-                <div className="flex items-center justify-between pt-4 border-t border-forest/5">
-                  <span className="text-xs text-bark flex items-center gap-1">
-                    <TreePine size={12} className="text-leaf" /> {event.location}
-                  </span>
-                  <a href={event.link} target="_blank" rel="noopener noreferrer"
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link href="/seminare" className="btn-outline">
+                Alle Termine ansehen <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* — Presse & Medien — */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Newspaper size={20} className="text-forest shrink-0" />
+              <h3 className="text-lg font-bold text-earth whitespace-nowrap">Presse &amp; Medien</h3>
+              <div className="flex-1 h-px bg-forest/15" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Interview Aromaris */}
+              <div className="card p-6 flex items-start gap-5">
+                <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                  <BookOpen size={22} className="text-forest" />
+                </div>
+                <div>
+                  <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Interview</span>
+                  <h3 className="text-base font-bold text-earth mb-1">Aromaris — Zitrusdüfte im Gespräch</h3>
+                  <p className="text-bark text-sm leading-relaxed mb-3">
+                    Maria M. Kettenring über die Heilkraft der Zitrusöle: Bergamotte, Zitrone & Co. und ihre Wirkung auf Körper und Psyche.
+                  </p>
+                  <a href="https://www.aromaris.de/zitrusduefte-interview-mit-maria-kettenring/" target="_blank" rel="noopener noreferrer"
                     className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                    Anmelden <ExternalLink size={12} />
+                    Zum Interview <ExternalLink size={12} />
                   </a>
                 </div>
               </div>
-            ))}
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {/* Interview Aromaris */}
-            <div className="card p-6 flex items-start gap-5">
-              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
-                <BookOpen size={22} className="text-forest" />
+              {/* Mankau Verlag Interview */}
+              <div className="card p-6 flex items-start gap-5">
+                <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                  <BookOpen size={22} className="text-forest" />
+                </div>
+                <div>
+                  <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Interview</span>
+                  <h3 className="text-base font-bold text-earth mb-1">Mankau Verlag — Natur-Resilienz im Gespräch</h3>
+                  <p className="text-bark text-sm leading-relaxed mb-3">
+                    Maria M. Kettenring und Jasmin Schlimm-Thierjung im Autorinnen-Interview über ihr gemeinsames Buch „Natur-Resilienz".
+                  </p>
+                  <a href="https://mankau-verlag.de/blogs/autoren-interviews/natur-resilienz-kettenring-schlimm-thierjung" target="_blank" rel="noopener noreferrer"
+                    className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                    Zum Interview <ExternalLink size={12} />
+                  </a>
+                </div>
               </div>
-              <div>
-                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Interview</span>
-                <h3 className="text-base font-bold text-earth mb-1">Aromaris — Zitrusdüfte im Gespräch</h3>
-                <p className="text-bark text-sm leading-relaxed mb-3">
-                  Maria M. Kettenring über die Heilkraft der Zitrusöle: Bergamotte, Zitrone & Co. und ihre Wirkung auf Körper und Psyche.
-                </p>
-                <a href="https://www.aromaris.de/zitrusduefte-interview-mit-maria-kettenring/" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Zum Interview <ExternalLink size={12} />
-                </a>
+
+              {/* PR-Netz */}
+              <div className="card p-6 flex items-start gap-5">
+                <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                  <Newspaper size={22} className="text-forest" />
+                </div>
+                <div>
+                  <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
+                  <h3 className="text-base font-bold text-earth mb-1">PR-Netz — Wohlfühlen in der Natur</h3>
+                  <p className="text-bark text-sm leading-relaxed mb-3">
+                    Die besten Tipps für Körper und Geist: Naturerlebnisse, ätherische Öle und achtsame Bewegung für mehr Wohlbefinden im Alltag.
+                  </p>
+                  <a href="https://www.pr-netz.de/80239/wohlfuehlen-in-der-natur-die-besten-tipps-fuer-koerper-und-geist/" target="_blank" rel="noopener noreferrer"
+                    className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                    Zum Artikel <ExternalLink size={12} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Podcast */}
+              <div className="card p-6 flex items-start gap-5">
+                <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                  <Mic size={22} className="text-forest" />
+                </div>
+                <div>
+                  <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Podcast</span>
+                  <h3 className="text-base font-bold text-earth mb-1">Zu Gast beim Kindheits(t)räume Podcast</h3>
+                  <p className="text-bark text-sm leading-relaxed mb-3">
+                    Maria im Gespräch mit Claudia Dippel über Aromatherapie, Naturverbundenheit und Kindheitserinnerungen.
+                  </p>
+                  <a href="https://anchor.fm/claudia-dippel/episodes/Interview-mit-Maria-Kettenring-e1d5h8s" target="_blank" rel="noopener noreferrer"
+                    className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                    Anhören <ExternalLink size={12} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Presse Brigitte */}
+              <div className="card p-6 flex items-start gap-5">
+                <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
+                  <Newspaper size={22} className="text-forest" />
+                </div>
+                <div>
+                  <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
+                  <h3 className="text-base font-bold text-earth mb-1">Brigitte Magazin — Aromatherapie &amp; Waldmedizin</h3>
+                  <p className="text-bark text-sm leading-relaxed mb-3">
+                    Artikel über Aromatherapie und Waldmedizin mit Buchempfehlung „Waldmedizin" von Anusati Thumm und Maria M. Kettenring.
+                  </p>
+                  <a href="https://shop.brigitte.de/de_DE/einzelhefte/einzelausgaben/brigitte-26-2021/2055728.html" target="_blank" rel="noopener noreferrer"
+                    className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
+                    Zum Artikel <ExternalLink size={12} />
+                  </a>
+                </div>
               </div>
             </div>
-
-            {/* PR-Netz */}
-            <div className="card p-6 flex items-start gap-5">
-              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
-                <Newspaper size={22} className="text-forest" />
-              </div>
-              <div>
-                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
-                <h3 className="text-base font-bold text-earth mb-1">PR-Netz — Wohlfühlen in der Natur</h3>
-                <p className="text-bark text-sm leading-relaxed mb-3">
-                  Die besten Tipps für Körper und Geist: Naturerlebnisse, ätherische Öle und achtsame Bewegung für mehr Wohlbefinden im Alltag.
-                </p>
-                <a href="https://www.pr-netz.de/80239/wohlfuehlen-in-der-natur-die-besten-tipps-fuer-koerper-und-geist/" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Zum Artikel <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
-
-            {/* Podcast */}
-            <div className="card p-6 flex items-start gap-5">
-              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
-                <Mic size={22} className="text-forest" />
-              </div>
-              <div>
-                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Podcast</span>
-                <h3 className="text-base font-bold text-earth mb-1">Zu Gast beim Kindheits(t)räume Podcast</h3>
-                <p className="text-bark text-sm leading-relaxed mb-3">
-                  Maria im Gespräch mit Claudia Dippel über Aromatherapie, Naturverbundenheit und Kindheitserinnerungen.
-                </p>
-                <a href="https://anchor.fm/claudia-dippel/episodes/Interview-mit-Maria-Kettenring-e1d5h8s" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Anhören <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
-
-            {/* Presse Brigitte */}
-            <div className="card p-6 flex items-start gap-5">
-              <div className="w-12 h-12 rounded-2xl bg-forest/10 flex items-center justify-center shrink-0">
-                <Newspaper size={22} className="text-forest" />
-              </div>
-              <div>
-                <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Presse</span>
-                <h3 className="text-base font-bold text-earth mb-1">Brigitte Magazin — Aromatherapie & Waldmedizin</h3>
-                <p className="text-bark text-sm leading-relaxed mb-3">
-                  Artikel über Aromatherapie und Waldmedizin mit Buchempfehlung „Waldmedizin" von Anusati Thumm und Maria M. Kettenring.
-                </p>
-                <a href="https://shop.brigitte.de/de_DE/einzelhefte/einzelausgaben/brigitte-26-2021/2055728.html" target="_blank" rel="noopener noreferrer"
-                  className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
-                  Zum Artikel <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/seminare" className="btn-outline">
-              Alle Termine ansehen <ArrowRight size={16} />
-            </Link>
           </div>
         </div>
       </section>

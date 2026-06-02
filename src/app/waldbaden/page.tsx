@@ -108,16 +108,34 @@ export default function WaldbadenPage() {
 
             {/* Waldmedizin Book CTA */}
             <section className="section-padding bg-forest text-white">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <TreePine size={40} className="text-sage mx-auto mb-6" />
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Waldmedizin — Das Buch</h2>
-                    <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-                        Vertiefen Sie Ihr Wissen über die Heilkraft der Baumöle. &ldquo;Waldmedizin&rdquo; enthält
-                        15 detailliert beschriebene Baumöle, 108 Rezepte und praktische Naturtherapieübungen.
-                    </p>
-                    <Link href="/buecher" className="btn-primary !bg-sage !text-earth hover:!bg-sage-light">
-                        Zum Buch <ArrowRight size={16} />
-                    </Link>
+                <div className="max-w-5xl mx-auto px-4">
+                    <div className="flex flex-col md:flex-row items-center gap-12">
+                        {/* Buchcover */}
+                        <div className="shrink-0 w-48 sm:w-56 drop-shadow-2xl">
+                            <Image
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/buch-waldmedizin-new.webp`}
+                                alt="Waldmedizin — Buchcover"
+                                width={280}
+                                height={400}
+                                className="rounded-lg"
+                                priority
+                            />
+                        </div>
+                        {/* Text */}
+                        <div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <TreePine size={28} className="text-sage shrink-0" />
+                                <h2 className="text-3xl sm:text-4xl font-bold text-white">Waldmedizin — Das Buch</h2>
+                            </div>
+                            <p className="text-white/80 text-lg leading-relaxed mb-8">
+                                Vertiefen Sie Ihr Wissen über die Heilkraft der Baumöle. &ldquo;Waldmedizin&rdquo; enthält
+                                15 detailliert beschriebene Baumöle, 108 Rezepte und praktische Naturtherapieübungen.
+                            </p>
+                            <a href="/buecher/#waldmedizin" className="btn-primary !bg-sage !text-earth hover:!bg-sage-light inline-flex items-center gap-2">
+                                Zum Buch <ArrowRight size={16} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 

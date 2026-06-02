@@ -142,7 +142,7 @@ export default function AromatherapiePage() {
       {/* ═══════════ PRIMAVERA PARTNER ═══════════ */}
       <section className="section-padding bg-[--color-lavender-light]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/aromatherapy_skincare_v2.png`}
@@ -152,18 +152,28 @@ export default function AromatherapiePage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-[--color-lavender-dark] mb-4 block">Mein Partner</span>
-              <div className="mb-8">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/primavera.jpg`}
-                  alt="PRIMAVERA Life"
-                  width={220}
-                  height={80}
-                  className="object-contain"
-                />
+              <span className="text-sm font-semibold uppercase tracking-widest text-[--color-lavender-dark] mb-6 block">Mein Partner</span>
+
+              {/* Logo + Titel nebeneinander */}
+              <div className="flex items-center gap-5 mb-6">
+                <div className="shrink-0 w-28 h-28 rounded-2xl bg-white shadow-md flex items-center justify-center p-3">
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/primavera.webp`}
+                    alt="PRIMAVERA Life"
+                    width={96}
+                    height={96}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[--color-lavender-dark] leading-tight">PRIMAVERA</h2>
+                  <p className="text-sm text-bark mt-1 tracking-wide">Life · Akademie</p>
+                </div>
               </div>
-              <div className="w-20 h-1 bg-[--color-lavender] rounded-full mb-8"></div>
-              <p className="text-bark text-lg leading-relaxed mb-4">
+
+              <div className="w-16 h-0.5 bg-[--color-lavender-dark]/30 rounded-full mb-6"></div>
+
+              <p className="text-bark text-lg leading-relaxed mb-8">
                 Entdecken Sie weitere Seminare, Workshops und Webinare bei meinem langjährigen Partner
                 PRIMAVERA. Hochwertige ätherische Öle und eine praxisnahe Ausbildung — für alle, die tiefer
                 in die Welt der Aromakultur einsteigen möchten.

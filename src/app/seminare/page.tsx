@@ -18,6 +18,7 @@ export type CalendarEvent = {
     price: string;
     link: string;
     featured: boolean;
+    badgeRight?: string;
     image: string;
 };
 
@@ -32,7 +33,7 @@ const events: CalendarEvent[] = [
         price: "268,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1183",
         featured: true,
-        image: "/villaroma/seminare/seminar_detox_gruen_1774344090956.png",
+        image: "/seminare/seminar_detox_gruen_1774344090956.png",
     },
     {
         title: "Waldbaden und Naturresilienz",
@@ -44,19 +45,7 @@ const events: CalendarEvent[] = [
         price: "25,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1137",
         featured: false,
-        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
-    },
-    {
-        title: "Duftwerkstatt - gekonnt mischen",
-        description: "Entdecke den Dreiklang der Düfte: Kombiniere ätherische Blüten-, Kräuter-, Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu individuellen Körperölen, Roll-Ons und Naturparfums. Tauche ein in die Geheimnisse natürlicher Düfte und lerne, wie du gelungene Wohlfühlmischungen kreierst und verfeinerst.",
-        location: "Fulda (DE)",
-        date: "30. – 31.05.2026",
-        duration: "2 Tage",
-        type: "Workshop",
-        price: "268,00 €",
-        link: "https://akademie.primaveralife.com/de/de-DE/Details/1098",
-        featured: false,
-        image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
+        image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
         title: "Exkursion zum Zirbenweg",
@@ -68,7 +57,7 @@ const events: CalendarEvent[] = [
         price: "388,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1190",
         featured: false,
-        image: "/villaroma/seminare/seminar_zirbenweg_1774344106703.png",
+        image: "/seminare/seminar_zirbenweg_1774344106703.png",
     },
     {
         title: "Waldbaden und Naturresilienz",
@@ -80,7 +69,7 @@ const events: CalendarEvent[] = [
         price: "25,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1139",
         featured: false,
-        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
+        image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
         title: "Zitrusdüfte - Lieblinge für Psyche",
@@ -92,7 +81,7 @@ const events: CalendarEvent[] = [
         price: "188,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1186",
         featured: false,
-        image: "/villaroma/seminare/seminar_zitrusduefte_1774344123867.png",
+        image: "/seminare/seminar_zitrusduefte_1774344123867.png",
     },
     {
         title: "Waldmedizin — Heilkraft der Baumöle",
@@ -104,11 +93,11 @@ const events: CalendarEvent[] = [
         price: "348,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
         featured: true,
-        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
+        image: "/seminare/seminar_baumoele_1773246261672.png",
     },
     {
         title: "Waldbaden und Resilienz",
-        description: "In zauberhafter Umgebung mitten in der Natur beim Pillersee (Tirol) stärken wir unsere Ressourcen und Belastbarkeit. Mit den 7 Resilienzwurzeln, den passenden ätherischen Ölen der Bäume, Blüten und Wurzeln bauen wir Stress ab, nutzen Waldbaden (Shinrin Yoku) und Duft-Qi-Gong zur Selbstregulation mit Ankerdüften.",
+        description: "Dieses Seminar fällt leider wegen noch nicht abgeschlossener Baumaßnahmen aus. Als aktuelle Alternative empfehlen wir den Kurs „Waldmedizin — Heilkraft der Baumöle“, bei dem ebenfalls Elemente aus der Naturresilienz mit einbezogen werden.",
         location: "St. Ulrich (AT)",
         date: "18. – 19.09.2026",
         duration: "2 Tage",
@@ -116,7 +105,8 @@ const events: CalendarEvent[] = [
         price: "268,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1189",
         featured: false,
-        image: "/villaroma/seminare/seminar_waldbaden_1773246243999.png",
+        badgeRight: "Fällt wegen anhaltender Baumaßnahmen aus",
+        image: "/seminare/seminar_waldbaden_1773246243999.png",
     },
     {
         title: "Duftwerkstatt - gekonnt mischen",
@@ -128,7 +118,7 @@ const events: CalendarEvent[] = [
         price: "268,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1099",
         featured: false,
-        image: "/villaroma/seminare/seminar_aromadesign_1773246292011.png",
+        image: "/seminare/seminar_aromadesign_1773246292011.png",
     },
     {
         title: "Waldmedizin — Heilkraft der Baumöle (Sonderedition)",
@@ -140,7 +130,7 @@ const events: CalendarEvent[] = [
         price: "239,00 €",
         link: "https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/",
         featured: false,
-        image: "/villaroma/seminare/seminar_baumoele_1773246261672.png",
+        image: "/seminare/seminar_baumoele_1773246261672.png",
     },
     {
         title: "PRIMAVERA Aromamassage",
@@ -152,7 +142,19 @@ const events: CalendarEvent[] = [
         price: "398,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1145",
         featured: false,
-        image: "/villaroma/seminare/seminar_aromamassage_1774344139032.png",
+        image: "/seminare/seminar_aromamassage_1774344139032.png",
+    },
+    {
+        title: "Vortrag: Resilient durch Naturmethoden",
+        description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung präsentieren ihr gemeinsames Buch 'Natur-Resilienz' beim 8. Kongress für Waldbaden, Naturgesundheit & Naturerlebnisse. Im Vortrag zeigen sie, wie Waldbaden, ätherische Öle und achtsame Naturerfahrungen die innere Widerstandskraft stärken - praxisnah und wissenschaftlich fundiert.",
+        location: "Weberstedt (Thüringen)",
+        date: "13.09.2026, 15:45 – 16:45 Uhr",
+        duration: "1 Stunde",
+        type: "Vortrag",
+        price: "",
+        link: "https://waldbaden-akademie.com/kongresse/",
+        featured: false,
+        image: "/seminare/kongress-waldbaden-2026.webp",
     },
     {
         title: "Weihnachtsbäckerei",
@@ -164,7 +166,7 @@ const events: CalendarEvent[] = [
         price: "168,00 €",
         link: "https://akademie.primaveralife.com/de/de-DE/Details/1185",
         featured: false,
-        image: "/villaroma/seminare/seminar_weihnachtsbaeckerei_1774344157206.png",
+        image: "/seminare/seminar_weihnachtsbaeckerei_1774344157206.png",
     }
 ];
 
@@ -210,7 +212,7 @@ export default function SeminarePage() {
                                 >
                                     <div className="w-full md:w-64 h-48 md:h-auto relative shrink-0">
                                         <Image
-                                            src={event.image}
+                                            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${event.image}`}
                                             alt={event.title}
                                             fill
                                             className="object-cover"
@@ -219,6 +221,13 @@ export default function SeminarePage() {
                                             <div className="absolute top-4 left-4">
                                                 <span className="inline-block px-3 py-1 rounded-full bg-forest text-white text-xs font-bold shadow-md">
                                                     Empfohlen
+                                                </span>
+                                            </div>
+                                        )}
+                                        {event.badgeRight && (
+                                            <div className="absolute top-4 right-4 max-w-[60%] text-right">
+                                                <span className="inline-block px-3 py-1 rounded-xl bg-red-600/90 backdrop-blur-sm text-white text-xs font-bold shadow-md leading-tight">
+                                                    {event.badgeRight}
                                                 </span>
                                             </div>
                                         )}

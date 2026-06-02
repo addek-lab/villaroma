@@ -27,14 +27,14 @@ export default function Datenschutz() {
                     Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben oder per E-Mail senden. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
                 </p>
 
-                <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">2. Hosting (GitHub Pages)</h2>
+                <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">2. Hosting (IONOS)</h2>
                 <p className="text-bark mb-4 text-sm leading-relaxed">
-                    Wir hosten die Inhalte unserer Website bei folgendem Anbieter: GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA (nachfolgend: GitHub).
-                    Wenn Sie unsere Website besuchen, erfasst GitHub verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von GitHub: 
-                    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer"> https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement</a>.
+                    Wir hosten die Inhalte unserer Website bei folgendem Anbieter: IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Deutschland (nachfolgend: IONOS).
+                    Wenn Sie unsere Website besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von IONOS:
+                    <a href="https://www.ionos.de/terms-gtc/datenschutzerklaerung/" target="_blank" rel="noopener noreferrer"> https://www.ionos.de/terms-gtc/datenschutzerklaerung/</a>.
                 </p>
                 <p className="text-bark mb-4 text-sm leading-relaxed">
-                    Die Verwendung von GitHub Pages erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.
+                    Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.
                 </p>
 
                 <h2 className="text-2xl text-earth font-semibold mt-8 mb-4">3. Allgemeine Hinweise und Pflichtinformationen</h2>
@@ -62,7 +62,7 @@ export default function Datenschutz() {
 
                 <h3 className="text-xl text-earth font-medium mt-6 mb-2">Server-Log-Dateien</h3>
                 <p className="text-bark mb-4 text-sm leading-relaxed">
-                    Der Provider der Seiten (GitHub) erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                    Der Provider der Seiten (IONOS) erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
                 </p>
                 <ul className="text-bark mb-4 text-sm list-disc pl-5">
                     <li>Browsertyp und Browserversion</li>

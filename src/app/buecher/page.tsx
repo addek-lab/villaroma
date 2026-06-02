@@ -13,6 +13,7 @@ interface ShopLink {
 }
 
 interface Book {
+  id?: string;
   title: string;
   subtitle: string;
   coAuthor: string;
@@ -89,6 +90,7 @@ const books: Book[] = [
     ],
   },
   {
+    id: "waldmedizin",
     title: "Waldmedizin",
     subtitle: "Die Heilkraft der ätherischen Baumöle",
     coAuthor: "mit Anusati Thumm",
@@ -111,7 +113,7 @@ const books: Book[] = [
     shops: [
       { label: "Ulmer", url: "https://www.ulmer.de/usd-7885345/waldmedizin-.html" },
       { label: "Amazon", url: "https://www.amazon.de/dp/3818624208/" },
-      { label: "Hugendubel", url: "https://www.hugendubel.de/de/buch_kartoniert/anusati_thumm_maria_m_kettenring-waldmedizin-49085568-produkt-details.html" },
+      { label: "Hugendubel", url: "https://www.hugendubel.de/de/taschenbuch/anusati_thumm_maria_m_kettenring-waldmedizin-47871608-produkt-details.html" },
       { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ISBN9783818624200.html" },
       { label: "Primavera", url: "https://www.primaveralife.com/waldmedizin.html" },
     ],
@@ -181,8 +183,6 @@ const books: Book[] = [
     featured: false,
     shops: [
       { label: "Amazon", url: "https://www.amazon.de/Duftküche-Vitalrezepte-mit-ätherischen-Ölen/dp/3708806301/" },
-      { label: "Thalia", url: "https://www.thalia.de/shop/home/artikeldetails/ID39352332.html" },
-      { label: "Bücher.de", url: "https://www.buecher.de/shop/desserts--suessspeisen/duftkueche/kettenring-maria-m-/products_products/detail/prod_id/40893003/" },
     ],
   },
   {
@@ -203,9 +203,7 @@ const books: Book[] = [
     year: "",
     featured: false,
     shops: [
-      { label: "Vegaroma", url: "https://www.vegaroma.de/shop/vegaroma-aromakueche/koch-backbuecher/kochbuch-rosenkueche" },
       { label: "Amazon", url: "https://www.amazon.de/ROSENKÜCHE-Feine-Rezepte-Blütenblättern-Essenzen/dp/392855493X" },
-      { label: "Bücher.de", url: "https://www.buecher.de/shop/buecher/rosenkueche/kettenring-maria-m-/products_products/detail/prod_id/44994082/" },
     ],
   },
   {
@@ -291,7 +289,7 @@ export default function BuecherPage() {
           <h2 className="text-2xl font-bold mb-10">Weitere Bücher</h2>
           <div className="space-y-10">
             {books.filter(b => !b.featured).map((book, i) => (
-              <div key={i} className="card overflow-hidden">
+              <div key={i} id={book.id} className="card overflow-hidden scroll-mt-28">
                 <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-0">
                   {/* Cover */}
                   {book.cover ? (
