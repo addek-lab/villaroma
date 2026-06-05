@@ -325,9 +325,9 @@ export default function HomePage() {
                 </div>
                 <div>
                   <span className="px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold mb-2 inline-block">Artikel</span>
-                  <h3 className="text-base font-bold text-earth mb-1">Zeitschrift Bewusster Leben — Natur-Resilienz</h3>
+                  <h3 className="text-base font-bold text-earth mb-1">Zeitschrift Bewusster Leben (Mai 2026) — Natur-Resilienz</h3>
                   <p className="text-bark text-sm leading-relaxed mb-3">
-                    Ein ausführlicher Beitrag über die heilende Kraft der Natur. Erfahren Sie, wie Waldmedizin und Waldbaden helfen, innere Widerstandskräfte im Alltag aufzubauen.
+                    Ein ausführlicher Beitrag aus der Mai-Ausgabe 2026 über die heilende Kraft der Natur. Erfahren Sie, wie Waldmedizin und Waldbaden helfen, innere Widerstandskräfte im Alltag aufzubauen.
                   </p>
                   <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/presse/Bewusster_Leben_Naturresilienz.pdf`} target="_blank" rel="noopener noreferrer"
                     className="text-xs text-forest font-medium flex items-center gap-1 hover:text-leaf transition-colors">
