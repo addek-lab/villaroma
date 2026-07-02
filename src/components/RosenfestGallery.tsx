@@ -5,10 +5,9 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   "IMG_3014.jpg", "IMG_3019.jpg", "IMG_3029.jpg", "IMG_3043.jpg",
-  "IMG_3045.jpg", "IMG_3085.jpg", "IMG_3116.jpg", "IMG_3135.jpg",
-  "IMG_3145.jpg", "IMG_3146.jpg", "IMG_3155.jpg", "IMG_3165.jpg",
-  "IMG_3166.jpg", "IMG_3167.jpg", "IMG_3236.jpg", "IMG_3240.jpg",
-  "IMG_3241.jpg"
+  "IMG_3045.jpg", "IMG_3116.jpg", "IMG_3135.jpg", "IMG_3145.jpg",
+  "IMG_3146.jpg", "IMG_3155.jpg", "IMG_3165.jpg", "IMG_3166.jpg",
+  "IMG_3167.jpg", "IMG_3236.jpg", "IMG_3240.jpg", "IMG_3241.jpg"
 ];
 
 export default function RosenfestGallery() {
