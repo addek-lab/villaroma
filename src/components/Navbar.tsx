@@ -12,6 +12,7 @@ const navLinks = [
     { href: "/seminare", label: "Seminare" },
     { href: "/waldbaden", label: "Waldbaden" },
     { href: "/aromatherapie", label: "Aromatherapie" },
+    { href: "/aromakueche", label: "Aromaküche" },
     { href: "/impressionen", label: "Impressionen" },
 ];
 

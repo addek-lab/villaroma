@@ -214,10 +214,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ PRIMAVERA 40 JAHRE ═══════════ */}
-      <section className="section-padding bg-white pb-0">
+      {/* ═══════════ PRIMAVERA 40 JAHRE RÜCKBLICK ═══════════ */}
+      <section className="section-padding bg-sage/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-10">
+            {/* Main Image */}
             <div className="w-full rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/40Jahre_Primavera.png`}
@@ -225,21 +226,39 @@ export default function HomePage() {
                 className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
               />
             </div>
-            <div className="flex flex-col items-center gap-4 text-center">
-              <div className="bg-sage/10 text-earth px-6 py-3 rounded-xl border border-sage/30 shadow-sm inline-flex items-center gap-2">
-                <Calendar size={18} className="text-forest shrink-0" />
-                <span className="font-medium text-sm md:text-base">
-                  <strong>Rosenfest:</strong> 27. und 28. Juni 2026 in Oy-Mittelberg
-                </span>
+
+            {/* Retrospective Text */}
+            <div className="text-center max-w-3xl">
+              <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">Rückblick</span>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-earth">
+                Ein wundervolles Rosenfest 2026
+              </h2>
+              <p className="text-bark text-lg leading-relaxed mb-6">
+                Was für ein unvergessliches Wochenende! Das PRIMAVERA Rosenfest in Oy-Mittelberg war erfüllt von wundervollen Begegnungen, inspirierenden Gesprächen und einer durchweg herzlichen Atmosphäre. Es war eine Freude, gemeinsam mit so vielen Duftbegeisterten die Welt der Aromatherapie und Pflanzenkräfte zu feiern.
+              </p>
+              <p className="text-bark text-lg leading-relaxed mb-10">
+                Ein riesiges Dankeschön an Ute und Kurt, das großartige Organisationsteam von PRIMAVERA und natürlich an alle Gäste, die dieses Jubiläum so besonders gemacht haben. Die wundervollen Eindrücke werden uns noch lange begleiten und nähren!
+              </p>
+            </div>
+
+            {/* Placeholder Images */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
+                <span>Bild 1</span>
+                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
               </div>
-              <a 
-                href="https://www.primaveralife.com/40-jahre-jubilaeum?srsltid=AfmBOook3P3Vdsf7yUvgq7nv0vSwnFZjbecLx85s8mjM2Rp6wErxmSvm" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-forest text-white hover:bg-leaf hover:scale-105 font-bold text-lg rounded-full transition-all shadow-md"
-              >
-                Zur Jubiläumsseite (extern) <ExternalLink size={20} />
-              </a>
+              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
+                <span>Bild 2</span>
+                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
+              </div>
+              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
+                <span>Bild 3</span>
+                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
+              </div>
+              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
+                <span>Bild 4</span>
+                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
+              </div>
             </div>
           </div>
         </div>

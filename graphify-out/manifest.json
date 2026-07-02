@@ -1,0 +1,72 @@
+{
+  "app/aromakueche/page.tsx": {
+    "mtime": 1781182507.1811156,
+    "ast_hash": "f1e5c4e1cb160412f0f5f61259bde864",
+    "semantic_hash": "f1e5c4e1cb160412f0f5f61259bde864"
+  },
+  "app/aromatherapie/page.tsx": {
+    "mtime": 1775609215.986879,
+    "ast_hash": "d171ad42d2ed5e015271ac133d1d82fb",
+    "semantic_hash": "d171ad42d2ed5e015271ac133d1d82fb"
+  },
+  "app/buecher/page.tsx": {
+    "mtime": 1775611351.9564803,
+    "ast_hash": "3fde1cce593177dce7b140a33ed4dcde",
+    "semantic_hash": "3fde1cce593177dce7b140a33ed4dcde"
+  },
+  "app/datenschutz/page.tsx": {
+    "mtime": 1775610373.0552738,
+    "ast_hash": "c3daf8938f3f3f1876f9433f3a276c6a",
+    "semantic_hash": "c3daf8938f3f3f1876f9433f3a276c6a"
+  },
+  "app/impressionen/page.tsx": {
+    "mtime": 1775209566.059343,
+    "ast_hash": "84e42028945eb69b6fd58ab1ee836987",
+    "semantic_hash": "84e42028945eb69b6fd58ab1ee836987"
+  },
+  "app/impressum/page.tsx": {
+    "mtime": 1775167505.0609293,
+    "ast_hash": "74bcdfaddb5cecc5d938ab69e3acbcdc",
+    "semantic_hash": "74bcdfaddb5cecc5d938ab69e3acbcdc"
+  },
+  "app/layout.tsx": {
+    "mtime": 1774345802.9291055,
+    "ast_hash": "71402eaa5ba7e5932e2a001c3e795c10",
+    "semantic_hash": "71402eaa5ba7e5932e2a001c3e795c10"
+  },
+  "app/page.tsx": {
+    "mtime": 1780676054.5973434,
+    "ast_hash": "13a32f04d4eff98f9ba97d3363370ec5",
+    "semantic_hash": "13a32f04d4eff98f9ba97d3363370ec5"
+  },
+  "app/seminare/page.tsx": {
+    "mtime": 1780392043.730421,
+    "ast_hash": "994dfd2bfaf07636e4bba74cbecc222a",
+    "semantic_hash": "994dfd2bfaf07636e4bba74cbecc222a"
+  },
+  "app/ueber-mich/page.tsx": {
+    "mtime": 1775610906.560322,
+    "ast_hash": "7220163c9915fa401e8bfa697d971275",
+    "semantic_hash": "7220163c9915fa401e8bfa697d971275"
+  },
+  "app/waldbaden/page.tsx": {
+    "mtime": 1775609960.6846647,
+    "ast_hash": "2e773a88cc85d786f790dc938c1c0309",
+    "semantic_hash": "2e773a88cc85d786f790dc938c1c0309"
+  },
+  "components/CookieBanner.tsx": {
+    "mtime": 1774345788.3657775,
+    "ast_hash": "7575da1cddb7d3e2742a8e5cfbf9c146",
+    "semantic_hash": "7575da1cddb7d3e2742a8e5cfbf9c146"
+  },
+  "components/Footer.tsx": {
+    "mtime": 1781182516.345858,
+    "ast_hash": "2d9e98cd3d0e6be61ed8b094cf5db7e4",
+    "semantic_hash": "2d9e98cd3d0e6be61ed8b094cf5db7e4"
+  },
+  "components/Navbar.tsx": {
+    "mtime": 1781182512.4496665,
+    "ast_hash": "4c057c78eb16b2b31657ccb83e9f21c3",
+    "semantic_hash": "4c057c78eb16b2b31657ccb83e9f21c3"
+  }
+}

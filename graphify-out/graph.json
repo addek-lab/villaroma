@@ -1,0 +1,1097 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_aromakueche_page",
+      "community": 2,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "app_aromakueche_page_metadata",
+      "community": 2,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "focuses",
+      "file_type": "code",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "app_aromakueche_page_focuses",
+      "community": 2,
+      "norm_label": "focuses"
+    },
+    {
+      "label": "cookingBooks",
+      "file_type": "code",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "app_aromakueche_page_cookingbooks",
+      "community": 2,
+      "norm_label": "cookingbooks"
+    },
+    {
+      "label": "AromakuechePage()",
+      "file_type": "code",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "app_aromakueche_page_aromakuechepage",
+      "community": 2,
+      "norm_label": "aromakuechepage()"
+    },
+    {
+      "label": "ExternalLink()",
+      "file_type": "code",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L297",
+      "_origin": "ast",
+      "id": "app_aromakueche_page_externallink",
+      "community": 2,
+      "norm_label": "externallink()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/aromatherapie/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_aromatherapie_page",
+      "community": 10,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "AromatherapiePage()",
+      "file_type": "code",
+      "source_file": "app/aromatherapie/page.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_aromatherapie_page_aromatherapiepage",
+      "community": 10,
+      "norm_label": "aromatherapiepage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_buecher_page",
+      "community": 3,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_buecher_page_metadata",
+      "community": 3,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "ShopLink",
+      "file_type": "code",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_buecher_page_shoplink",
+      "community": 3,
+      "norm_label": "shoplink"
+    },
+    {
+      "label": "Book",
+      "file_type": "code",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_buecher_page_book",
+      "community": 3,
+      "norm_label": "book"
+    },
+    {
+      "label": "books",
+      "file_type": "code",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "app_buecher_page_books",
+      "community": 3,
+      "norm_label": "books"
+    },
+    {
+      "label": "BuecherPage()",
+      "file_type": "code",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L226",
+      "_origin": "ast",
+      "id": "app_buecher_page_buecherpage",
+      "community": 3,
+      "norm_label": "buecherpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_datenschutz_page",
+      "community": 8,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_datenschutz_page_metadata",
+      "community": 8,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "Datenschutz()",
+      "file_type": "code",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_datenschutz_page_datenschutz",
+      "community": 8,
+      "norm_label": "datenschutz()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_impressionen_page",
+      "community": 1,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "Category",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_impressionen_page_category",
+      "community": 1,
+      "norm_label": "category"
+    },
+    {
+      "label": "GalleryImage",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_impressionen_page_galleryimage",
+      "community": 1,
+      "norm_label": "galleryimage"
+    },
+    {
+      "label": "images",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "app_impressionen_page_images",
+      "community": 1,
+      "norm_label": "images"
+    },
+    {
+      "label": "categories",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "app_impressionen_page_categories",
+      "community": 1,
+      "norm_label": "categories"
+    },
+    {
+      "label": "categoryColors",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "app_impressionen_page_categorycolors",
+      "community": 1,
+      "norm_label": "categorycolors"
+    },
+    {
+      "label": "categoryActiveColors",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "app_impressionen_page_categoryactivecolors",
+      "community": 1,
+      "norm_label": "categoryactivecolors"
+    },
+    {
+      "label": "ImpressionenPage()",
+      "file_type": "code",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "app_impressionen_page_impressionenpage",
+      "community": 1,
+      "norm_label": "impressionenpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_impressum_page",
+      "community": 9,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_impressum_page_metadata",
+      "community": 9,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "Impressum()",
+      "file_type": "code",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_impressum_page_impressum",
+      "community": 9,
+      "norm_label": "impressum()"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_layout",
+      "community": 0,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "playfair",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_layout_playfair",
+      "community": 0,
+      "norm_label": "playfair"
+    },
+    {
+      "label": "inter",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_layout_inter",
+      "community": 0,
+      "norm_label": "inter"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "app_layout_metadata",
+      "community": 0,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "app_layout_rootlayout",
+      "community": 0,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_page",
+      "community": 5,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "books",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_page_books",
+      "community": 5,
+      "norm_label": "books"
+    },
+    {
+      "label": "seminare",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "app_page_seminare",
+      "community": 5,
+      "norm_label": "seminare"
+    },
+    {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "app_page_homepage",
+      "community": 5,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_seminare_page",
+      "community": 4,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "app_seminare_page_metadata",
+      "community": 4,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "CalendarEvent",
+      "file_type": "code",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "app_seminare_page_calendarevent",
+      "community": 4,
+      "norm_label": "calendarevent"
+    },
+    {
+      "label": "events",
+      "file_type": "code",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "app_seminare_page_events",
+      "community": 4,
+      "norm_label": "events"
+    },
+    {
+      "label": "SeminarePage()",
+      "file_type": "code",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "app_seminare_page_seminarepage",
+      "community": 4,
+      "norm_label": "seminarepage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_ueber_mich_page",
+      "community": 6,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "app_ueber_mich_page_metadata",
+      "community": 6,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "credentials",
+      "file_type": "code",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_ueber_mich_page_credentials",
+      "community": 6,
+      "norm_label": "credentials"
+    },
+    {
+      "label": "UeberMichPage()",
+      "file_type": "code",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "app_ueber_mich_page_uebermichpage",
+      "community": 6,
+      "norm_label": "uebermichpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_waldbaden_page",
+      "community": 7,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "app_waldbaden_page_metadata",
+      "community": 7,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "benefits",
+      "file_type": "code",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "app_waldbaden_page_benefits",
+      "community": 7,
+      "norm_label": "benefits"
+    },
+    {
+      "label": "WaldbadenPage()",
+      "file_type": "code",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "app_waldbaden_page_waldbadenpage",
+      "community": 7,
+      "norm_label": "waldbadenpage()"
+    },
+    {
+      "label": "CookieBanner.tsx",
+      "file_type": "code",
+      "source_file": "components/CookieBanner.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_cookiebanner",
+      "community": 0,
+      "norm_label": "cookiebanner.tsx"
+    },
+    {
+      "label": "CookieBanner()",
+      "file_type": "code",
+      "source_file": "components/CookieBanner.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "components_cookiebanner_cookiebanner",
+      "community": 0,
+      "norm_label": "cookiebanner()"
+    },
+    {
+      "label": "Footer.tsx",
+      "file_type": "code",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_footer",
+      "community": 0,
+      "norm_label": "footer.tsx"
+    },
+    {
+      "label": "footerLinks",
+      "file_type": "code",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "components_footer_footerlinks",
+      "community": 0,
+      "norm_label": "footerlinks"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "components_footer_footer",
+      "community": 0,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "Navbar.tsx",
+      "file_type": "code",
+      "source_file": "components/Navbar.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_navbar",
+      "community": 0,
+      "norm_label": "navbar.tsx"
+    },
+    {
+      "label": "navLinks",
+      "file_type": "code",
+      "source_file": "components/Navbar.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "components_navbar_navlinks",
+      "community": 0,
+      "norm_label": "navlinks"
+    },
+    {
+      "label": "Navbar()",
+      "file_type": "code",
+      "source_file": "components/Navbar.tsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "components_navbar_navbar",
+      "community": 0,
+      "norm_label": "navbar()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "app_aromakueche_page",
+      "target": "app_aromakueche_page_aromakuechepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "app_aromakueche_page",
+      "target": "app_aromakueche_page_cookingbooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "app_aromakueche_page",
+      "target": "app_aromakueche_page_externallink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_aromakueche_page",
+      "target": "app_aromakueche_page_focuses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/aromakueche/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_aromakueche_page",
+      "target": "app_aromakueche_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/aromatherapie/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_aromatherapie_page",
+      "target": "app_aromatherapie_page_aromatherapiepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_buecher_page",
+      "target": "app_buecher_page_book",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "app_buecher_page",
+      "target": "app_buecher_page_books",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "app_buecher_page",
+      "target": "app_buecher_page_buecherpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_buecher_page",
+      "target": "app_buecher_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/buecher/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_buecher_page",
+      "target": "app_buecher_page_shoplink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_datenschutz_page",
+      "target": "app_datenschutz_page_datenschutz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/datenschutz/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_datenschutz_page",
+      "target": "app_datenschutz_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_categories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_category",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_categoryactivecolors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_categorycolors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_galleryimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressionen/page.tsx",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "app_impressionen_page",
+      "target": "app_impressionen_page_impressionenpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_impressum_page",
+      "target": "app_impressum_page_impressum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/impressum/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_impressum_page",
+      "target": "app_impressum_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_inter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_playfair",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "components_cookiebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "components_cookiebanner_cookiebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "components_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "components_footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "components_navbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_layout",
+      "target": "components_navbar_navbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_books",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "app_page",
+      "target": "app_page_seminare",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_seminare_page",
+      "target": "app_seminare_page_calendarevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "app_seminare_page",
+      "target": "app_seminare_page_events",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_seminare_page",
+      "target": "app_seminare_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/seminare/page.tsx",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "app_seminare_page",
+      "target": "app_seminare_page_seminarepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_ueber_mich_page",
+      "target": "app_ueber_mich_page_credentials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_ueber_mich_page",
+      "target": "app_ueber_mich_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/ueber-mich/page.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "app_ueber_mich_page",
+      "target": "app_ueber_mich_page_uebermichpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_waldbaden_page",
+      "target": "app_waldbaden_page_benefits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_waldbaden_page",
+      "target": "app_waldbaden_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/waldbaden/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_waldbaden_page",
+      "target": "app_waldbaden_page_waldbadenpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/CookieBanner.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_cookiebanner",
+      "target": "components_cookiebanner_cookiebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "components_footer",
+      "target": "components_footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_footer",
+      "target": "components_footer_footerlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Navbar.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "components_navbar",
+      "target": "components_navbar_navbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Navbar.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_navbar",
+      "target": "components_navbar_navlinks",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "48d02b6fb1f7a7defb4d726ceaeb21b0d8aebcdb"
+}
