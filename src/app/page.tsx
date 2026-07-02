@@ -241,24 +241,26 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Placeholder Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
-                <span>Bild 1</span>
-                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
-              </div>
-              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
-                <span>Bild 2</span>
-                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
-              </div>
-              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
-                <span>Bild 3</span>
-                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
-              </div>
-              <div className="aspect-square bg-forest/5 rounded-2xl flex flex-col items-center justify-center text-forest/40 font-medium border-2 border-dashed border-forest/20 shadow-sm transition-all hover:bg-forest/10">
-                <span>Bild 4</span>
-                <span className="text-xs font-normal mt-1">(Platzhalter)</span>
-              </div>
+            {/* Impressionen Gallery */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+              {[
+                "IMG_3014.jpg",
+                "IMG_3019.jpg",
+                "IMG_3029.jpg",
+                "IMG_3045.jpg",
+                "IMG_3116.jpg",
+                "IMG_3135.jpg",
+                "IMG_3145.jpg",
+                "IMG_3155.jpg"
+              ].map((img, i) => (
+                <div key={i} className="relative aspect-square rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-forest/5">
+                  <img 
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/rosenfest/${img}`} 
+                    alt={`Eindruck vom Rosenfest ${i + 1}`} 
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" 
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
