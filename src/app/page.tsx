@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, TreePine, Calendar, Sparkles, Quote, ExternalLink, Mic, Newspaper } from "lucide-react";
+import RosenfestGallery from "../components/RosenfestGallery";
 
 const books = [
   {
@@ -242,26 +243,7 @@ export default function HomePage() {
             </div>
 
             {/* Impressionen Gallery */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
-              {[
-                "IMG_3014.jpg",
-                "IMG_3019.jpg",
-                "IMG_3029.jpg",
-                "IMG_3045.jpg",
-                "IMG_3116.jpg",
-                "IMG_3135.jpg",
-                "IMG_3145.jpg",
-                "IMG_3155.jpg"
-              ].map((img, i) => (
-                <div key={i} className="relative aspect-square rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-forest/5">
-                  <img 
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/rosenfest/${img}`} 
-                    alt={`Eindruck vom Rosenfest ${i + 1}`} 
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" 
-                  />
-                </div>
-              ))}
-            </div>
+            <RosenfestGallery />
           </div>
         </div>
       </section>
