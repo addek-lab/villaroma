@@ -53,6 +53,24 @@ const cookingBooks = [
     }
 ];
 
+const recommendedBooks = [
+    {
+        title: "Die Küche des Himalaya",
+        subtitle: "Nepal · Tibet · Ladakh · Bhutan",
+        description: "Eine kulinarische und kulturelle Reise durch die faszinierende Himalaya-Region von Wolfgang Günther. Entdecken Sie authentische Rezepte und die einzigartige Esskultur dieser Bergwelten – eine absolute Empfehlung von Maria für alle, die gerne Neues am Herd ausprobieren.",
+        cover: "/Die-kueche-des-Himalaya.png",
+        highlights: [
+            "Authentische Rezepte aus Nepal, Tibet, Ladakh und Bhutan",
+            "Kulturelle Einblicke in die Himalaya-Region",
+            "Zusammengestellt von Wolfgang Günther"
+        ],
+        shops: [
+            { label: "Yeti Verlag", url: "https://yeti-verlag.de/produkt/die-kueche-des-himalaya/" },
+            { label: "Vegaroma", url: "https://vegaroma.de/das-kochbuch-die-kueche-des-himalaya?srsltid=AfmBOoru7MDDwBFl4Gdl5j3DAhtGX8lqfi1bbQYaTmCcn5GW27Uapmax" }
+        ]
+    }
+];
+
 export default function AromakuechePage() {
     return (
         <div className="pt-20">
@@ -198,6 +216,64 @@ export default function AromakuechePage() {
                                     <Link href={book.link} className="btn-outline !py-2 !px-5 !text-sm inline-flex items-center gap-1.5">
                                         Details & Shops <ArrowRight size={14} />
                                     </Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════ EMPFEHLUNGEN SECTION ═══════════ */}
+            <section className="section-padding !pt-0 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center max-w-2xl mx-auto mb-16">
+                        <span className="text-sm font-semibold uppercase tracking-widest text-leaf mb-4 block">
+                            Über den Tellerrand
+                        </span>
+                        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                            Marias Empfehlungen
+                        </h2>
+                        <p className="text-bark text-lg">
+                            Ausgewählte Literatur und Kochbücher, die das Thema Kochen und Genuss auf besondere Weise bereichern.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        {recommendedBooks.map((book, i) => (
+                            <div key={i} className="card bg-cream/20 p-6 md:p-8 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-sage/20">
+                                <div className="shrink-0 w-36 h-48 relative shadow-md rounded overflow-hidden bg-white">
+                                    <Image
+                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${book.cover}`}
+                                        alt={book.title}
+                                        fill
+                                        className="object-contain p-2"
+                                    />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-xl font-bold text-earth mb-1">{book.title}</h3>
+                                    <p className="text-leaf font-semibold text-sm mb-3">{book.subtitle}</p>
+                                    <p className="text-bark text-sm mb-4 leading-relaxed">{book.description}</p>
+                                    <ul className="space-y-1.5 mb-6">
+                                        {book.highlights.map((highlight, idx) => (
+                                            <li key={idx} className="text-xs text-bark flex items-start gap-2">
+                                                <Check size={14} className="text-forest shrink-0 mt-0.5" />
+                                                <span>{highlight}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <div className="flex flex-wrap gap-2">
+                                        {book.shops.map((shop, idx) => (
+                                            <a
+                                                key={idx}
+                                                href={shop.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn-outline !py-1.5 !px-4 !text-xs inline-flex items-center gap-1.5"
+                                            >
+                                                {shop.label} <ExternalLink size={12} />
+                                            </a>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         ))}
