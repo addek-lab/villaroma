@@ -63,18 +63,7 @@ const events: CalendarEvent[] = [
         badgeRight: "Wenige Restplätze verfügbar",
         image: "/seminare/seminar_zitrusduefte_1774344123867.png",
     },
-    {
-        title: "Waldmedizin — Heilkraft der Baumöle",
-        description: "Tauche ein in die Welt der Baumöle, Mythen und Märchen. Erfahre mehr über die heilende Kraft des Waldbadens und die vielfältigen Wirkungen ätherischer Nadelbaumöle wie Fichte, Tanne und Zirbe in der Aromatherapie.",
-        location: "Frankfurt (DE)",
-        date: "11. – 12.09.2026",
-        duration: "2 Tage",
-        type: "Vortrag",
-        price: "348,00 €",
-        link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
-        featured: true,
-        image: "/seminare/seminar_baumoele_1773246261672.png",
-    },
+
     {
         title: "Vortrag: Resilient durch Naturmethoden",
         description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung präsentieren ihr gemeinsames Buch 'Natur-Resilienz' beim 8. Kongress für Waldbaden, Naturgesundheit & Naturerlebnisse. Im Vortrag zeigen sie, wie Waldbaden, ätherische Öle und achtsame Naturerfahrungen die innere Widerstandskraft stärken - praxisnah und wissenschaftlich fundiert.",
@@ -89,7 +78,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldbaden und Resilienz aus der Natur",
-        description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden. Als aktuelle Alternative empfehlen wir den Kurs Waldmedizin — Heilkraft der Baumöle in Frankfurt. Dort werden auch Elemente der Naturresilienz mit einbezogen, sodass wesentliche Inhalte in passender Form aufgegriffen werden. Zudem wird Breathwalk praktiziert und ergänzt das Angebot um eine achtsame, bewegte Erfahrung in der Natur.",
+        description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden.",
         location: "St. Ulrich (AT)",
         date: "18. – 19.09.2026",
         duration: "2 Tage",
@@ -113,18 +102,7 @@ const events: CalendarEvent[] = [
         featured: false,
         image: "/seminare/seminar_aromadesign_1773246292011.png",
     },
-    {
-        title: "Waldmedizin — Heilkraft der Baumöle (Sonderedition)",
-        description: "Erleben Sie die Heilkraft der Baumöle und die Magie alter Mythen in diesem besonderen Workshop. Wir trainieren unseren Geruchssinn durch sensorische Übungen, stellen eigene Wald-Roll-ons für den Winter her und stärken unsere Resilienz mit begleitenden Atem- und Qigong-Einheiten. Entdecken Sie Walddüfte als wertvolle psychische Anker für mehr Stärke und Schutz im Alltag.",
-        location: "Weberstedt (Hainich)",
-        date: "24. – 25.10.2026",
-        duration: "2 Tage",
-        type: "Seminar",
-        price: "239,00 €",
-        link: "https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/",
-        featured: false,
-        image: "/seminare/seminar_baumoele_1773246261672.png",
-    },
+
     {
         title: "PRIMAVERA Aromamassage",
         description: "Löse Verspannungen und stelle Deine innere Harmonie wieder her. In diesem Kurs erlernst Du einfache, aber wirkungsvolle Grifftechniken der Aromamassage wie Streichen, Dehnen und Kneten, um blockierte Energie wieder zum Fließen zu bringen und individuelle Verwöhnerlebnisse mit Bio Pflegeölen zu kreieren.",

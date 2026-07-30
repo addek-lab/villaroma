@@ -49,15 +49,7 @@ const seminare = [
     badgeRight: "Wenige Restplätze verfügbar",
     image: "/seminare/seminar_zitrusduefte_1774344123867.png",
   },
-  {
-    title: "Waldmedizin — Heilkraft der Baumöle",
-    location: "Frankfurt (DE)",
-    date: "11. – 12.09.2026",
-    type: "Vortrag",
-    description: "Tauche ein in die Welt der Baumöle, Mythen und Märchen und erfahre mehr über die vielfältigen Wirkungen ätherischer Nadelbaumöle.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
-    image: "/seminare/seminar_baumoele_1773246261672.png",
-  },
+
   {
     title: "Vortrag: Resilient durch Naturmethoden",
     location: "Weberstedt (Thüringen)",
