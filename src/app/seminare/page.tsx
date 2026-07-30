@@ -160,22 +160,6 @@ export default function SeminarePage() {
                 className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
               />
             </div>
-            <div className="flex flex-col items-center gap-4 text-center">
-              <div className="bg-sage/10 text-earth px-6 py-3 rounded-xl border border-sage/30 shadow-sm inline-flex items-center gap-2">
-                <Calendar size={18} className="text-forest shrink-0" />
-                <span className="font-medium text-sm md:text-base">
-                  <strong>Rosenfest:</strong> 27. und 28. Juni 2026 in Oy-Mittelberg
-                </span>
-              </div>
-              <a 
-                href="https://www.primaveralife.com/40-jahre-jubilaeum?srsltid=AfmBOook3P3Vdsf7yUvgq7nv0vSwnFZjbecLx85s8mjM2Rp6wErxmSvm" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-forest text-white hover:bg-leaf hover:scale-105 font-bold text-lg rounded-full transition-all shadow-md"
-              >
-                Zur Jubiläumsseite (extern) <ExternalLink size={20} />
-              </a>
-            </div>
           </div>
         </div>
       </section>
