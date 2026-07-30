@@ -25,18 +25,7 @@ export type CalendarEvent = {
 
 const events: CalendarEvent[] = [
 
-    {
-        title: "Exkursion zum Zirbenweg",
-        description: "Erlebe den Zirbenweg am Patscherkofel in Tirol, einen panoramareichen Höhenweg durch einen der ältesten Zirbelkieferbestände Europas. Wir entdecken gemeinsam die Kraft der Baumöle, lernen botanische Besonderheiten kennen und stellen im Naturparadies eigene Aromapflegeprodukte her.",
-        location: "Oy-Mittelberg",
-        date: "08. – 09.06.2026",
-        duration: "2 Tage",
-        type: "Exkursion",
-        price: "388,00 €",
-        link: "https://akademie.primaveralife.com/de/de-DE/Details/1190",
-        featured: false,
-        image: "/seminare/seminar_zirbenweg_1774344106703.png",
-    },
+
     {
         title: "Waldbaden und Naturresilienz",
         description: "Ätherische Öle von Bäumen, Wurzeln, Blüten und Kräutern bauen Stress ab und Widerstandskräfte auf. Du lernst kleine Naturresilienz- und Waldbaden-Übungen kennen, die Dich in die Atmosphäre des Waldes und in die Natur eintauchen lassen.",
