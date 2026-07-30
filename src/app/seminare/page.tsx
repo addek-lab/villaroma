@@ -78,7 +78,7 @@ const events: CalendarEvent[] = [
     },
     {
         title: "Waldbaden und Resilienz aus der Natur",
-        description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden.",
+        description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen dieses Jahr leider nicht stattfinden. Er wird jedoch im September 2027 wieder stattfinden.",
         location: "St. Ulrich (AT)",
         date: "18. – 19.09.2026",
         duration: "2 Tage",

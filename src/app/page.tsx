@@ -64,7 +64,7 @@ const seminare = [
     location: "St. Ulrich (AT)",
     date: "18. – 19.09.2026",
     type: "Seminar",
-    description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen leider nicht stattfinden.",
+    description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen dieses Jahr leider nicht stattfinden. Er wird jedoch im September 2027 wieder stattfinden.",
     link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
     badgeRight: "Fällt aus",
     image: "/seminare/seminar_waldbaden_1773246243999.png",
