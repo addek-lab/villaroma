@@ -43,6 +43,27 @@ const books: Book[] = [
     shops: [],
   },
   {
+    title: "Duft, Licht & Lebensfreude",
+    subtitle: "Die Welt von PRIMAVERA",
+    coAuthor: "",
+    publisher: "PRIMAVERA",
+    edition: "Jubiläumsausgabe",
+    description:
+      "Ein inspirierendes Coffee Table Book zum 40-jährigen Jubiläum von PRIMAVERA. Es erzählt nicht nur die Unternehmensgeschichte, sondern bietet auch reichhaltiges Wissen rund um Aromatherapie, Naturverbundenheit und eine bewusste Lebensführung für mehr Balance im Alltag.",
+    highlights: [
+      "Die Unternehmensgeschichte und Wurzeln von PRIMAVERA",
+      "Anregungen zur inneren Balance durch Atemmeditation und Yoga",
+      "Do-it-yourself Anleitungen für Naturkosmetik und Aromaküche",
+      "Ausführliches Pflanzenglossar zu 20 ausgewählten Pflanzen",
+    ],
+    cover: "/buch-duft-licht-und-lebensfreude.webp",
+    year: "2026",
+    featured: false,
+    shops: [
+      { label: "Primavera", url: "https://www.primaveralife.com/duft-licht-und-lebensfreude-die-welt-von-primavera.html" },
+    ],
+  },
+  {
     title: "Zitrusdüfte",
     subtitle: "Die Heilkraft der ätherischen Zitrusöle — 150 Rezepturen für Körper und Psyche",
     coAuthor: "mit Anusati Thumm",
