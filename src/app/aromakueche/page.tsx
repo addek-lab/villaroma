@@ -57,11 +57,11 @@ const recommendedBooks = [
     {
         title: "Die Küche des Himalaya",
         subtitle: "Nepal · Tibet · Ladakh · Bhutan",
-        description: "Eine kulinarische und kulturelle Reise durch die faszinierende Himalaya-Region von Wolfgang Günther. Entdecken Sie authentische Rezepte und die einzigartige Esskultur dieser Bergwelten – eine absolute Empfehlung von Maria für alle, die gerne Neues am Herd ausprobieren.",
+        description: "Eine kulinarische und kulturelle Reise durch die faszinierende Himalaya-Region von Wolfgang Günther. Entdecken Sie authentische Rezepte und die einzigartige Esskultur dieser Bergwelten – bereichert mit Ergänzungen aus der Aromaküche und Beiträgen vom Vegaroma Team sowie Maria M. Kettenring.",
         cover: "/Die-kueche-des-Himalaya.png",
         highlights: [
             "Authentische Rezepte aus Nepal, Tibet, Ladakh und Bhutan",
-            "Kulturelle Einblicke in die Himalaya-Region",
+            "Mit Beiträgen von Maria M. Kettenring und Vegaroma",
             "Zusammengestellt von Wolfgang Günther"
         ],
         shops: [
