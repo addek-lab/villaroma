@@ -29,26 +29,6 @@ const books = [
 
 const seminare = [
 
-  {
-    title: "Waldbaden und Naturresilienz",
-    location: "Oy-Mittelberg",
-    date: "10.07.2026",
-    type: "Workshop",
-    description: "Eintauchen in die Natur zur Stärkung der inneren Balance und Resilienz.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1139",
-    badgeRight: "Wenige Restplätze verfügbar",
-    image: "/seminare/seminar_waldbaden_1773246243999.png",
-  },
-  {
-    title: "Zitrusdüfte - Lieblinge für die Psyche",
-    location: "Oy-Mittelberg",
-    date: "11.07.2026",
-    type: "Seminar",
-    description: "Die wertvollen Zitrusdüfte sind wahre Seelenstreichler. Lerne, wie du Splashs und Massageöle zur Unterstützung bei Stress kreierst.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1186",
-    badgeRight: "Wenige Restplätze verfügbar",
-    image: "/seminare/seminar_zitrusduefte_1774344123867.png",
-  },
 
   {
     title: "Vortrag: Resilient durch Naturmethoden",
