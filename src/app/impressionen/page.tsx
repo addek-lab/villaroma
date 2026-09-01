@@ -253,7 +253,7 @@ export default function ImpressionenPage() {
         <div className="max-w-3xl mx-auto relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Möchten Sie dabei sein?</h2>
             <p className="text-white/80 text-lg mb-10">
-                Erleben Sie die Waldmedizin und das Waldbaden hautnah in einem meiner Seminare.
+                Erleben Sie Aromatherapie, Natur-Resilienz, Waldbaden und Aromakultur hautnah in einem meiner Seminare.
             </p>
             <Link href="/seminare" className="btn-primary !bg-white !text-forest hover:!bg-sage-light">
                 Zu den Seminaren <ArrowRight size={18} />
