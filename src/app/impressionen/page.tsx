@@ -11,6 +11,7 @@ interface GalleryImage {
   optimized: string;
   original: string;
   category: Category;
+  caption?: string;
 }
 
 const images: GalleryImage[] = [
@@ -93,6 +94,20 @@ const images: GalleryImage[] = [
   { optimized: "img-7180.webp", original: "IMG_7180.jpg", category: "Seminare" },
   { optimized: "img-7184.webp", original: "IMG_7184.jpg", category: "Reisen & Exkursionen" },
   { optimized: "img-7186.webp", original: "IMG_7186.jpg", category: "Reisen & Exkursionen" },
+  { optimized: "img-3642.webp", original: "IMG_3642.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3681.webp", original: "IMG_3681.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3683.webp", original: "IMG_3683.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3644.webp", original: "IMG_3644.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3687.webp", original: "IMG_3687.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3595.webp", original: "IMG_3595.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3568.webp", original: "IMG_3568.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3546.webp", original: "IMG_3546.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3591.webp", original: "IMG_3591.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3575.webp", original: "IMG_3575.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3566.webp", original: "IMG_3566.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3663.webp", original: "IMG_3663.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3648.webp", original: "IMG_3648.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
+  { optimized: "img-3658.webp", original: "IMG_3658.jpg", category: "Reisen & Exkursionen", caption: "Duftreise ins Naturparadies Juli 26" },
 ];
 
 const categories: Category[] = ["Alle", "Waldbaden", "Seminare", "Natur & Pflanzen", "Reisen & Exkursionen", "Aromaküche"];
@@ -213,6 +228,13 @@ export default function ImpressionenPage() {
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                   />
+                  {img.caption && (
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-20 pointer-events-none">
+                      <p className="text-white text-xs sm:text-sm font-semibold tracking-wide drop-shadow-md">
+                        {img.caption}
+                      </p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
