@@ -37,7 +37,7 @@ const events: CalendarEvent[] = [
         price: "",
         link: "https://waldbaden-akademie.com/kongresse/",
         featured: false,
-        image: "/seminare/kongress-waldbaden-2026.webp",
+        image: "/seminare/kongress-waldbaden-2026-new.png",
     },
     {
         title: "Workshop: NaturResilienz und Stressreduktion",
@@ -49,7 +49,7 @@ const events: CalendarEvent[] = [
         price: "",
         link: "https://waldbaden-akademie.com/kongresse/",
         featured: false,
-        image: "/seminare/kongress-waldbaden-2026.webp",
+        image: "/seminare/kongress-waldbaden-2026-new.png",
     },
     {
         title: "Waldbaden und Resilienz aus der Natur",

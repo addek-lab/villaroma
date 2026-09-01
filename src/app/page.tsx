@@ -37,7 +37,7 @@ const seminare = [
     type: "Vortrag",
     description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung stellen ihr gemeinsames Buch 'Natur-Resilienz' vor — wie Waldbaden und ätherische Öle die innere Widerstandskraft stärken.",
     link: "https://waldbaden-akademie.com/kongresse/",
-    image: "/seminare/kongress-waldbaden-2026.webp",
+    image: "/seminare/kongress-waldbaden-2026-new.png",
   },
   {
     title: "Workshop: NaturResilienz und Stressreduktion",
@@ -46,7 +46,7 @@ const seminare = [
     type: "Workshop",
     description: "Was haben Waldmedizin und die Terpene mit Stressreduktion zu tun? Welche Zitrusdüfte stärken uns? Wir entdecken Duftanker und stellen DIY Rezepturen wie Roll-ons her.",
     link: "https://waldbaden-akademie.com/kongresse/",
-    image: "/seminare/kongress-waldbaden-2026.webp",
+    image: "/seminare/kongress-waldbaden-2026-new.png",
   },
   {
     title: "Waldbaden und Resilienz aus der Natur",
