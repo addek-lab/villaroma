@@ -66,6 +66,18 @@ const events: CalendarEvent[] = [
         image: "/seminare/kongress-waldbaden-2026.webp",
     },
     {
+        title: "Workshop: NaturResilienz und Stressreduktion",
+        description: "Was haben Waldmedizin und die Terpene mit Stressreduktion und Stärkung des Immunsystems zu tun? Welche Terpenhaltigen Wald- und Zitrusdüfte stärken uns? Mit der Intuition der Nase entdecken wir Duftanker und stellen mit DIY Rezepturen aus der Aromatherapie und -Kultur Roll-on, BodySplash oder Würzsalz her.",
+        location: "Weberstedt (Thüringen)",
+        date: "12. – 13.09.2026",
+        duration: "2 Tage",
+        type: "Workshop",
+        price: "",
+        link: "https://waldbaden-akademie.com/kongresse/",
+        featured: false,
+        image: "/seminare/kongress-waldbaden-2026.webp",
+    },
+    {
         title: "Waldbaden und Resilienz aus der Natur",
         description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen dieses Jahr leider nicht stattfinden. Er wird jedoch im September 2027 wieder stattfinden.",
         location: "St. Ulrich (AT)",
