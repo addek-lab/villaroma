@@ -28,30 +28,6 @@ const events: CalendarEvent[] = [
 
 
     {
-        title: "Vortrag: Resilient durch Naturmethoden",
-        description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung präsentieren ihr gemeinsames Buch 'Natur-Resilienz' beim 8. Kongress für Waldbaden, Naturgesundheit & Naturerlebnisse. Im Vortrag zeigen sie, wie Waldbaden, ätherische Öle und achtsame Naturerfahrungen die innere Widerstandskraft stärken - praxisnah und wissenschaftlich fundiert.",
-        location: "Weberstedt (Thüringen)",
-        date: "13.09.2026, 15:45 – 16:45 Uhr",
-        duration: "1 Stunde",
-        type: "Vortrag",
-        price: "",
-        link: "https://waldbaden-akademie.com/kongresse/",
-        featured: false,
-        image: "/seminare/kongress-waldbaden-2026-new.png",
-    },
-    {
-        title: "Workshop: NaturResilienz und Stressreduktion",
-        description: "Was haben Waldmedizin und die Terpene mit Stressreduktion und Stärkung des Immunsystems zu tun? Welche Terpenhaltigen Wald- und Zitrusdüfte stärken uns? Mit der Intuition der Nase entdecken wir Duftanker und stellen mit DIY Rezepturen aus der Aromatherapie und -Kultur Roll-on, BodySplash oder Würzsalz her.",
-        location: "Weberstedt (Thüringen)",
-        date: "12. – 13.09.2026",
-        duration: "2 Tage",
-        type: "Workshop",
-        price: "",
-        link: "https://waldbaden-akademie.com/kongresse/",
-        featured: false,
-        image: "/seminare/kongress-waldbaden-2026-new.png",
-    },
-    {
         title: "Waldbaden und Resilienz aus der Natur",
         description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen dieses Jahr leider nicht stattfinden. Er wird jedoch im September 2027 wieder stattfinden.",
         location: "St. Ulrich (AT)",
@@ -77,7 +53,18 @@ const events: CalendarEvent[] = [
         featured: false,
         image: "/seminare/seminar_aromadesign_1773246292011.png",
     },
-
+    {
+        title: "Waldmedizin - Heilkraft der Baumöle (Sonderedition)",
+        description: "Unvergessliche Auszeiten und Stress abbauen mit Natur- und Baumdüften. Wir setzen Duftanker aus der Aromatherapie als bewährte Hilfe für den Alltag und erleben neue Impulse für mehr Selbstbestimmung und Selbstwirksamkeit. Ein spezielles sensorisches Riechtraining erzeugt mehr Intuition und schärft die anderen Sinne mit.",
+        location: "Weberstedt (Thüringen)",
+        date: "24. – 25.10.2026",
+        duration: "2 Tage",
+        type: "Seminar",
+        price: "239,00 €",
+        link: "https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/",
+        featured: false,
+        image: "/seminare/seminar_baumoele_neu.png",
+    },
     {
         title: "PRIMAVERA Aromamassage",
         description: "Löse Verspannungen und stelle Deine innere Harmonie wieder her. In diesem Kurs erlernst Du einfache, aber wirkungsvolle Grifftechniken der Aromamassage wie Streichen, Dehnen und Kneten, um blockierte Energie wieder zum Fließen zu bringen und individuelle Verwöhnerlebnisse mit Bio Pflegeölen zu kreieren.",
@@ -90,7 +77,6 @@ const events: CalendarEvent[] = [
         featured: false,
         image: "/seminare/seminar_aromamassage_1774344139032.png",
     },
-
     {
         title: "Weihnachtsbäckerei",
         description: "Es duftet nach Punsch, Tannengrün und selbst gebackenen Plätzchen. Im Workshop lernst Du, wie Du für noch mehr Würze sorgst und Deine Liebsten mit außergewöhnlichen Geschenkideen aus der Duft- und Aromaküche überraschen kannst. Gemeinsam kreieren wir gesunde Gaumenfreuden für die Winterzeit, die im Gedächtnis bleiben.",

@@ -28,26 +28,6 @@ const books = [
 ];
 
 const seminare = [
-
-
-  {
-    title: "Vortrag: Resilient durch Naturmethoden",
-    location: "Weberstedt (Thüringen)",
-    date: "13.09.2026, 15:45 – 16:45 Uhr",
-    type: "Vortrag",
-    description: "Maria M. Kettenring und Jasmin Schlimm-Thierjung stellen ihr gemeinsames Buch 'Natur-Resilienz' vor — wie Waldbaden und ätherische Öle die innere Widerstandskraft stärken.",
-    link: "https://waldbaden-akademie.com/kongresse/",
-    image: "/seminare/kongress-waldbaden-2026-new.png",
-  },
-  {
-    title: "Workshop: NaturResilienz und Stressreduktion",
-    location: "Weberstedt (Thüringen)",
-    date: "12. – 13.09.2026",
-    type: "Workshop",
-    description: "Was haben Waldmedizin und die Terpene mit Stressreduktion zu tun? Welche Zitrusdüfte stärken uns? Wir entdecken Duftanker und stellen DIY Rezepturen wie Roll-ons her.",
-    link: "https://waldbaden-akademie.com/kongresse/",
-    image: "/seminare/kongress-waldbaden-2026-new.png",
-  },
   {
     title: "Waldbaden und Resilienz aus der Natur",
     location: "St. Ulrich (AT)",
@@ -66,6 +46,15 @@ const seminare = [
     description: "Kombiniere ätherische Blüten-, Kräuter-, Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu individuellen Körperölen und Naturparfums.",
     link: "https://akademie.primaveralife.com/de/de-DE/Details/1099",
     image: "/seminare/seminar_aromadesign_1773246292011.png",
+  },
+  {
+    title: "Waldmedizin - Heilkraft der Baumöle (Sonderedition)",
+    location: "Weberstedt",
+    date: "24. – 25.10.2026",
+    type: "Seminar",
+    description: "Unvergessliche Auszeiten und Stress abbauen mit Natur- und Baumdüften. Wir setzen Duftanker aus der Aromatherapie als bewährte Hilfe für den Alltag und erleben neue Impulse für mehr Selbstbestimmung und Selbstwirksamkeit. Ein spezielles sensorisches Riechtraining erzeugt mehr Intuition und schärft die anderen Sinne mit.",
+    link: "https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/",
+    image: "/seminare/seminar_baumoele_neu.png",
   },
 ];
 
@@ -114,6 +103,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* ═══════════ NEW BOOK: NATUR-RESILIENZ (PROMINENT) ═══════════ */}
       <section className="section-padding bg-white">
