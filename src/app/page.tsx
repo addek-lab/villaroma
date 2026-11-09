@@ -27,26 +27,16 @@ const books = [
   },
 ];
 
-const seminare = [
-  {
-    title: "Waldbaden und Resilienz aus der Natur",
-    location: "St. Ulrich (AT)",
-    date: "18. – 19.09.2026",
-    type: "Seminar",
-    description: "Der Kurs Waldbaden und Naturresilienz in St. Ulrich kann aufgrund noch nicht abgeschlossener Baumaßnahmen dieses Jahr leider nicht stattfinden. Er wird jedoch im September 2027 wieder stattfinden.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1188",
-    badgeRight: "Fällt aus",
-    image: "/seminare/seminar_waldbaden_1773246243999.png",
-  },
-  {
-    title: "Duftwerkstatt - gekonnt mischen",
-    location: "Oy-Mittelberg",
-    date: "17. – 18.10.2026",
-    type: "Workshop",
-    description: "Kombiniere ätherische Blüten-, Kräuter-, Wurzel- und Zitrusöle mithilfe gezielter Riechübungen zu individuellen Körperölen und Naturparfums.",
-    link: "https://akademie.primaveralife.com/de/de-DE/Details/1099",
-    image: "/seminare/seminar_aromadesign_1773246292011.png",
-  },
+const seminare: {
+  title: string;
+  location: string;
+  date: string;
+  type: string;
+  description: string;
+  link: string;
+  badgeRight?: string;
+  image: string;
+}[] = [
   {
     title: "Waldmedizin - Heilkraft der Baumöle (Sonderedition)",
     location: "Weberstedt",
@@ -55,6 +45,24 @@ const seminare = [
     description: "Unvergessliche Auszeiten und Stress abbauen mit Natur- und Baumdüften. Wir setzen Duftanker aus der Aromatherapie als bewährte Hilfe für den Alltag und erleben neue Impulse für mehr Selbstbestimmung und Selbstwirksamkeit. Ein spezielles sensorisches Riechtraining erzeugt mehr Intuition und schärft die anderen Sinne mit.",
     link: "https://waldbaden-akademie.com/veranstaltungen/waldmedizin-heilkraft-der-baumoele-sonderedition-2-tage/",
     image: "/seminare/seminar_baumoele_neu.png",
+  },
+  {
+    title: "PRIMAVERA Aromamassage",
+    location: "Oy-Mittelberg",
+    date: "13. – 15.11.2026",
+    type: "Workshop",
+    description: "Löse Verspannungen und stelle Deine innere Harmonie wieder her. Erlernen Sie einfache, wirkungsvolle Grifftechniken der Aromamassage und kreieren Sie individuelle Verwöhnerlebnisse mit Bio Pflegeölen.",
+    link: "https://akademie.primaveralife.com/de/de-DE/Details/1145",
+    image: "/seminare/seminar_aromamassage_1774344139032.png",
+  },
+  {
+    title: "Weihnachtsbäckerei – Aromafein duftend",
+    location: "Drestedt (Eventküche Tills Topf)",
+    date: "28.11.2026",
+    type: "Workshop",
+    description: "Aromaküche lernen. Weihnachtsgenuss neu entdecken: Ein besonderer Workshop mit Maria M. Kettenring rund um Weihnachtsgebäck, Marzipan & Pralinen, Punsch, Gewürzöle und natürliche Aromen wie Zimt, Orange, Kardamom, Tonka und Vanille.",
+    link: "https://vegaroma.de/Inspiration/Workshop-Weihnachtsbaeckerei/",
+    image: "/seminare/seminar_weihnachtsbaeckerei_1774344157206.png",
   },
 ];
 

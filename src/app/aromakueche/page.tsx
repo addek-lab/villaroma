@@ -354,15 +354,25 @@ export default function AromakuechePage() {
                         Erleben Sie die Aromaküche live
                     </h2>
                     <p className="text-sage-light text-lg mb-10 max-w-2xl mx-auto">
-                        In unseren Seminaren und Workshops — wie der beliebten Weihnachtsbäckerei — lernen Sie den 
-                        fachgerechten Umgang und die kreative Dosierung ätherischer Öle beim Kochen und Backen.
+                        In unseren Seminaren und Workshops — wie dem Workshop <strong>&bdquo;Weihnachtsbäckerei – Aromafein duftend&ldquo;</strong> am 28.11.2026 in Drestedt — lernen Sie den 
+                        fachgerechten Umgang und die kreative Dosierung natürlicher Aromen und ätherischer Öle beim Kochen und Backen.
                     </p>
-                    <Link 
-                        href="/seminare" 
-                        className="inline-flex items-center gap-2 px-8 py-4 bg-white text-forest rounded-full font-bold transition hover:bg-cream hover:scale-105"
-                    >
-                        Zu den Seminaren <ArrowRight size={18} />
-                    </Link>
+                    <div className="flex flex-wrap items-center justify-center gap-4">
+                        <a 
+                            href="https://vegaroma.de/Inspiration/Workshop-Weihnachtsbaeckerei/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-forest rounded-full font-bold transition hover:bg-cream hover:scale-105"
+                        >
+                            Zum Workshop Weihnachtsbäckerei <ExternalLink size={18} />
+                        </a>
+                        <Link 
+                            href="/seminare" 
+                            className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white rounded-full font-bold transition hover:bg-white/15"
+                        >
+                            Alle Seminare <ArrowRight size={18} />
+                        </Link>
+                    </div>
                 </div>
             </section>
         </div>
