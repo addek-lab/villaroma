@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { X, Maximize2, Camera, ArrowRight, Filter } from "lucide-react";
+import WeberstedtDokuSection from "../../components/WeberstedtDokuSection";
 
 type Category = "Alle" | "Waldbaden" | "Seminare" | "Natur & Pflanzen" | "Reisen & Exkursionen" | "Aromaküche";
 
@@ -163,9 +164,20 @@ export default function ImpressionenPage() {
         </div>
       </section>
 
+      {/* ═══════════ FEATURED FOTODOKUMENTATION WEBERSTEDT ═══════════ */}
+      <WeberstedtDokuSection />
+
       {/* ═══════════ CATEGORY FILTER ═══════════ */}
       <section className="px-4 mb-10">
         <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-earth mb-2">
+              Bildergalerie nach Themen
+            </h2>
+            <p className="text-bark text-sm sm:text-base">
+              Stöbern Sie durch weitere Aufnahmen aus Seminaren, Exkursionen, Waldbaden und der Aromaküche.
+            </p>
+          </div>
           <div className="flex items-center justify-center gap-2 mb-2">
             <Filter size={16} className="text-bark" />
             <span className="text-sm font-medium text-bark">Kategorie wählen</span>
